@@ -274,9 +274,13 @@ Language** chooses it, and the choice is kept with your other settings. English
 is the default, and a player who never opens that row sees and hears exactly
 what the port always showed.
 
-**What stays English** is the recorded audio — the announcer calling out your
-kills, and the game's own spoken lines. Those are sound files, not text, so no
-translation can reach them.
+**The original recorded audio stays in English.** On Android, Vietnamese mode now
+has an experimental spoken companion for a small set of identified Challenge
+recordings: an Android Vietnamese TTS voice gives a short explanation at the
+same moment, with the original actor's volume lowered. This does not replace
+the recordings. Most prerecorded lines (and the opener, announcer, and
+encyclopedia voices) have no verified transcripts yet, so they remain English
+only. See [the Vietnamese status and limitations](docs/VIETNAMESE.md).
 
 ### The language files
 
