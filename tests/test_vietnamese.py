@@ -81,6 +81,26 @@ class VietnameseSpeechTests(unittest.TestCase):
                 self.assertNotIn(english, translated)
         self.assertIn("Loh Boon Keat", translated)  # creator name is not translated
 
+    def test_all_dynamic_keyboard_tutorial_lines_translate(self):
+        import ast
+        tree = ast.parse(Path("audiodefence/game/tutorial_text.py").read_text(encoding="utf-8"))
+        lines = None
+        for node in tree.body:
+            if isinstance(node, ast.Assign) and any(
+                    isinstance(t, ast.Name) and t.id == "LINES" for t in node.targets):
+                lines = ast.literal_eval(node.value)
+                break
+        self.assertIsNotNone(lines)
+        self.assertEqual(len(lines), 7)
+        actions = dict.fromkeys(("turn_left", "turn_right", "fire", "reload",
+                                 "pause", "next_weapon", "skip", "melee"), "Enter")
+        for topic, english in lines.items():
+            with self.subTest(topic=topic):
+                spoken = english.format(**actions)
+                translated = localization.translate(spoken)
+                self.assertNotEqual(translated, spoken, "Dynamic keyboard hint remains English")
+                self.assertTrue(any(ord(ch) > 127 for ch in translated))
+
     def test_android_menu_touch_words_stay_vietnamese(self):
         # The in-game menu hint converter uses a keyboard-independent table.
         # Inspect its patterns without importing pygame/controller hardware.
