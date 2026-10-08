@@ -1,0 +1,67 @@
+"""Vietnamese spoken companions for short, unambiguous original voice callouts.
+
+Unlike longer Dr. Bastard recordings, these sound keys explicitly identify a
+spoken weapon, power-up, or immediate instruction. Labels describe what is said,
+but are NOT claimed to be verified word-for-word recordings.
+
+Only the *recorded voice clip* is made quieter. The zombie, weapon, ambient,
+HRTF and gameplay sounds retain their original gain.
+"""
+from __future__ import annotations
+
+# Original audio key -> short Vietnamese text for the game's TTS voice.
+LABELS = {
+    "announcer_outofammo_c": "Hết đạn!",
+    "announcer_reload_b": "Nạp đạn!",
+    "announcer_reload_g": "Nạp đạn!",
+    "weapon_gun_bazooka_voice": "Súng phóng rocket.",
+    "weapon_gun_grenade_voice": "Súng phóng lựu.",
+    "weapon_gun_hunting_voice": "Súng trường săn.",
+    "weapon_gun_machinegun_voice": "Súng máy.",
+    "weapon_gun_microsmg_voice": "Tiểu liên Micro SMG.",
+    "weapon_gun_pistol_voice": "Súng lục.",
+    "weapon_gun_policeshotgun_voice": "Shotgun cảnh sát.",
+    "weapon_gun_sawnoff_voice": "Shotgun nòng ngắn.",
+    "weapon_gun_sonic_voice": "Pháo âm thanh.",
+    "weapon_gun_tactical_voice": "Súng trường chiến thuật.",
+    "fireworks_announce": "Pháo hoa!",
+    "minigun_announce": "Súng máy Minigun!",
+    "tesla_announce": "Trường điện Tesla!",
+    "tornado_announce": "Lốc xoáy!",
+    "fireworks_announce_b": "Pháo hoa!",
+    "minigun_announce_c": "Súng máy Minigun!",
+    "tesla_announce_a": "Trường điện Tesla!",
+    "tornado_announce_a": "Lốc xoáy!",
+}
+
+
+def companion_label(key: str | None) -> str | None:
+    return LABELS.get(key or "")
+
+
+def speak_short_voice(sound) -> bool:
+    """Read a Vietnamese companion once when its *original* speech clip plays.
+
+    On other languages and platforms nothing changes. TTS does not replace the
+    recording, and ends up in the game's separate speech mix.
+    """
+    from ..platform import host
+    if not host.ANDROID or sound is None:
+        return False
+    from .parameters import GameParameters
+    if GameParameters.shared().language() != "Tiếng Việt":
+        return False
+    text = companion_label(getattr(sound, "key", None))
+    if not text:
+        return False
+
+    from ..platform.speech import Speech
+    # The same agent can be reused. The original gain is restored on each
+    # recording's natural end so no successive callouts become quieter.
+    original_gain = sound.gain
+    sound.set_gain(original_gain * 0.32)
+    sound.add_3d_sound_end_callback(
+        lambda clip, original=original_gain: clip.set_gain(original)
+    )
+    Speech.shared().speak_in_game(text, False)
+    return True
