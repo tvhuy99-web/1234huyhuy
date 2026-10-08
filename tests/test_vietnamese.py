@@ -9,6 +9,7 @@ import unittest
 from audiodefence import localization
 from audiodefence.platform.speech_android import phone_words
 from audiodefence.game.recorded_voice_text import CHALLENGE_VOICE_LINES, companion_for
+from audiodefence.game.voice_labels import LABELS, companion_label
 from pathlib import Path
 
 
@@ -71,6 +72,17 @@ class VietnameseSpeechTests(unittest.TestCase):
                     any(path.glob('*/' + key + '.m4a')),
                     'No corresponding recording found for ' + key,
                 )
+
+    def test_short_spoken_labels_match_audio_files(self):
+        sound_paths = Path("analysis/data/sounds.tsv").read_text(encoding="utf-8").splitlines()[1:]
+        sound_stems = {Path(line.split("\t", 1)[0]).stem for line in sound_paths}
+        self.assertGreaterEqual(len(LABELS), 21)
+        for key, translated in LABELS.items():
+            with self.subTest(sound=key):
+                self.assertIn(key, sound_stems, "No corresponding original sound asset")
+                self.assertTrue(translated.strip())
+                self.assertEqual(companion_label(key), translated)
+        self.assertIsNone(companion_label("weapon_gun_pistol_fire_a"))
 
     def test_english_keyboard_remains_correct(self):
         self.assertEqual(
