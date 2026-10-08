@@ -60,6 +60,12 @@ class ADSound:
         self.started_main_menu_music = False
         self.sound_was_playing = False
         self.sound = None
+        # Android Vietnamese: TTS can accompany a known English spoken recording.
+        # Unmapped sounds and all original sound effects remain unchanged.
+        self._vi_voice_text = None
+        self._vi_voice_wait = 0.0
+        self._vi_original_gain = None
+        self._vi_voice_paused = False
         self.set_state(1 if self.spawn_time != 0.0 else 0)
         self.init_sound()
 
@@ -91,6 +97,10 @@ class ADSound:
     def update(self, dt: float) -> None:                      # 0x1000b3914
         if self._state == 2:
             dur = self.sound.duration if self.sound is not None else 0.0
+            # A blocking English line must also wait for its Vietnamese TTS companion.
+            # Nonblocking lines keep their original wave and enemy timings.
+            if self.blocker and self._vi_voice_text:
+                dur = max(dur, self._vi_voice_wait)
             if self.start_music_before_end > 0.0 and not self.started_main_menu_music:
                 # The menu music comes in under the end of a challenge's closing line, so it is already
                 # running when the score screen arrives: 30 lines carry a lead-in, all but one of 3 s.
@@ -131,8 +141,12 @@ class ADSound:
 
     def finish_sound_with_skip(self, skipped: bool) -> None:  # 0x1000b4060
         from .brick_manager import BrickManager
+        if skipped:
+            self._stop_vi_voice()
+        self._restore_vi_gain()
         if self.sound is not None:
             self.sound.stop()
+        self._vi_voice_text = None
         self.set_state(3)
         BrickManager.shared().sound_or_enemy_with_name_was_deactivated(self.name, skipped)
 
@@ -150,6 +164,7 @@ class ADSound:
                 self.sound.set_gain(self.gain)
         self.set_state(2)
         self.speak_tutorial_text()
+        self.speak_recorded_voice_companion()
         BrickManager.shared().check_spawn_on_start(self.name)
 
     def speak_tutorial_text(self) -> None:
@@ -172,17 +187,74 @@ class ADSound:
         else:
             Speech.shared().speak_in_game(text, False)
 
+    def speak_recorded_voice_companion(self) -> None:
+        """Read a reviewed Vietnamese explanation alongside an ORIGINAL challenge recording.
+
+        This is not speech recognition or dubbing. Only keyed recordings with a
+        contextual companion line are read; unknown audio is never given made-up text.
+        Tutorial announcer speech already has tutorial_text.py and is not duplicated.
+        """
+        from ..platform import host
+        if not host.ANDROID or self.sound is None or GameParameters.shared().language() != 'Tiếng Việt':
+            return
+        from .recorded_voice_text import companion_for
+        text = companion_for(getattr(self.sound, 'key', None))
+        if not text:
+            return
+        from .. import localization
+        from ..platform.speech import Speech
+        from ..ui.reading import in_game_speech, reading_seconds
+        translated = localization.translate(text)
+        # A missing translation should never be spoken in English by the Vietnamese voice.
+        if translated == text:
+            log.warning('no Vietnamese text for recorded speech %s', getattr(self.sound, 'key', None))
+            return
+        self._vi_voice_text = text
+        self._vi_voice_wait = max(0.0, reading_seconds(translated, in_game_speech()))
+        # Duck only the actor's own recording, not ambient audio, zombies or gunfire.
+        self._vi_original_gain = self.sound.gain
+        self.sound.set_gain(self._vi_original_gain * 0.32)
+        Speech.shared().speak_in_game(text, False)
+
+    def _restore_vi_gain(self) -> None:
+        if self._vi_original_gain is not None and self.sound is not None:
+            self.sound.set_gain(self._vi_original_gain)
+            self._vi_original_gain = None
+
+    def _stop_vi_voice(self) -> None:
+        if self._vi_voice_text:
+            from ..platform.speech import Speech
+            Speech.shared().stop_in_game()
+            self._vi_voice_text = None
+            self._vi_voice_wait = 0.0
+
     def stop_with_no_callback(self) -> None:                  # 0x1000b4438
         if self._state in (2, 1):
+            self._stop_vi_voice()
+            self._restore_vi_gain()
             self.set_state(3)
             if self.sound is not None:
                 self.sound.stop()
 
     def pause(self) -> None:                                  # 0x1000b45c0
         self.sound_was_playing = bool(self.sound is not None and self.sound.playing)
+        if self._vi_voice_text:
+            self._vi_voice_paused = True
+            from ..platform.speech import Speech
+            Speech.shared().stop_in_game()
         if self.sound is not None:
             self.sound.pause()
 
     def resume(self) -> None:                                 # 0x1000b4674
         if self.sound_was_playing and self.sound is not None:
             self.sound.resume()
+        if self._vi_voice_paused and self._vi_voice_text:
+            # Android cannot pause a TextToSpeech utterance in the middle; replay
+            # the companion from the beginning and extend the blocking wait if needed.
+            from .. import localization
+            from ..platform.speech import Speech
+            from ..ui.reading import in_game_speech, reading_seconds
+            self._vi_voice_wait = self.time_in_state + reading_seconds(
+                localization.translate(self._vi_voice_text), in_game_speech())
+            Speech.shared().speak_in_game(self._vi_voice_text, False)
+        self._vi_voice_paused = False
