@@ -1,0 +1,51 @@
+name: Draft transcripts of original English voice clips
+
+on:
+  push:
+    branches: [feat/vietnamese-localization]
+    paths:
+      - '.github/workflows/transcribe-voice.yml'
+      - 'tools/transcribe_recorded_voice.py'
+      - 'tools/voice_inventory.py'
+      - 'analysis/data/sounds.tsv'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  draft-transcripts:
+    name: Draft speech recognition (${{ matrix.name }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 105
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: challenge
+            groups: challenge_dialogue
+          - name: other
+            groups: tutorial_voice,gameover_dialogue,announcer,weapon_names,powerup_names,revive_dialogue,opener_dialogue
+    steps:
+      - name: Check out original voice audio and scripts
+        uses: actions/checkout@v4
+      - name: Python with pretrained English speech recognition
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU speech recognition (runs locally, no audio uploaded)
+        run: pip install --disable-pip-version-check "faster-whisper==1.2.1"
+      - name: Create English DRAFT transcripts, not translated/verified dialogue
+        run: |
+          python tools/transcribe_recorded_voice.py \
+            --groups "${{ matrix.groups }}" \
+            --model small.en \
+            --output "analysis/draft_transcripts_${{ matrix.name }}.json"
+      - name: Save drafts for human listening and correction
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: English-voice-DRAFT-${{ matrix.name }}
+          path: analysis/draft_transcripts_${{ matrix.name }}.json
+          if-no-files-found: warn
+          retention-days: 21
