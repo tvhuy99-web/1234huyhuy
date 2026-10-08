@@ -228,7 +228,7 @@ def code_phrases():
                     for phrase in stmt.value.value.splitlines():
                         phrase = phrase.strip()
                         if (len(phrase) > 10 and
-                                re.search(r'\\b(?:by|The|Built|is)\\b', phrase) and
+                                re.search(r'\b(?:by|The|Built|is)\b', phrase) and
                                 not is_plumbing(phrase)):
                             yield phrase, '%s:%d (credit text line)' % (
                                 os.path.relpath(path, ROOT), stmt.lineno)
