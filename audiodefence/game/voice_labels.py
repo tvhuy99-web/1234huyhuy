@@ -36,7 +36,21 @@ LABELS = {
 
 
 def companion_label(key: str | None) -> str | None:
-    return LABELS.get(key or "")
+    key = key or ""
+    label = LABELS.get(key)
+    if label:
+        return label
+    # All long Challenge dialogue goes through ADSound so it can hold its
+    # wave and implement skip/pause. Read other recordings here at the
+    # central sound-play event: game-over, revive, opener, tutorial help.
+    if key.startswith("bastard_") and not key.startswith("bastard_gameover_"):
+        return None
+    from .voice_drafts_vi import draft_for
+    if key.startswith(("bastard_gameover_", "OPENER_", "revive_",
+                        "announcer_revive", "announcer_tutorial_aimhelp",
+                        "announcer_tutorial_aimprompt")):
+        return draft_for(key)
+    return None
 
 
 def speak_short_voice(sound) -> bool:
@@ -50,9 +64,14 @@ def speak_short_voice(sound) -> bool:
         return False
     from .parameters import GameParameters
     params = GameParameters.shared()
-    if params.language() != "Tiếng Việt" or not params.last_announcer_value():
+    if params.language() != "Tiếng Việt":
         return False
-    text = companion_label(getattr(sound, "key", None))
+    key = getattr(sound, "key", None) or ""
+    # Announcer Off only suppresses call-outs the game already suppresses,
+    # not a scripted game-over line or the opening film.
+    if key in LABELS and not params.last_announcer_value():
+        return False
+    text = companion_label(key)
     if not text:
         return False
 
