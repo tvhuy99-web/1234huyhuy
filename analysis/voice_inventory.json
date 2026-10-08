@@ -28,7 +28,7 @@
     "key": "announcer_revive_a",
     "seconds": 1.602,
     "group": "announcer",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -36,7 +36,7 @@
     "key": "announcer_revive_b",
     "seconds": 1.556,
     "group": "announcer",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -44,7 +44,7 @@
     "key": "announcer_reviveyes",
     "seconds": 1.741,
     "group": "announcer",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -84,7 +84,7 @@
     "key": "bastard_ruins_intro",
     "seconds": 41.564,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -92,7 +92,7 @@
     "key": "bastard_maya_1_1",
     "seconds": 8.777,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -100,7 +100,7 @@
     "key": "bastard_zombie_shield_a",
     "seconds": 26.633,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -108,7 +108,7 @@
     "key": "bastard_maya_10_2",
     "seconds": 6.014,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -116,7 +116,7 @@
     "key": "bastard_maya_10_3",
     "seconds": 12.028,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -124,7 +124,7 @@
     "key": "bastard_maya_10_4",
     "seconds": 41.053,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -132,7 +132,7 @@
     "key": "bastard_passerby_storm_a",
     "seconds": 11.564,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -140,7 +140,7 @@
     "key": "bastard_maya_2_2",
     "seconds": 10.519,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -148,7 +148,7 @@
     "key": "bastard_zombie_horde_c",
     "seconds": 7.314,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -156,7 +156,7 @@
     "key": "bastard_maya_3_1",
     "seconds": 7.779,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -164,7 +164,7 @@
     "key": "bastard_maya_3_2",
     "seconds": 6.757,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -172,7 +172,7 @@
     "key": "bastard_passerby_cows_a",
     "seconds": 12.446,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -180,7 +180,7 @@
     "key": "bastard_maya_4_2",
     "seconds": 7.384,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -188,7 +188,7 @@
     "key": "bastard_zombie_whisperer_a",
     "seconds": 23.382,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -196,7 +196,7 @@
     "key": "bastard_maya_5_2",
     "seconds": 10.403,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -204,7 +204,7 @@
     "key": "bastard_maya_5_3",
     "seconds": 17.694,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -212,7 +212,7 @@
     "key": "bastard_maya_5_4",
     "seconds": 17.276,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -220,7 +220,7 @@
     "key": "bastard_maya_6_1",
     "seconds": 17.763,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -228,7 +228,7 @@
     "key": "bastard_maya_6_2",
     "seconds": 7.523,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -236,7 +236,7 @@
     "key": "bastard_maya_6_3",
     "seconds": 8.522,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -244,7 +244,7 @@
     "key": "bastard_maya_7_1",
     "seconds": 21.548,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -252,7 +252,7 @@
     "key": "bastard_maya_7_2",
     "seconds": 9.52,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -260,7 +260,7 @@
     "key": "bastard_zombie_berserk_a",
     "seconds": 29.884,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -268,7 +268,7 @@
     "key": "bastard_maya_8_2",
     "seconds": 10.565,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -276,7 +276,7 @@
     "key": "bastard_maya_8_3",
     "seconds": 9.056,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -284,7 +284,7 @@
     "key": "bastard_maya_8_4",
     "seconds": 20.271,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -292,7 +292,7 @@
     "key": "bastard_maya_9_1",
     "seconds": 20.643,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -300,7 +300,7 @@
     "key": "bastard_maya_9_2",
     "seconds": 9.311,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -308,7 +308,7 @@
     "key": "bastard_tutorial_1_1",
     "seconds": 53.986,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -316,7 +316,7 @@
     "key": "bastard_tutorial_1_2",
     "seconds": 29.396,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -324,7 +324,7 @@
     "key": "bastard_tutorial_1_4",
     "seconds": 27.283,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -332,7 +332,7 @@
     "key": "bastard_tutorial_1_5",
     "seconds": 15.79,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -340,7 +340,7 @@
     "key": "bastard_tutorial_1_6",
     "seconds": 33.692,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -348,7 +348,7 @@
     "key": "bastard_tutorial_10_1",
     "seconds": 32.067,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -356,7 +356,7 @@
     "key": "bastard_tutorial_10_2",
     "seconds": 5.503,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -364,7 +364,7 @@
     "key": "bastard_tutorial_10_3",
     "seconds": 16.811,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -372,7 +372,7 @@
     "key": "bastard_tutorial_10_4",
     "seconds": 37.059,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -380,7 +380,7 @@
     "key": "bastard_tutorial_2_1",
     "seconds": 13.816,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -388,7 +388,7 @@
     "key": "bastard_tutorial_2_2",
     "seconds": 27.028,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -396,7 +396,7 @@
     "key": "bastard_tutorial_2_3",
     "seconds": 19.319,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -404,7 +404,7 @@
     "key": "bastard_tutorial_2_4",
     "seconds": 10.82,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -412,7 +412,7 @@
     "key": "bastard_tutorial_3_1",
     "seconds": 29.304,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -420,7 +420,7 @@
     "key": "bastard_tutorial_3_2",
     "seconds": 28.444,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -428,7 +428,7 @@
     "key": "bastard_tutorial_3_3",
     "seconds": 33.553,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -436,7 +436,7 @@
     "key": "bastard_tutorial_3_4",
     "seconds": 9.567,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -940,7 +940,7 @@
     "key": "bastard_gameover_a",
     "seconds": 4.69,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -948,7 +948,7 @@
     "key": "bastard_gameover_b",
     "seconds": 7.198,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -956,7 +956,7 @@
     "key": "bastard_gameover_c",
     "seconds": 5.805,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -964,7 +964,7 @@
     "key": "bastard_gameover_d",
     "seconds": 3.344,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -972,7 +972,7 @@
     "key": "bastard_gameover_e",
     "seconds": 3.692,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -980,7 +980,7 @@
     "key": "bastard_gameover_f",
     "seconds": 6.502,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -988,7 +988,7 @@
     "key": "bastard_gameover_g",
     "seconds": 8.429,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -996,7 +996,7 @@
     "key": "bastard_gameover_h",
     "seconds": 3.622,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1004,7 +1004,7 @@
     "key": "bastard_gameover_i",
     "seconds": 6.803,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1012,7 +1012,7 @@
     "key": "bastard_gameover_j",
     "seconds": 2.81,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1020,7 +1020,7 @@
     "key": "bastard_gameover_k",
     "seconds": 7.5,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1028,7 +1028,7 @@
     "key": "bastard_gameover_l",
     "seconds": 6.618,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1036,7 +1036,7 @@
     "key": "bastard_gameover_m",
     "seconds": 5.062,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1044,7 +1044,7 @@
     "key": "bastard_gameover_n",
     "seconds": 3.39,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1052,7 +1052,7 @@
     "key": "bastard_gameover_o",
     "seconds": 4.807,
     "group": "gameover_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1060,7 +1060,7 @@
     "key": "OPENER_DRBASTARD_B_SPA",
     "seconds": 6.06,
     "group": "opener_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1068,7 +1068,7 @@
     "key": "OPENER_DRBASTARD_SPA",
     "seconds": 6.06,
     "group": "opener_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1076,7 +1076,7 @@
     "key": "OPENER_LIFT_VOICE_1_SPA",
     "seconds": 2.067,
     "group": "opener_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1084,7 +1084,7 @@
     "key": "OPENER_LIFT_VOICE_2_SPA",
     "seconds": 4.063,
     "group": "opener_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1124,7 +1124,7 @@
     "key": "revive_no",
     "seconds": 4.063,
     "group": "revive_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1140,7 +1140,7 @@
     "key": "revive_yes",
     "seconds": 2.322,
     "group": "revive_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1172,7 +1172,7 @@
     "key": "announcer_tutorial_aimhelp",
     "seconds": 6.548,
     "group": "tutorial_voice",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -1180,7 +1180,7 @@
     "key": "announcer_tutorial_aimprompt",
     "seconds": 5.062,
     "group": "tutorial_voice",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
