@@ -24,6 +24,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: vietnamese-localization-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   check-vietnamese:
     runs-on: ubuntu-latest
