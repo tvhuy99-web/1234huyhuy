@@ -75,6 +75,31 @@ py tools/verify_localization.py --language "Tiếng Việt"
 - So sánh Windows: các hướng dẫn bàn phím vẫn dùng `Enter` và `Escape` chính xác.
 - Xác nhận không có mất âm thanh 3D, tiếng zombie, tiếng súng, hiệu ứng HRTF hoặc trễ tiếng trong giao tranh đông.
 
+## APK thử nghiệm qua GitHub Actions
+
+Nhánh Việt hóa có quy trình tự động:
+[Kiểm thử bản dịch](../.github/workflows/vietnamese.yml) và
+[Biên dịch APK Android](../.github/workflows/android-vietnamese-debug.yml).
+
+Để nhận APK **khi quy trình Android báo thành công**:
+
+1. Mở mục **Actions** của repository trên GitHub.
+2. Chọn **Vietnamese Android debug APK**, rồi chọn lần chạy có dấu thành công.
+3. Cuộn xuống **Artifacts**, mở `AudioDefence-Vietnamese-Android-DEBUG`.
+4. Giải nén tệp ZIP được GitHub tải về; tệp `.apk` nằm bên trong.
+
+Bản này được Gradle ký bằng **khóa debug tự sinh của máy build**, chỉ dành cho thử nghiệm.
+Nó không dùng khóa của APK gốc, không phải bản phát hành và không bảo đảm cập nhật đè
+lên APK thử nghiệm trước đó (khóa debug trên các runner có thể khác nhau).
+
+**Bảo vệ dữ liệu chơi:** trước khi gỡ bản gốc để cài APK debug, hãy dùng
+**Settings → Miscellaneous → Export backup**. Giữ một bản sao ở nơi an toàn,
+vì Android có thể từ chối cài đè ứng dụng có chữ ký khác. Khi nhập dữ liệu,
+hãy đọc kỹ thông báo khôi phục trước khi xác nhận.
+
+Chỉ báo APK đã sẵn sàng khi toàn bộ các bước **Build**, **Verify Vietnamese assets**
+và **Upload artifact** đều thành công. Nếu workflow thất bại, chưa có APK hợp lệ.
+
 ## Biên dịch APK
 
 Làm theo mục [Hướng dẫn build APK Android trong README](../README.md#building-the-app-1). Trên Windows,
