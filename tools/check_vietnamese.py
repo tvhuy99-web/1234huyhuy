@@ -1,11 +1,12 @@
-"""Quick, dependency-free quality checks for the Vietnamese AudioDefence translation.
+"""Quality checks for the Vietnamese AudioDefence translation.
 
     python tools/check_vietnamese.py
     python tools/check_vietnamese.py --strict
 
-The normal check catches broken JSON, plural rules, and formatting placeholders while the
-translation is in progress. --strict also fails if any source phrase remains untranslated.
-For game-data coverage, also run tools/verify_localization.py --language "Tiếng Việt".
+The normal check is fast: it compares with the previously translated Russian key inventory.
+--strict instead extracts every current phrase from source code and game data through
+make_language.every_phrase, so it also catches newly introduced strings after a code update.
+For additional gameplay coverage, run tools/verify_localization.py --language "Tiếng Việt".
 """
 from __future__ import annotations
 
@@ -77,11 +78,17 @@ def check(source, translation, strict=False):
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--strict", action="store_true", help="also require every phrase to be translated")
+    parser.add_argument("--strict", action="store_true", help="check all game/code phrases and require complete translation")
     args = parser.parse_args()
     try:
-        source = read_json(SOURCE)
         translation = read_json(VIETNAMESE)
+        if args.strict:
+            # The current code and game data are the authority, not another language file.
+            # Other existing languages still contribute one-word labels that static extraction misses.
+            from make_language import every_phrase
+            source = {phrase: '' for phrase in every_phrase(besides=VIETNAMESE.name)}
+        else:
+            source = read_json(SOURCE)
         done, total, missing, errors = check(source, translation, args.strict)
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print("Vietnamese localization: " + str(exc), file=sys.stderr)
