@@ -233,6 +233,22 @@ def code_phrases():
                             yield phrase, '%s:%d (credit text line)' % (
                                 os.path.relpath(path, ROOT), stmt.lineno)
 
+            # Voice hints are chosen from two platform-specific module-level
+            # phrases, then interpolated into a longer screen-reader message.
+            # The interpolated variants have different names for the voice, so
+            # a source-only scan misses the very words that must be translated.
+            if os.path.relpath(path, ROOT).replace(os.sep, '/') == 'audiodefence/ui/settings.py':
+                for stmt in tree.body:
+                    if not isinstance(stmt, ast.Assign):
+                        continue
+                    if not any(isinstance(target, ast.Name) and target.id == 'VOICE_DEFAULT_HINT'
+                               for target in stmt.targets):
+                        continue
+                    for item in ast.walk(stmt.value):
+                        if isinstance(item, ast.Constant) and isinstance(item.value, str):
+                            yield item.value.strip(), '%s:%d (voice default hint)' % (
+                                os.path.relpath(path, ROOT), item.lineno)
+
             # A label or hint assigned *after* a widget is created is also
             # user-facing. Previously only constructor arguments and keyword
             # fields were inspected; Tarot's shuffle price hint escaped the
