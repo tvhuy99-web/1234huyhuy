@@ -78,7 +78,12 @@ class VietnameseSpeechTests(unittest.TestCase):
         import json
         inventory = json.loads(Path("analysis/voice_inventory.json").read_text(encoding="utf-8"))
         mapped = {item["key"] for item in inventory}
-        self.assertGreaterEqual(len(ASR_DRAFT_VI), 71)
+        self.assertGreaterEqual(len(ASR_DRAFT_VI), 114)
+        challenge_clips = {item["key"] for item in inventory
+                           if item["group"] == "challenge_dialogue"}
+        self.assertEqual(len(challenge_clips), 88)
+        self.assertTrue(challenge_clips.issubset(ASR_DRAFT_VI),
+                        "Every recorded Challenge dialogue requires Vietnamese text")
         for key, vietnamese in ASR_DRAFT_VI.items():
             with self.subTest(voice_key=key):
                 self.assertIn(key, mapped, "Translation refers to unknown audio")
