@@ -213,6 +213,26 @@ def code_phrases():
                             yield phrase, '%s:%d (tutorial text table)' % (
                                 os.path.relpath(path, ROOT), item.lineno)
 
+            # The Credits/About view reads multiline constants rather than
+            # call-site literals. Preserve proper names, but inventory actual
+            # English descriptive sentences and the attribution prepositions.
+            if os.path.relpath(path, ROOT).replace(os.sep, '/') == 'audiodefence/ui/credits_text.py':
+                for stmt in tree.body:
+                    if not isinstance(stmt, ast.Assign):
+                        continue
+                    if not any(isinstance(target, ast.Name) and target.id in (
+                            'PORT_CREDITS_TEXT', 'STUDIO_TEXT') for target in stmt.targets):
+                        continue
+                    if not isinstance(stmt.value, ast.Constant) or not isinstance(stmt.value.value, str):
+                        continue
+                    for phrase in stmt.value.value.splitlines():
+                        phrase = phrase.strip()
+                        if (len(phrase) > 10 and
+                                re.search(r'\\b(?:by|The|Built|is)\\b', phrase) and
+                                not is_plumbing(phrase)):
+                            yield phrase, '%s:%d (credit text line)' % (
+                                os.path.relpath(path, ROOT), stmt.lineno)
+
             for node in ast.walk(tree):
                 if not isinstance(node, ast.Call):
                     continue
