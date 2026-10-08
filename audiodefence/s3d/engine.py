@@ -840,6 +840,13 @@ class S3DSound:
             self.stored_fade = fadein
             self.play_when_loaded = True
             self.activate()
+        # The central sound play event can announce *any* precisely named voice
+        # clip, including short callouts played outside Challenge's ADSound.
+        # The key whitelist prevents all ordinary sound effects from speaking.
+        if _host.ANDROID:
+            from ..game.voice_labels import companion_label, speak_short_voice
+            if companion_label(self.key):
+                speak_short_voice(self)
 
     def _setup_either(self) -> None:                                # 0x100105da4
         self._build_source()
