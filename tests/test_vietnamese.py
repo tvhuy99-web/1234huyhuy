@@ -60,6 +60,27 @@ class VietnameseSpeechTests(unittest.TestCase):
                 self.assertTrue(phrases[english].strip())
                 self.assertNotEqual(localization.translate(english), english)
 
+    def test_about_credits_retain_names_but_not_english_roles(self):
+        import ast
+        tree = ast.parse(Path("audiodefence/ui/credits_text.py").read_text(encoding="utf-8"))
+        values = {}
+        for node in tree.body:
+            if isinstance(node, ast.Assign):
+                for target in node.targets:
+                    if isinstance(target, ast.Name) and target.id in (
+                            "STUDIO_TEXT", "CREDITS_TEXT", "PORT_CREDITS_TEXT"):
+                        values[target.id] = ast.literal_eval(node.value)
+        self.assertEqual(len(values), 3)
+        translated = localization.translate(values["STUDIO_TEXT"] + values["CREDITS_TEXT"])
+        translated += localization.translate(values["PORT_CREDITS_TEXT"])
+        for english in (
+            "Original Idea & Game Design", "Executive Producers", "by Somethin' Else",
+            "The Windows and Mac port", "Ported by", "Built from the game's own code",
+            "is Somethin' Else's, and this port only carries it to a keyboard."):
+            with self.subTest(english=english):
+                self.assertNotIn(english, translated)
+        self.assertIn("Loh Boon Keat", translated)  # creator name is not translated
+
     def test_english_gesture_keeps_english_words(self):
         with patch('audiodefence.localization.language', return_value=localization.ENGLISH):
             self.assertEqual(phone_words('Press Escape to cancel.'), 'Press a two-finger scrub to cancel.')
