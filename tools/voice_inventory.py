@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOUNDS = ROOT / "analysis/data/sounds.tsv"
 CAPTIONS = ROOT / "audiodefence/game/recorded_voice_text.py"
 SHORT_LABELS = ROOT / "audiodefence/game/voice_labels.py"
+DRAFT_VI = ROOT / "audiodefence/game/voice_drafts_vi.py"
 TUTORIAL_NO_TEXT = {"announcer_tutorial_aimhelp", "announcer_tutorial_aimprompt"}
 
 
@@ -43,6 +44,10 @@ def companion_keys():
 
 def short_label_keys():
     return set(_load_module(SHORT_LABELS, "ad_voice_labels").LABELS)
+
+
+def draft_translation_keys():
+    return set(_load_module(DRAFT_VI, "ad_voice_drafts_vi").ASR_DRAFT_VI)
 
 
 def classify(path: str):
@@ -77,6 +82,7 @@ def classify(path: str):
 def inventory():
     reviewed_companions = companion_keys()
     short_labels = short_label_keys()
+    draft_keys = draft_translation_keys()
     items = []
     with SOUNDS.open(encoding="utf-8", newline="") as f:
         for row in csv.DictReader(f, delimiter="\t"):
@@ -86,12 +92,14 @@ def inventory():
                 continue
             group, confirmed_voice = result
             key = Path(path).stem
-            if group == "tutorial_voice" and key not in TUTORIAL_NO_TEXT:
+            if key in short_labels:
+                state = "short_label_existing"
+            elif key in draft_keys:
+                state = "asr_draft_vi_needs_review"
+            elif group == "tutorial_voice" and key not in TUTORIAL_NO_TEXT:
                 state = "tutorial_text_existing"
             elif key in reviewed_companions:
                 state = "contextual_companion_existing"
-            elif key in short_labels:
-                state = "short_label_existing"
             elif not confirmed_voice:
                 state = "review_if_voice"
             else:
