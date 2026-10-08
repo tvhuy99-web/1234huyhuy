@@ -905,6 +905,13 @@ class S3DSound:
             self.engine.dispatch(self._stop_internal)
 
     def _stop_internal(self) -> None:                               # 0x1001067f8
+        # Restore a voice clip's original gain before reusing the sound agent.
+        # Important: do this here, not with an end monitor, because gameplay
+        # relies on existing single-monitor callbacks for power-up activation.
+        voice_gain = getattr(self, "_vi_voice_original_gain", None)
+        if voice_gain is not None:
+            self.set_gain(voice_gain)
+            self._vi_voice_original_gain = None
         self.stopping = False
         self.play_rate = 0.0
         self.looping_flag = False
