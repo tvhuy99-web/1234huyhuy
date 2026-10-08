@@ -122,6 +122,24 @@ class VietnameseSpeechTests(unittest.TestCase):
                 said = re.sub(pattern, words, said)
             self.assertEqual(said, expected)
 
+    def test_native_android_startup_speaks_saved_vietnamese(self):
+        # Native Java runs before Python is initialized. These announcements
+        # must not bypass the game language from the previous session.
+        java = Path("android/app/src/main/java/com/audiodefence/MainActivity.java").read_text(
+            encoding="utf-8")
+        self.assertIn('new File(home, "AudioDefence")', java)
+        self.assertIn('"settings.json"', java)
+        self.assertIn('new JSONObject(value.toString())', java)
+        self.assertIn('saved.optString("language"', java)
+        self.assertIn('bridge.setGameSpeechLanguage(bootVietnamese ? "vi-VN" : "")', java)
+        self.assertIn('vietnameseForStartup(home)', java)
+        self.assertIn('"Đang chuẩn bị dữ liệu trò chơi.', java)
+        self.assertIn('"Đang giải nén bản cập nhật."', java)
+        self.assertIn('"Trò chơi đã sẵn sàng."', java)
+        self.assertIn('"TalkBack đang bật.', java)
+        self.assertIn('"Xin lỗi, trò chơi không thể khởi động.', java)
+        self.assertIn('" phần trăm"', java)
+
     def test_default_voice_hints_for_both_desktop_systems(self):
         import ast
         import json
