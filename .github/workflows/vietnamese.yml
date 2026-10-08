@@ -47,5 +47,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_vietnamese.py' -v
       - name: Review dynamic English phrase candidates (informational)
         run: python tools/audit_vietnamese_dynamic.py
+      - name: Reject English clauses accidentally left inside Vietnamese strings
+        run: python tools/check_vietnamese_embedded_english.py
       - name: Check Python syntax
         run: python -m compileall -q audiodefence tools
