@@ -194,8 +194,7 @@ class ADSound:
         unknown recordings are not given guessed dialogue.
         Tutorial announcer speech already has tutorial_text.py and is not duplicated.
         """
-        from ..platform import host
-        if not host.ANDROID or self.sound is None or GameParameters.shared().language() != 'Tiếng Việt':
+        if self.sound is None or GameParameters.shared().language() != 'Tiếng Việt':
             return
         from .voice_drafts_vi import draft_for
         from .recorded_voice_text import companion_for

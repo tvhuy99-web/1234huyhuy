@@ -1,7 +1,9 @@
 # Báo cáo rà soát cuối: Tiếng Việt và TTS AudioDefence
 
-Ngày kiểm tra: **08/10/2026**. Đối tượng: nhánh
-`feat/vietnamese-localization` trong `tvhuy99-web/1234huyhuy`, PR #1 nháp.
+Ngày kiểm tra: **08/10/2026**. Đối tượng: bản mã nguồn tải từ `master`
+của `tvhuy99-web/1234huyhuy` tại commit
+`22ff5ac53c069c429ca066842d9adaf88c3a5da1`, cùng các sửa đổi cục bộ.
+Các sửa đổi trong lần kiểm tra này chưa được đẩy lên GitHub.
 
 ## Kết luận
 
@@ -11,11 +13,11 @@ nghe xác minh lời nói thu âm và chạy thực tế trên thiết bị Andr
 
 | Hạng mục | Kết quả | Độ chắc chắn |
 |---|---|---|
-| Tệp `localization/Tiếng Việt.json` | **1.516/1.516 giá trị không rỗng** | Kiểm tra tĩnh |
-| Câu UI/data được trình quét liệt kê | **1.063/1.063** | Bộ trích xuất mã/game |
-| Bài kiểm thử hồi quy | **19/19 đạt** | GitHub Actions |
+| Tệp `localization/Tiếng Việt.json` | **1.520/1.520 giá trị không rỗng** | Kiểm tra tĩnh |
+| Câu UI/data được trình quét liệt kê | **1.067/1.067** | Bộ trích xuất mã/game |
+| Bài kiểm thử hồi quy | **23/23 đạt** | Chạy cục bộ sau các sửa đổi |
 | Challenge, đối chiếu tên audio | **88/88 tệp có câu TTS đi kèm** | Có ánh xạ; bản chép lời chưa duyệt |
-| Tổng câu dịch từ ASR gắn audio | **114 câu nháp** | Phải nghe so lại |
+| Tổng câu dịch từ ASR gắn audio | **114/114 đã nhận dạng lại và đối chiếu bản Việt** | Hai mô hình ASR; xem báo cáo từng tệp |
 | Thông báo ngắn, tên súng/power-up | **21 nhãn TTS** | Theo tên tệp âm thanh |
 | Tutorial có văn bản thích ứng điều khiển | **13 tệp** | TTS phát theo cài đặt hướng dẫn |
 | Tệp `revive_standby` | **1 chưa xác định** | ASR mâu thuẫn, có thể là nền/hiệu ứng |
@@ -39,14 +41,17 @@ nghe xác minh lời nói thu âm và chạy thực tế trên thiết bị Andr
    lỗi khởi động. `MainActivity.java` đã đọc lựa chọn ngôn ngữ từ
    `AudioDefence/settings.json`, dùng lời Việt khi đã lưu Tiếng Việt;
    lần cài đầu dựa theo ngôn ngữ máy. Đây là nhóm lời thoại **không được
-   tính trong 1.516 mục JSON**, vì chạy trước Python.
+   tính trong 1.520 mục JSON**, vì chạy trước Python.
 
 Các thay đổi trên có thêm kiểm thử chống tái phát. Trình kiểm tra tĩnh
 cũng được mở rộng để đọc bảng hướng dẫn, câu gán `label`/`hint` sau
-khi tạo view, lời Ghi công và nguồn giọng hệ thống. Các cảnh báo khác
-từ `tools/audit_vietnamese_dynamic.py` cần phân loại riêng: nhiều cảnh
-báo là phần câu của đoạn Extra **đã dịch nguyên đoạn**, chuỗi regex
-hoặc cấu hình nội bộ không đọc cho người chơi.
+khi tạo view, lời Ghi công và nguồn giọng hệ thống. Sau khi bổ sung bốn
+nhãn điều khiển động còn thiếu, `tools/audit_vietnamese_dynamic.py` vẫn
+liệt kê 19 ứng viên: các đoạn con của phần Giới thiệu và Extra đã có bản
+dịch cho toàn đoạn, bảy câu tutorial đã có khóa dịch riêng, cùng comment,
+chuỗi kiểm thử và quy tắc thay cử chỉ tiếng Anh. Các ứng viên này không
+được tính là câu UI còn thiếu; test mới kiểm tra bản dịch phần Giới thiệu,
+Extra và nhãn điều khiển.
 
 ## Kiểm tra tiếng Anh bị kẹp bên trong câu tiếng Việt
 
@@ -54,11 +59,11 @@ hoặc cấu hình nội bộ không đọc cho người chơi.
 `.github/workflows/vietnamese.yml`. Khác với phép đếm các ô JSON khác
 rỗng, công cụ này **kiểm tra bên trong từng câu** của:
 
-- **1.516 giá trị dịch văn bản**.
+- **1.520 giá trị dịch văn bản**.
 - **114 câu TTS nháp** được đọc cùng bản ghi âm tiếng Anh.
 - **21 thông báo TTS ngắn** cho súng và vật phẩm.
 
-**Kết quả: 1.651/1.651 chuỗi đã quét, 0 cụm tiếng Anh đáng ngờ** theo
+**Kết quả: 1.655/1.655 chuỗi đã quét, 0 cụm tiếng Anh đáng ngờ** theo
 hai phép soát tự động:
 
 1. Nhận biết từ ngữ pháp và mệnh lệnh tiếng Anh còn lại trong văn bản
@@ -84,17 +89,20 @@ cần giữ nguyên để không làm mất ý nghĩa và nhất quán với âm
 
 ## Những điều chưa kiểm chứng được
 
-- **114 câu TTS ASR chưa được nghe xác minh với bản thu tiếng Anh từng tệp**.
-  Có thể sai tên riêng, số, ngắt câu hoặc bỏ sót lời thoại nhỏ dưới
-  tiếng hiệu ứng. Bản chép tự động không phải bản dịch chính thức.
+- **114 câu TTS đã được xử lý và so bản Việt với hai lượt ASR mới**;
+  các lỗi tìm thấy đã được sửa. Đây là đối chiếu văn bản từ nhận dạng
+  tự động, chưa phải nghe xác minh bằng tai. Các tệp còn mơ hồ và
+  toàn bộ lời Anh/Việt được ghi ở `docs/VOICE_ASR_REVIEW_20261008.md`
+  và `analysis/voice_asr_review_20261008.json`.
 - **`revive_standby.m4a`** chưa thể quyết định là giọng nói hay hiệu ứng.
   Nếu có lời nói thật, vẫn thiếu bản TTS cho tệp đó.
 - **19 âm mẫu Zombiepedia** được thiết kế nghe tiếng zombie; cần nghe để
   bảo đảm không chứa câu nói mang nghĩa mà ta chưa phân loại.
-- **Windows và macOS chưa có TTS đọc kèm lời thoại thu âm**. Bộ ghép
-  `ADSound`/`S3DSound.play` đang bật riêng trên Android để dùng giọng
-  `vi-VN` của điện thoại. Giao diện Windows/Mac dùng bản dịch chữ,
-  nhưng lời ghi âm sẵn vẫn nói tiếng Anh trên các nền tảng đó.
+- **Windows và macOS hiện cũng gọi TTS kèm các lời thoại đã ánh xạ** qua
+  cùng luồng phát giọng của game. Android yêu cầu giọng `vi-VN`; Windows/macOS
+  dùng giọng đọc đã chọn trong game hoặc trình đọc màn hình, vì vậy cần cài
+  và chọn giọng tiếng Việt trên máy để bảo đảm phát âm tiếng Việt. Chưa có
+  kiểm thử thực tế trên Windows/macOS.
 - **Chưa có kiểm thử trực tiếp trên điện thoại Android**. Cần xác nhận
   vi-VN có sẵn, chọn tiếng Việt từ lần chơi trước, tạm dừng, bỏ qua,
   đổi ngôn ngữ, thông báo nối đuôi/đè nhau, tiếng súng/zombie HRTF và
@@ -111,8 +119,7 @@ cần giữ nguyên để không làm mất ý nghĩa và nhất quán với âm
     python tools/audit_vietnamese_dynamic.py
     python tools/voice_inventory.py
 
-CI kiểm thử ở: https://github.com/tvhuy99-web/1234huyhuy/actions/runs/37722992014
-
 **Điều kiện ra mắt**: nghe duyệt 114 câu thoại, giải quyết `revive_standby`,
 thử APK debug trên thiết bị thật và kiểm tra không có lời tiếng Anh của
-người nói bị bỏ qua. PR giữ ở chế độ Draft, không merge `master` trước đó.
+người nói bị bỏ qua. Kết quả ASR mới giúp tập trung trước vào các tệp
+còn mơ hồ; không thay thế kiểm thử phát giọng thực tế.

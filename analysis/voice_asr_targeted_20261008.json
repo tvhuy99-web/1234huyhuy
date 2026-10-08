@@ -1,0 +1,397 @@
+[
+  {
+    "path": "game/sounds/revive/revive_yes.m4a",
+    "key": "revive_yes",
+    "seconds": 2.322,
+    "group": "revive_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "large-v3-turbo",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "6d2a8e86b7d77c7ec42f06165aabc0441c69243ae203fd520dda90500478ebaf",
+    "english_asr": "Eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "previous_vietnamese": "Audio Defence!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.27,
+        "text": "Eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "avg_logprob": -0.2095,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_j.m4a",
+    "key": "bastard_gameover_j",
+    "seconds": 2.81,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "large-v3-turbo",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "4fe88a40581174c133b3ca1c9c8b1cce42f983bf91877221457a8a562ca6ae7c",
+    "english_asr": "I'm only a god. Bleh.",
+    "previous_vietnamese": "Thế là xong! Bùm!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 1.0,
+        "text": "I'm only a god.",
+        "avg_logprob": -0.8362,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 1.68,
+        "end": 2.04,
+        "text": "Bleh.",
+        "avg_logprob": -0.8362,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_3_brick_3/bastard_zombie_clown_c.m4a",
+    "key": "bastard_zombie_clown_c",
+    "seconds": 3.901,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "large-v3-turbo",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "ae41ea269eb49946152e017b8f19b9919d4215b54d5282a905f3f1f2f4596d0a",
+    "english_asr": "Where are the clowns?",
+    "previous_vietnamese": "Lũ hề đâu hết rồi?",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.84,
+        "text": "Where are the clowns?",
+        "avg_logprob": -0.3816,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/revive/revive_no.m4a",
+    "key": "revive_no",
+    "seconds": 4.063,
+    "group": "revive_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "large-v3-turbo",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "7d76816bde3b4587f817bc786d9558edcfe30ce37aaf3e899c959b8f28a0cbcd",
+    "english_asr": "Thank you.",
+    "previous_vietnamese": "Hết rồi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 29.98,
+        "text": "Thank you.",
+        "avg_logprob": -0.838,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/opener/OPENER_DRBASTARD_B_SPA.m4a",
+    "key": "OPENER_DRBASTARD_B_SPA",
+    "seconds": 6.06,
+    "group": "opener_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "large-v3-turbo",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "c0212d9853e211960042a6aba11db49f998ad03b776e78284be7e9b2c6ef0916",
+    "english_asr": "And here we go!",
+    "previous_vietnamese": "Và bắt đầu nào!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.02,
+        "text": "And here we go!",
+        "avg_logprob": -0.4412,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/opener/OPENER_DRBASTARD_SPA.m4a",
+    "key": "OPENER_DRBASTARD_SPA",
+    "seconds": 6.06,
+    "group": "opener_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "large-v3-turbo",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "c0212d9853e211960042a6aba11db49f998ad03b776e78284be7e9b2c6ef0916",
+    "english_asr": "And here we go!",
+    "previous_vietnamese": "Và bắt đầu nào!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.02,
+        "text": "And here we go!",
+        "avg_logprob": -0.4412,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/revive/revive_standby.m4a",
+    "key": "revive_standby",
+    "seconds": 8.057,
+    "group": "revive_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false,
+    "config": {
+      "model": "large-v3-turbo",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "f8639c2bac3154cdac3cfe742b33b5cb142da4c0400fe69d55a6935e3837acf3",
+    "english_asr": "Thank you.",
+    "previous_vietnamese": null,
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 29.98,
+        "text": "Thank you.",
+        "avg_logprob": -0.5944,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_2/bastard_tutorial_1_6.m4a",
+    "key": "bastard_tutorial_1_6",
+    "seconds": 33.692,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "large-v3-turbo",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "ff6952d3ef51bf9fd9db313944eb879bb2c9a4c85708c0aba9ef8b1b700d0820",
+    "english_asr": "Ah, I feel so light. Oh, forgot about you and Jim. You killed him already. I really wanted to see that. Anyway, you passed your first test. Congratulations. I would pat you on the back, but I feel way safer up in this bulletproof control room. See you in the next challenge!",
+    "previous_vietnamese": "Phù! Cảm giác thật tuyệt. Ồ! Ta quên mất ngươi và Jim. Ngươi giết nó rồi à? Tiếc thật, ta rất muốn xem. Dù sao ngươi đã vượt bài kiểm tra đầu tiên. Chúc mừng! Ta sẽ không vỗ lưng khen ngươi đâu, vì ta thấy an toàn hơn nhiều trong phòng điều khiển chống đạn này. Hẹn gặp ở thử thách tiếp theo!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 12.48,
+        "text": "Ah, I feel so light.",
+        "avg_logprob": -0.2403,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 13.6,
+        "end": 15.74,
+        "text": "Oh, forgot about you and Jim.",
+        "avg_logprob": -0.2403,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 16.18,
+        "end": 17.16,
+        "text": "You killed him already.",
+        "avg_logprob": -0.2403,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 17.6,
+        "end": 19.5,
+        "text": "I really wanted to see that.",
+        "avg_logprob": -0.2403,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 20.1,
+        "end": 22.08,
+        "text": "Anyway, you passed your first test.",
+        "avg_logprob": -0.2403,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 22.44,
+        "end": 22.96,
+        "text": "Congratulations.",
+        "avg_logprob": -0.2403,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 23.96,
+        "end": 25.2,
+        "text": "I would pat you on the back,",
+        "avg_logprob": -0.2403,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 25.2,
+        "end": 29.62,
+        "text": "but I feel way safer up in this bulletproof control room.",
+        "avg_logprob": -0.2403,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 30.0,
+        "end": 32.0,
+        "text": "See you in the next challenge!",
+        "avg_logprob": -0.2835,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_10_brick_5/bastard_tutorial_10_4.m4a",
+    "key": "bastard_tutorial_10_4",
+    "seconds": 37.059,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "large-v3-turbo",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "975a486d5903e461b82a4c95ed9105a1ad55a918c571233b90b8c99e4e1cd3ac",
+    "english_asr": "Ha ha ha! You survived the last test! You may actually be the Staff of Legends. That means you're hired! Congratulations, Blind Warrior! Let's party! Alright, party's over. You're not ready for my zombie arena yet. I have to build you up. I'll send you to my smaller arenas first to let your legend grow and spread while you survive real challenges. Once you're a real veteran, I'll let you in my infamous zombie arena where only the best zombie fighters are allowed.",
+    "previous_vietnamese": "Ha ha! Ngươi sống sót qua bài kiểm tra cuối! Có lẽ ngươi thật sự là chiến binh huyền thoại. Vậy là ngươi được tuyển! Chúc mừng, chiến binh mù! Mở tiệc nào! Được rồi, hết tiệc. Ngươi vẫn chưa sẵn sàng bước vào đấu trường zombie lớn của ta. Ta phải rèn luyện ngươi thêm. Trước hết ta sẽ đưa ngươi tới những đấu trường nhỏ, cho danh tiếng của ngươi lan rộng khi vượt qua những thử thách thực sự. Khi đã thành cựu binh, ta sẽ cho ngươi vào đấu trường zombie riêng, nơi chỉ những chiến binh giỏi nhất được phép góp mặt!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.82,
+        "text": "Ha ha ha! You survived the last test! You may actually be the Staff of Legends.",
+        "avg_logprob": -0.16,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 8.46,
+        "end": 13.24,
+        "text": "That means you're hired! Congratulations, Blind Warrior! Let's party!",
+        "avg_logprob": -0.16,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 14.62,
+        "end": 20.54,
+        "text": "Alright, party's over. You're not ready for my zombie arena yet. I have to build you up.",
+        "avg_logprob": -0.16,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 20.54,
+        "end": 27.48,
+        "text": "I'll send you to my smaller arenas first to let your legend grow and spread while you survive real challenges.",
+        "avg_logprob": -0.16,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 28.48,
+        "end": 32.46,
+        "text": "Once you're a real veteran, I'll let you in my infamous zombie arena",
+        "avg_logprob": -0.1375,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 32.46,
+        "end": 35.68,
+        "text": "where only the best zombie fighters are allowed.",
+        "avg_logprob": -0.1375,
+        "no_speech_prob": 0.0
+      }
+    ]
+  }
+]

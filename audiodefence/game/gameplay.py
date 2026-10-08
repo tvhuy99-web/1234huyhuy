@@ -1595,15 +1595,16 @@ class OpenerGameplayController(GameplayController):
         self.start_update_timers()
         self.weapon_touch_area.gameplay_view_controller = self
         self.timer_view_hidden = True
+        from .. import localization
         scheme = GameParameters.shared().control_scheme
         if scheme == 1:
-            self.control_mode_label = 'Move the device'
+            self.control_mode_label = localization.translate('Move the device')
         elif scheme == 2:
-            self.control_mode_label = 'Swipe the screen'
+            self.control_mode_label = localization.translate('Swipe the screen')
         elif scheme == 3:
-            self.control_mode_label = 'Tilt the device'
+            self.control_mode_label = localization.translate('Tilt the device')
         else:
-            self.control_mode_label = 'Swipe the screen or move the device'
+            self.control_mode_label = localization.translate('Swipe the screen or move the device')
         if self.host is not None and self.host.screen_reader_running():
             # the original announces "Triple tap to skip intro" after 2 s; the port names its key.  Skipping
             # before then leaves the opener behind, so the announcement checks it is still the screen: it

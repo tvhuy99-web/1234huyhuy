@@ -1,0 +1,3059 @@
+[
+  {
+    "path": "game/sounds/announcer/announcer_revive_b.m4a",
+    "key": "announcer_revive_b",
+    "seconds": 1.556,
+    "group": "announcer",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "a7fc262ff4c79616537a3f3c00765a22d7c473f0bd861db1631eb7922dd32bba",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Revive.",
+    "previous_vietnamese": "Hồi sinh!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "text": "Revive.",
+        "avg_logprob": -0.6258,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/announcer/announcer_revive_a.m4a",
+    "key": "announcer_revive_a",
+    "seconds": 1.602,
+    "group": "announcer",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "c9f907db451dc4fb9f6bc5bed9539239d9cb194c2f7647f93cf1510abf8988eb",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Revive.",
+    "previous_vietnamese": "Hồi sinh!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.08,
+        "end": 2.08,
+        "text": "Revive.",
+        "avg_logprob": -0.674,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/announcer/announcer_reviveyes.m4a",
+    "key": "announcer_reviveyes",
+    "seconds": 1.741,
+    "group": "announcer",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "a3f2ae52bc70276b37b4f374accf5e30754555909bd5626a1ba85a9d9e4aebbf",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Back on your feet.",
+    "previous_vietnamese": "Đứng dậy nào!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.05,
+        "end": 2.05,
+        "text": "Back on your feet.",
+        "avg_logprob": -0.4454,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/opener/OPENER_LIFT_VOICE_1_SPA.m4a",
+    "key": "OPENER_LIFT_VOICE_1_SPA",
+    "seconds": 2.067,
+    "group": "opener_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "67e07eac779d931591db780d00d3d83c8e6be68a594b75c6c386e64a2aa139e2",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Going up.",
+    "previous_vietnamese": "Đang đi lên.",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.24,
+        "end": 2.24,
+        "text": "Going up.",
+        "avg_logprob": -0.5445,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/revive/revive_yes.m4a",
+    "key": "revive_yes",
+    "seconds": 2.322,
+    "group": "revive_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "6d2a8e86b7d77c7ec42f06165aabc0441c69243ae203fd520dda90500478ebaf",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "",
+    "previous_vietnamese": "Audio Defence!",
+    "human_listened": false,
+    "segments": []
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_7_brick_4/bastard_tutorial_7_4.m4a",
+    "key": "bastard_tutorial_7_4",
+    "seconds": 2.647,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "a39e80dd10686c4b2313e4c1891c48f07852a9dc9ea0959cc0575b902d117a19",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You won. I wasn't looking.",
+    "previous_vietnamese": "Ồ, ngươi thắng rồi à? Ta có nhìn đâu!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.08,
+        "end": 2.18,
+        "text": "You won. I wasn't looking.",
+        "avg_logprob": -0.6359,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_j.m4a",
+    "key": "bastard_gameover_j",
+    "seconds": 2.81,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "4fe88a40581174c133b3ca1c9c8b1cce42f983bf91877221457a8a562ca6ae7c",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I'm only a god. Berserk.",
+    "previous_vietnamese": "Thế là xong! Bùm!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.14,
+        "end": 2.14,
+        "text": "I'm only a god. Berserk.",
+        "avg_logprob": -0.8286,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_1/bastard_gameover_d.m4a",
+    "key": "bastard_gameover_d",
+    "seconds": 3.344,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "764d78159c8fec28c66ac42fa4c6f54b5710fb31b1b70a683e9ca0ae9ee006a7",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Someone clean up this mess!",
+    "previous_vietnamese": "Ôi trời! Ai đó dọn cái đống lộn xộn này đi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.85,
+        "end": 2.85,
+        "text": "Someone clean up this mess!",
+        "avg_logprob": -0.2977,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_3/bastard_gameover_n.m4a",
+    "key": "bastard_gameover_n",
+    "seconds": 3.39,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "9c55ff65227bb4e8aabcb55d74f0d7082d02a3a917bc5ff55739b7a2880c91f3",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "That wasn't meant to happen yet!",
+    "previous_vietnamese": "Ối! Chuyện đó lẽ ra chưa được xảy ra!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.94,
+        "end": 2.94,
+        "text": "That wasn't meant to happen yet!",
+        "avg_logprob": -0.2864,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_h.m4a",
+    "key": "bastard_gameover_h",
+    "seconds": 3.622,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "5db5a62847c724c12436d51dd51ce738358c5e9375310984d93c7457af7cef75",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "It's okay.",
+    "previous_vietnamese": "Suỵt! Không sao đâu.",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.26,
+        "end": 3.26,
+        "text": "It's okay.",
+        "avg_logprob": -0.5053,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_1/bastard_gameover_e.m4a",
+    "key": "bastard_gameover_e",
+    "seconds": 3.692,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "8a9797fe04eeff5582634ba269d7a097f78b9a02d82c96c701c13672eddc59c1",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I am very disappointed.",
+    "previous_vietnamese": "Ta thất vọng về ngươi quá!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.24,
+        "text": "I am very disappointed.",
+        "avg_logprob": -0.5186,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_3_brick_3/bastard_zombie_clown_c.m4a",
+    "key": "bastard_zombie_clown_c",
+    "seconds": 3.901,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "ae41ea269eb49946152e017b8f19b9919d4215b54d5282a905f3f1f2f4596d0a",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Oh, the clown!",
+    "previous_vietnamese": "Lũ hề đâu hết rồi?",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.88,
+        "end": 2.08,
+        "text": "Oh, the clown!",
+        "avg_logprob": -1.0161,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/opener/OPENER_LIFT_VOICE_2_SPA.m4a",
+    "key": "OPENER_LIFT_VOICE_2_SPA",
+    "seconds": 4.063,
+    "group": "opener_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "5ed86309df26650b36729afeb67673829e9e38adb9cfc765bbbcc14e8a238adf",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Level 3. Main Arena.",
+    "previous_vietnamese": "Tầng ba. Đấu trường chính.",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.18,
+        "end": 3.18,
+        "text": "Level 3. Main Arena.",
+        "avg_logprob": -0.3932,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/revive/revive_no.m4a",
+    "key": "revive_no",
+    "seconds": 4.063,
+    "group": "revive_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "7d76816bde3b4587f817bc786d9558edcfe30ce37aaf3e899c959b8f28a0cbcd",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "",
+    "previous_vietnamese": "Hết rồi!",
+    "human_listened": false,
+    "segments": []
+  },
+  {
+    "path": "game/sounds/challenges/urban_3_brick_2/bastard_zombie_clown_b.m4a",
+    "key": "bastard_zombie_clown_b",
+    "seconds": 4.644,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "23170a1e7491b421d6a4333f63eb68dac62c8cf80b57d1f05fe11ebedb610fb5",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Let's send in other zombies along with the next clown.",
+    "previous_vietnamese": "Hãy thả thêm vài con zombie cùng chú hề tiếp theo!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.0,
+        "text": "Let's send in other zombies along with the next clown.",
+        "avg_logprob": -0.2784,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_1/bastard_gameover_a.m4a",
+    "key": "bastard_gameover_a",
+    "seconds": 4.69,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "5b371f36799109fb292ad0c87d0a7065bfae9875f6d9fcd8ea27f95b3a848ba3",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Did you die already? Oh, you did? Meh.",
+    "previous_vietnamese": "Chết rồi à? Ồ, chết thật rồi sao? Chán thế!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.36,
+        "text": "Did you die already? Oh, you did? Meh.",
+        "avg_logprob": -0.2957,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_3/bastard_gameover_o.m4a",
+    "key": "bastard_gameover_o",
+    "seconds": 4.807,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "ae84222bec18795db945f23824687324ef9be3e553a103baffe3074a55c1a0a3",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Bring me the zombie re-animator, kid. This one is fresh.",
+    "previous_vietnamese": "Mang bộ dụng cụ hồi sinh zombie đến đây! Xác này vẫn còn mới!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.64,
+        "text": "Bring me the zombie re-animator, kid. This one is fresh.",
+        "avg_logprob": -0.3746,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/announcer_tutorial_aimprompt.m4a",
+    "key": "announcer_tutorial_aimprompt",
+    "seconds": 5.062,
+    "group": "tutorial_voice",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "7c575652f79fa18beaba8d71bf9ea1ecd0685fb055353b6e7892393a466dccef",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Try to turn around, get a feel of the world reacting to your movement.",
+    "previous_vietnamese": "Hãy thử xoay người và cảm nhận thế giới âm thanh thay đổi theo chuyển động của bạn.",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.0,
+        "text": "Try to turn around, get a feel of the world reacting to your movement.",
+        "avg_logprob": -0.2006,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_3/bastard_gameover_m.m4a",
+    "key": "bastard_gameover_m",
+    "seconds": 5.062,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "483399af096a372560aeb4921f33e4a5a3222a0908afa3e99e6f55a644bfe740",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "That was tough to watch. I enjoyed it!",
+    "previous_vietnamese": "Chết tiệt! Cảnh vừa rồi thật kinh khủng! Ta thích lắm!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.01,
+        "end": 4.61,
+        "text": "That was tough to watch. I enjoyed it!",
+        "avg_logprob": -0.3834,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_10_brick_2/bastard_tutorial_10_2.m4a",
+    "key": "bastard_tutorial_10_2",
+    "seconds": 5.503,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "348b027e8f6849019478cbf957ac816812fb07008abee0ff05c242f370ba5ebf",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "No, that was luck. Release another chainsaw!",
+    "previous_vietnamese": "Cái gì? Không, vừa rồi chỉ là may mắn! Thả thêm một con cưa máy nữa!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.69,
+        "end": 4.96,
+        "text": "No, that was luck. Release another chainsaw!",
+        "avg_logprob": -0.5143,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_1/bastard_gameover_c.m4a",
+    "key": "bastard_gameover_c",
+    "seconds": 5.805,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "5c67ff8e7a397b4b3253b06f88344a8742d1359f83ac4f6f707fbd683f4365e4",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Just when I was starting to like you, you failed.",
+    "previous_vietnamese": "Ồ, ta vừa bắt đầu thích ngươi thì ngươi đã thua mất rồi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.5,
+        "end": 5.14,
+        "text": "Just when I was starting to like you, you failed.",
+        "avg_logprob": -0.3846,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_10_brick_2/bastard_maya_10_2.m4a",
+    "key": "bastard_maya_10_2",
+    "seconds": 6.014,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "fd7ae3e9a29a5833fd1a368f3650d880862f701aaca0d51693bbf27949ed0b71",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "That was a warm up. Let's give you a real challenge now.",
+    "previous_vietnamese": "Vừa rồi chỉ là khởi động thôi. Giờ mới đến thử thách thực sự!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.34,
+        "end": 5.34,
+        "text": "That was a warm up. Let's give you a real challenge now.",
+        "avg_logprob": -0.2631,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/opener/OPENER_DRBASTARD_B_SPA.m4a",
+    "key": "OPENER_DRBASTARD_B_SPA",
+    "seconds": 6.06,
+    "group": "opener_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "c0212d9853e211960042a6aba11db49f998ad03b776e78284be7e9b2c6ef0916",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "",
+    "previous_vietnamese": "Và bắt đầu nào!",
+    "human_listened": false,
+    "segments": []
+  },
+  {
+    "path": "game/sounds/opener/OPENER_DRBASTARD_SPA.m4a",
+    "key": "OPENER_DRBASTARD_SPA",
+    "seconds": 6.06,
+    "group": "opener_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "c0212d9853e211960042a6aba11db49f998ad03b776e78284be7e9b2c6ef0916",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "",
+    "previous_vietnamese": "Và bắt đầu nào!",
+    "human_listened": false,
+    "segments": []
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_f.m4a",
+    "key": "bastard_gameover_f",
+    "seconds": 6.502,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "7ab5ac08ffd03f008a251ac0ed459a79bf372c43f169be21571b7657ec5894e8",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Such a waste of human life. It's okay. I can make a zombie out of you.",
+    "previous_vietnamese": "Thật phí một mạng người. Nhưng không sao, ta vẫn có thể tận dụng xác ngươi.",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.28,
+        "text": "Such a waste of human life. It's okay. I can make a zombie out of you.",
+        "avg_logprob": -0.1959,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/announcer_tutorial_aimhelp.m4a",
+    "key": "announcer_tutorial_aimhelp",
+    "seconds": 6.548,
+    "group": "tutorial_voice",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "16ca433f992e06ae3f4cbb993255169047247217fc4e625ea579420dafdd828d",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "If you have trouble finding the zombie, try turning around. The zombie might be behind you.",
+    "previous_vietnamese": "Nếu khó tìm thấy zombie, hãy thử xoay người. Biết đâu nó đang ở phía sau bạn.",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.0,
+        "text": "If you have trouble finding the zombie, try turning around. The zombie might be behind you.",
+        "avg_logprob": -0.1847,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_3/bastard_gameover_l.m4a",
+    "key": "bastard_gameover_l",
+    "seconds": 6.618,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "8d51cb5bb7b8a8ef1f758014c22ba84e7f9442d7249d542c4b9ae629eb50e02e",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "It's not that bad! At least you- Oh, who am I kidding? That was terrible!",
+    "previous_vietnamese": "Cũng không tệ đến thế đâu! Ít nhất ngươi... Ồ, ta lừa ai chứ? Tệ khủng khiếp!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.18,
+        "text": "It's not that bad! At least you- Oh, who am I kidding? That was terrible!",
+        "avg_logprob": -0.2932,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_3_brick_5/bastard_maya_3_2.m4a",
+    "key": "bastard_maya_3_2",
+    "seconds": 6.757,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "40ed38ccc5b3f900a25825e010e0b2d0da8f64f5329e32f6969e3f7aa0c1c82d",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "That was intense, wasn't it?",
+    "previous_vietnamese": "Phù! Vừa rồi căng thẳng thật, đúng không?",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 3.44,
+        "end": 5.68,
+        "text": "That was intense, wasn't it?",
+        "avg_logprob": -0.3584,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_i.m4a",
+    "key": "bastard_gameover_i",
+    "seconds": 6.803,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "0d8345fe0f31dfa9ed21ebbfa0cc0b4001405f50be8dee3149780b485d3e2bd6",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "No, no, no, no, no. I didn't pay you to get eaten alive so soon.",
+    "previous_vietnamese": "Không! Không! Không! Ta đâu trả tiền để ngươi bị ăn sống sớm thế này!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.04,
+        "end": 6.04,
+        "text": "No, no, no, no, no. I didn't pay you to get eaten alive so soon.",
+        "avg_logprob": -0.2791,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_1/bastard_gameover_b.m4a",
+    "key": "bastard_gameover_b",
+    "seconds": 7.198,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "a4b0fc99e0c1b029b02f6cbea798fed8f374b6de8880507f8939956e214cb9e0",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Well done! Bravo! Oh, what? You failed? Ha ha ha!",
+    "previous_vietnamese": "Giỏi lắm! Hoan hô! Cái gì? Ngươi thất bại rồi à? Ha ha! Ối!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.08,
+        "end": 5.58,
+        "text": "Well done! Bravo! Oh, what? You failed? Ha ha ha!",
+        "avg_logprob": -0.4385,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_3_brick_1/bastard_zombie_horde_c.m4a",
+    "key": "bastard_zombie_horde_c",
+    "seconds": 7.314,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "158b03efcbac0e4a10914f00b78c157a58d9d519816fb5343fa343ef1c44f2df",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I don't know about you, but I think this is too easy. It's time for a good old zombie horde!",
+    "previous_vietnamese": "Ta không biết ngươi thấy sao, nhưng thế này dễ quá. Đã đến lúc thả một bầy zombie thật sự rồi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.5,
+        "text": "I don't know about you, but I think this is too easy. It's time for a good old zombie horde!",
+        "avg_logprob": -0.2046,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_4_brick_3/bastard_maya_4_2.m4a",
+    "key": "bastard_maya_4_2",
+    "seconds": 7.384,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "bcd871ec02d56dee79d8ad70f24b85835902cc813e4c234e395153b075a93b6d",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Looks like we're dining on steak tonight.",
+    "previous_vietnamese": "Có vẻ tối nay chúng ta được ăn bít tết rồi. Ha ha ha!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 2.29,
+        "end": 6.93,
+        "text": "Looks like we're dining on steak tonight.",
+        "avg_logprob": -0.3767,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/gameover_3/bastard_gameover_k.m4a",
+    "key": "bastard_gameover_k",
+    "seconds": 7.5,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "14a68966176cc97d1e3bc31517007355629d9029af4db6fe3b4502f424bf881e",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Ha ha ha ha. You lose! Ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha",
+    "previous_vietnamese": "Ha ha ha! Ngươi thua rồi! Ha ha ha!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.76,
+        "text": "Ha ha ha ha. You lose! Ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha",
+        "avg_logprob": -0.2043,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_6_brick_3/bastard_maya_6_2.m4a",
+    "key": "bastard_maya_6_2",
+    "seconds": 7.523,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "8a64233c0c5e8b7ca803876f888164f1f3c269985e1c888ae4fedb974a7c2f50",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Oh, you think you got the hang of this? Well, you don't. Here comes another zombie wave.",
+    "previous_vietnamese": "Tưởng đã nắm được cách chơi rồi sao? Chưa đâu! Một đợt zombie khác đang đến!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.27,
+        "end": 6.59,
+        "text": "Oh, you think you got the hang of this? Well, you don't. Here comes another zombie wave.",
+        "avg_logprob": -0.2139,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_3_brick_3/bastard_maya_3_1.m4a",
+    "key": "bastard_maya_3_1",
+    "seconds": 7.779,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "d33e7e0cbf6dbb942c32efc7a171c6b1350cb2c9f14181037b71f1fd4ac4d4a1",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "How are you holding up? Are you conserving ammo? I hope you are, because we're only halfway!",
+    "previous_vietnamese": "Vẫn chịu nổi chứ? Có đang tiết kiệm đạn không? Ta mong là có. Vì chúng ta mới đi được nửa đường thôi! Ha ha!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.8,
+        "text": "How are you holding up? Are you conserving ammo? I hope you are, because we're only halfway!",
+        "avg_logprob": -0.2348,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/revive/revive_standby.m4a",
+    "key": "revive_standby",
+    "seconds": 8.057,
+    "group": "revive_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false,
+    "audio_sha256": "f8639c2bac3154cdac3cfe742b33b5cb142da4c0400fe69d55a6935e3837acf3",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "",
+    "previous_vietnamese": null,
+    "human_listened": false,
+    "segments": []
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_g.m4a",
+    "key": "bastard_gameover_g",
+    "seconds": 8.429,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "84f63231abab3531f57a85ada3ccd15afe955af6c961976c0b275746e39f1035",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Look at you! Look at you, dying at my feet!",
+    "previous_vietnamese": "Nhìn ngươi kìa! Nhìn ngươi chết ngay dưới chân ta kìa! Ha ha ha!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 6.86,
+        "text": "Look at you! Look at you, dying at my feet!",
+        "avg_logprob": -0.4141,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_6_brick_4/bastard_maya_6_3.m4a",
+    "key": "bastard_maya_6_3",
+    "seconds": 8.522,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "0b37a8fc28363545f61ae075d1f8983e320a0363cd63875dac7661ea48902261",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You're now a master of the Tactical Rifle.",
+    "previous_vietnamese": "Và bùm! Giờ ngươi là bậc thầy súng trường chiến thuật!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 4.3,
+        "end": 7.58,
+        "text": "You're now a master of the Tactical Rifle.",
+        "avg_logprob": -0.3107,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_1_brick_3/bastard_maya_1_1.m4a",
+    "key": "bastard_maya_1_1",
+    "seconds": 8.777,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "c4ca22fdd4711d35f5d129f70c6e36cbc05e7ed37b44ecade0b4d2a56fa9c1f2",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You gotta climatise to the jungle pretty quick. Keep it up!",
+    "previous_vietnamese": "Chà chà, ngươi phải làm quen với rừng rậm thật nhanh đấy. Cứ thế phát huy!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 3.25,
+        "end": 7.89,
+        "text": "You gotta climatise to the jungle pretty quick. Keep it up!",
+        "avg_logprob": -0.3561,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_8_brick_1/bastard_zombie_horde_b.m4a",
+    "key": "bastard_zombie_horde_b",
+    "seconds": 8.777,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "a85a31c3960d3996a5111dadfc24e9183645da182a5b4e275b79925290330ff9",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "And just when you thought you were in control, all I have to do is press a button and BAM! A zombie horde is incoming!",
+    "previous_vietnamese": "Ngay khi ngươi tưởng đã kiểm soát được mọi thứ, ta chỉ cần bấm một nút và bùm! Một bầy zombie đang lao tới!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 8.2,
+        "text": "And just when you thought you were in control, all I have to do is press a button and BAM! A zombie horde is incoming!",
+        "avg_logprob": -0.2139,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_8_brick_3/bastard_maya_8_3.m4a",
+    "key": "bastard_maya_8_3",
+    "seconds": 9.056,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "8d4a96aea25a869f74671de50f80940536cc8489749b7ae4d7b1cf206b20af02",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I get the feeling you're not stressed enough. Let me fix that with another zombie wave with a side of Berserk.",
+    "previous_vietnamese": "Ta có cảm giác ngươi vẫn chưa đủ căng thẳng. Để ta sửa bằng một bầy zombie mới, kèm thêm Berserk!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.59,
+        "end": 7.59,
+        "text": "I get the feeling you're not stressed enough. Let me fix that with another zombie wave with a side of Berserk.",
+        "avg_logprob": -0.2106,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_9_brick_3/bastard_maya_9_2.m4a",
+    "key": "bastard_maya_9_2",
+    "seconds": 9.311,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "d8acd78d17ebf46ccd660f19e3e5b7d0f139f0198207d34058cec38ad27bfdbf",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Well, I think you just invented a new music genre with that performance. I loved it!",
+    "previous_vietnamese": "Ngươi vừa sáng tạo ra một thể loại âm nhạc mới bằng màn biểu diễn vừa rồi đấy. Ta thích lắm!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 3.02,
+        "end": 8.62,
+        "text": "Well, I think you just invented a new music genre with that performance. I loved it!",
+        "avg_logprob": -0.3331,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_10_brick_2/bastard_urban_10_2.m4a",
+    "key": "bastard_urban_10_2",
+    "seconds": 9.404,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "1dd219c8adc541505830b6992278fb3138ff93ab67b4f33a29dca943a6de6066",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Oh no, you're only halfway there. And now we'll proceed with the Hulk's own tune, Music Maestro!",
+    "previous_vietnamese": "Chưa đâu, ngươi mới đi được nửa đường thôi! Giờ đến tiết mục của Hulk với nhạc nền riêng, giai điệu quái vật!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.27,
+        "end": 8.47,
+        "text": "Oh no, you're only halfway there. And now we'll proceed with the Hulk's own tune, Music Maestro!",
+        "avg_logprob": -0.2837,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_3_brick_4/bastard_urban_3_1.m4a",
+    "key": "bastard_urban_3_1",
+    "seconds": 9.404,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "84d0044a5d538fdcee6ae943b1f0facebdab3aaf468f019b56b86609a1f49920",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Why does everyone hate clowns?",
+    "previous_vietnamese": "Tội nghiệp lũ hề! Sao ai cũng ghét hề thế nhỉ?",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 5.46,
+        "end": 8.46,
+        "text": "Why does everyone hate clowns?",
+        "avg_logprob": -0.3816,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_7_brick_4/bastard_maya_7_2.m4a",
+    "key": "bastard_maya_7_2",
+    "seconds": 9.52,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "f08ffc7cfa4543e4d9c7d09d6d3d2f1806bebabd3625d786ea0613e2d304a40b",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You should thank me for keeping you out of your comfort zone. It's stuff like this that makes you improve as a human being.",
+    "previous_vietnamese": "Ngươi nên cảm ơn ta vì đã ép ngươi ra khỏi vùng an toàn. Những việc như thế mới giúp con người tiến bộ!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.05,
+        "end": 8.3,
+        "text": "You should thank me for keeping you out of your comfort zone. It's stuff like this that makes you improve as a human being.",
+        "avg_logprob": -0.1627,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_2/bastard_tutorial_3_4.m4a",
+    "key": "bastard_tutorial_3_4",
+    "seconds": 9.567,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "796d65dab5fc6ff471426dd8038d47ad57dd31aa3adf06ada88980e21b1c9ec5",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You made my day! Ha ha ha ha! I hate you so much!",
+    "previous_vietnamese": "Ha ha ha! Ngươi khiến hôm nay của ta thật tuyệt! Ha ha! Ta ghét ngươi quá đi mất!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 2.42,
+        "end": 8.02,
+        "text": "You made my day! Ha ha ha ha! I hate you so much!",
+        "avg_logprob": -0.3598,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_5_brick_2/bastard_maya_5_2.m4a",
+    "key": "bastard_maya_5_2",
+    "seconds": 10.403,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "2325de85dfaa743711a11c138fcf21839cd2da763991cb8593500dd1b8e8c45e",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Did you have trouble finding that one? Try to find the next one amongst other Zombies now!",
+    "previous_vietnamese": "Khó tìm con vừa rồi lắm à? Vậy hãy thử tìm con tiếp theo giữa đám zombie khác đi! Ha ha!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.37,
+        "end": 9.22,
+        "text": "Did you have trouble finding that one? Try to find the next one amongst other Zombies now!",
+        "avg_logprob": -0.3511,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_2_brick_3/bastard_maya_2_2.m4a",
+    "key": "bastard_maya_2_2",
+    "seconds": 10.519,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "30d6bd7072507722c9cbe1a7c834d24f75e132193c6b4b0a1e8c8a58ff4735a3",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Someone bring the Blind Warrior an umbrella. We don't want our champion catching a cold.",
+    "previous_vietnamese": "Được rồi. Ai đó mang cho chiến binh mù một chiếc ô! Chúng ta không muốn nhà vô địch bị cảm lạnh đâu.",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 3.38,
+        "end": 9.7,
+        "text": "Someone bring the Blind Warrior an umbrella. We don't want our champion catching a cold.",
+        "avg_logprob": -0.2791,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_8_brick_2/bastard_maya_8_2.m4a",
+    "key": "bastard_maya_8_2",
+    "seconds": 10.565,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "ef13be646ed40305d5b2607cb59c3e102e14bbc2455f32a63d9899a2ed889d1a",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Yeah, well, that was easy. Surviving a Berserk can get a bit harder under more stress. Let me stress you more.",
+    "previous_vietnamese": "Ờ, màn đó dễ thôi. Nhưng sống sót trước Berserk sẽ khó hơn khi bị gây áp lực. Để ta làm ngươi căng thẳng thêm!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 8.8,
+        "text": "Yeah, well, that was easy. Surviving a Berserk can get a bit harder under more stress. Let me stress you more.",
+        "avg_logprob": -0.2207,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_10_brick_1/bastard_urban_10_1.m4a",
+    "key": "bastard_urban_10_1",
+    "seconds": 10.635,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "85bb24dce7be7d7ec820790baabac25b9910652391002d90e9eef952c8a6c466",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Boo hoo! You think you're almighty for killing a Hulk? That was just a teaser. The challenge begins now!",
+    "previous_vietnamese": "Hu hu! Tưởng giết được một con Hulk là ngươi vô địch thiên hạ rồi sao? Đó chỉ là màn nhử thôi. Thử thách thực sự bắt đầu ngay bây giờ!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.08,
+        "end": 9.3,
+        "text": "Boo hoo! You think you're almighty for killing a Hulk? That was just a teaser. The challenge begins now!",
+        "avg_logprob": -0.315,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_4_brick_2/bastard_urban_4_2.m4a",
+    "key": "bastard_urban_4_2",
+    "seconds": 10.635,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "d4cad879bd61117ef482a0da630f99ab2f359a75c210232fb714fceedc4c5a9d",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You're fighting so desperately for your life. Expect more zombie mix-ups in the future.",
+    "previous_vietnamese": "Xem ngươi tuyệt vọng chiến đấu để giành giật mạng sống thật vui! Sau này sẽ còn nhiều màn trộn đủ loại zombie nữa đấy.",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 4.18,
+        "end": 10.1,
+        "text": "You're fighting so desperately for your life. Expect more zombie mix-ups in the future.",
+        "avg_logprob": -0.389,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_2_brick_3/bastard_urban_2_1.m4a",
+    "key": "bastard_urban_2_1",
+    "seconds": 10.658,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "c236a1e0cea16193a4170c7e963b95983373bdb8295a6ca7d07684e89c7b5a79",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Don't worry about the owners of those cars. They're the zombies you'll be facing in the next challenge.",
+    "previous_vietnamese": "Đừng lo cho chủ của những chiếc xe đó. Họ chính là lũ zombie ngươi sắp đối mặt trong thử thách tiếp theo!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 2.77,
+        "end": 10.01,
+        "text": "Don't worry about the owners of those cars. They're the zombies you'll be facing in the next challenge.",
+        "avg_logprob": -0.215,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_3/bastard_tutorial_2_4.m4a",
+    "key": "bastard_tutorial_2_4",
+    "seconds": 10.82,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "cc4062e2c15af16f0dffb722ba342eef17fe69d55e77dcfe7f90e6344a52e9e7",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Ha! I saw it this time! I saw you shoot down those two zombies! Take that, low attention span!",
+    "previous_vietnamese": "Ha ha! Lần này ta nhìn thấy rồi! Ta thấy ngươi bắn hạ cả hai con zombie! Thấy chưa, ai bảo ta không biết tập trung!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.91,
+        "end": 8.91,
+        "text": "Ha! I saw it this time! I saw you shoot down those two zombies! Take that, low attention span!",
+        "avg_logprob": -0.2511,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_6_brick_2/bastard_urban_6_2.m4a",
+    "key": "bastard_urban_6_2",
+    "seconds": 10.89,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "103499a31ab3bdfc77c5d4a76f3e8353f6a537a0c91c9a312e931afd3f00115a",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Wow, natural with guns. It's a bit creepy actually. Anyway, off to the next challenge.",
+    "previous_vietnamese": "Ôi chà! Ngươi đúng là có năng khiếu dùng súng! Hơi đáng sợ đấy. Thôi, sang thử thách tiếp theo nào!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 2.22,
+        "end": 9.8,
+        "text": "Wow, natural with guns. It's a bit creepy actually. Anyway, off to the next challenge.",
+        "avg_logprob": -0.2564,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_2_brick_1/bastard_passerby_storm_a.m4a",
+    "key": "bastard_passerby_storm_a",
+    "seconds": 11.564,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "41214dd2604fcf4ae32c2b4b7271bf988ccb9062845e234d34072c15c95f5447",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "A thunderstorm! So dramatic! What a good time to kill zombies. Never mind the occasional deafening thunder.",
+    "previous_vietnamese": "Giông bão! Thật kịch tính! Thời điểm tuyệt vời để giết zombie. Chỉ có điều tiếng sấm đôi lúc sẽ làm ngươi điếc tai thôi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.14,
+        "end": 10.74,
+        "text": "A thunderstorm! So dramatic! What a good time to kill zombies. Never mind the occasional deafening thunder.",
+        "avg_logprob": -0.3609,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_10_brick_3/bastard_maya_10_3.m4a",
+    "key": "bastard_maya_10_3",
+    "seconds": 12.028,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "f5bdd98c7ce9919e718cec876b026130c01f56384dea96dec38052300d1b9b06",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Congratulations! You beat the challenge! Nah! It's never gonna be that easy. You want to beat the challenge? Then survive this!",
+    "previous_vietnamese": "Chúc mừng! Ngươi đã vượt qua thử thách! Đùa đấy! Làm gì có chuyện dễ thế. Muốn thắng ư? Vậy thì sống sót qua màn này đi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.3,
+        "end": 11.37,
+        "text": "Congratulations! You beat the challenge! Nah! It's never gonna be that easy. You want to beat the challenge? Then survive this!",
+        "avg_logprob": -0.2948,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_9_brick_2/bastard_urban_9_2.m4a",
+    "key": "bastard_urban_9_2",
+    "seconds": 12.144,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "6f69c43ae21b544e360b6a5ca5da7d892ee7d2fd4492b7783fae59aa403d3c72",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "See? That was pretty funny. You look like a stressed out chef in a cheap restaurant.",
+    "previous_vietnamese": "Ha ha ha! Thấy chưa, vui thật mà! Trông ngươi chẳng khác nào đầu bếp đang căng thẳng ở một quán ăn rẻ tiền! Ha ha ha!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 3.54,
+        "end": 11.14,
+        "text": "See? That was pretty funny. You look like a stressed out chef in a cheap restaurant.",
+        "avg_logprob": -0.2813,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_4_brick_1/bastard_passerby_cows_a.m4a",
+    "key": "bastard_passerby_cows_a",
+    "seconds": 12.446,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "ff2b8912bf734489fe3385de767094828410eb81339dc3edf5d0ddae041f0816",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Yes, yes, they're harmless, but they're scary cows, a terror to behold. I hate cows.",
+    "previous_vietnamese": "Thả bò ra! Đúng, đúng, chúng vô hại. Nhưng chúng là những con bò đáng sợ! Một nỗi kinh hoàng! Ta ghét bò!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 3.6,
+        "end": 11.6,
+        "text": "Yes, yes, they're harmless, but they're scary cows, a terror to behold. I hate cows.",
+        "avg_logprob": -0.3274,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_7_brick_1/bastard_passerby_jukebox_a.m4a",
+    "key": "bastard_passerby_jukebox_a",
+    "seconds": 12.817,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "ba62eac534c3f0bfc4da18eab9d04136987610fdd721de4231571fd0c2488bfc",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I put a jukebox down in the arena with you. It will play my favorite music from time to time. You can shoot it and turn it off if you want to hurt my feelings.",
+    "previous_vietnamese": "Ta đã đặt một chiếc máy hát vào đấu trường cùng ngươi. Thỉnh thoảng nó sẽ phát những bản nhạc ta thích nhất. Nếu muốn làm ta tổn thương, cứ bắn cho nó tắt đi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 12.26,
+        "text": "I put a jukebox down in the arena with you. It will play my favorite music from time to time. You can shoot it and turn it off if you want to hurt my feelings.",
+        "avg_logprob": -0.2016,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_8_brick_4/bastard_tutorial_8_2.m4a",
+    "key": "bastard_tutorial_8_2",
+    "seconds": 12.817,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "ce5fdd543a03290ae0bce33b3c19f235819c3e8ee56fc1bc18d1a97ac28dbe1b",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "What? You survived? I really thought you were gonna die. I'm not sure how to proceed. Anyway, we'll improvise.",
+    "previous_vietnamese": "Cái gì? Ngươi vẫn sống ư?! Chết tiệt, ta cứ nghĩ ngươi sẽ chết. Giờ chẳng biết tiếp tục thế nào. Thôi, ứng biến vậy!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 12.06,
+        "text": "What? You survived? I really thought you were gonna die. I'm not sure how to proceed. Anyway, we'll improvise.",
+        "avg_logprob": -0.2741,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_6_brick_3/bastard_tutorial_6_2.m4a",
+    "key": "bastard_tutorial_6_2",
+    "seconds": 13.189,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "1803a42817fa883c4edda346bf598bb220cec8348b99df9ebf50cc089e4fc617",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Man, that was pretty awesome to watch. Actually, it was so awesome that I could watch it all day. Here are more zombies. Kill them for me. I have the popcorn already.",
+    "previous_vietnamese": "Chết tiệt, vừa rồi xem đã mắt thật! Hay đến mức ta có thể xem cả ngày. Vậy thì thêm zombie nhé. Giết chúng cho ta xem. Bỏng ngô ta đã chuẩn bị sẵn rồi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.66,
+        "end": 11.34,
+        "text": "Man, that was pretty awesome to watch. Actually, it was so awesome that I could watch it all day. Here are more zombies. Kill them for me. I have the popcorn already.",
+        "avg_logprob": -0.1929,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_1/bastard_tutorial_2_1.m4a",
+    "key": "bastard_tutorial_2_1",
+    "seconds": 13.816,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "b7e7ed2e803cee4a0c921f32dad7206ed76859b53050311b4bbffa83800c5b47",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I see you've run out of ammo. It's okay. I let my fighters carry up to two guns at once. Actually, I can see you have a bigger one in your belt. Come on then, switch weapons.",
+    "previous_vietnamese": "Ồ, có vẻ ngươi hết đạn rồi. Không sao. Ta cho các chiến binh mang theo hai khẩu súng cùng lúc. Thật ra ta thấy ngươi có khẩu lớn hơn ở thắt lưng. Nào, đổi vũ khí đi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.39,
+        "end": 13.49,
+        "text": "I see you've run out of ammo. It's okay. I let my fighters carry up to two guns at once. Actually, I can see you have a bigger one in your belt. Come on then, switch weapons.",
+        "avg_logprob": -0.1443,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_5_brick_1/bastard_zombie_runner_a.m4a",
+    "key": "bastard_zombie_runner_a",
+    "seconds": 14.048,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "93619f5ae3d186786da8b7b7a0d592ba62d78bb74fcf004c306d9c515f4cfe1c",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "When it comes to fast zombies, I prefer to go with animals. These ones are called snuffle hogs. A gift from my dear friend Papa Sangre. Kill a few now if you can.",
+    "previous_vietnamese": "Nhắc đến zombie chạy nhanh, ta thích dùng những loài mang dáng dấp động vật. Chúng tên là Snufflehog, quà từ người bạn thân Papa Sangre của ta. Thử giết vài con xem, nếu ngươi có thể!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 13.38,
+        "text": "When it comes to fast zombies, I prefer to go with animals. These ones are called snuffle hogs. A gift from my dear friend Papa Sangre. Kill a few now if you can.",
+        "avg_logprob": -0.1839,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_9_brick_4/bastard_tutorial_9_2.m4a",
+    "key": "bastard_tutorial_9_2",
+    "seconds": 14.303,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "711214a06107c622e2bf8d5dcf5b415dc9c2d8ee662c6878a3dbc2e68ff299ae",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You'll have to get used to these little enhancements, Blind Warrior. It's all to make your challenges more entertaining. For the audience.",
+    "previous_vietnamese": "Ngươi phải tập quen với những trò tăng độ khó nho nhỏ này, chiến binh mù ạ. Tất cả nhằm làm thử thách thú vị hơn. Cho khán giả xem!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.4,
+        "end": 6.9,
+        "text": "You'll have to get used to these little enhancements, Blind Warrior.",
+        "avg_logprob": -0.297,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 6.9,
+        "end": 12.96,
+        "text": "It's all to make your challenges more entertaining. For the audience.",
+        "avg_logprob": -0.297,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_7_brick_4/bastard_urban_7_2.m4a",
+    "key": "bastard_urban_7_2",
+    "seconds": 14.652,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "7e9c8100664a02f93b5f52c1c3fe6e424d51da579b893042f6546257df2912a2",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I can see on your face you're not a fan of my music. Well, I'm not a fan of yours either, but it's my jukebox and I'll play the music I want. Now, off you go.",
+    "previous_vietnamese": "Nhìn mặt ngươi là ta biết chẳng thích nhạc của ta. Mà ta cũng chẳng thích ngươi! Nhưng đây là máy hát của ta, ta muốn phát nhạc gì thì phát. Giờ đi tiếp đi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 2.61,
+        "end": 13.81,
+        "text": "I can see on your face you're not a fan of my music. Well, I'm not a fan of yours either, but it's my jukebox and I'll play the music I want. Now, off you go.",
+        "avg_logprob": -0.1546,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_8_brick_3/bastard_urban_8_1.m4a",
+    "key": "bastard_urban_8_1",
+    "seconds": 14.884,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "ff310ee2d2f0dd654852836e5bc02b1cfab7a9fa97804303db6707b568538e4e",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "What a mess you've made. So many rotten bodies piled up all over the arena. Yuck! Don't worry, the cleaning staff are on their way. In the meantime, keep killing more zombies!",
+    "previous_vietnamese": "Ôi, ngươi bày ra đống lộn xộn gì thế này! Xác thối chất đầy đấu trường, ghê quá! Đừng lo, đội dọn dẹp đang đến. Trong lúc đó, cứ tiếp tục giết thêm zombie đi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.33,
+        "end": 8.33,
+        "text": "What a mess you've made. So many rotten bodies piled up all over the arena. Yuck!",
+        "avg_logprob": -0.1771,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 8.33,
+        "end": 14.33,
+        "text": "Don't worry, the cleaning staff are on their way. In the meantime, keep killing more zombies!",
+        "avg_logprob": -0.1771,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_4_brick_5/bastard_tutorial_4_4.m4a",
+    "key": "bastard_tutorial_4_4",
+    "seconds": 15.07,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "994c6e52820735e441ed5dcad5dc34d462d44df90c3941a9f5299ced59e28c81",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Is it done? I went out to fix myself a sandwich. Anyway, lesson learned, right? Shooting slot machines. Good. Waiting too long to shoot them. Bad.",
+    "previous_vietnamese": "Xong rồi à? Ta vừa ra ngoài làm cho mình một chiếc bánh kẹp. Dù sao thì nhớ bài học nhé! Bắn máy quay thưởng ngay là tốt. Chờ quá lâu mới bắn là dở!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.37,
+        "end": 13.27,
+        "text": "Is it done? I went out to fix myself a sandwich. Anyway, lesson learned, right? Shooting slot machines. Good. Waiting too long to shoot them. Bad.",
+        "avg_logprob": -0.1809,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_6_brick_1/bastard_urban_6_1.m4a",
+    "key": "bastard_urban_6_1",
+    "seconds": 15.557,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "50fea0853469974cf064573ac332bc3d02f88690f4b9f5c826de438e97e194bd",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "A hunting rifle. Sometimes you can one-shot kill a zombie with it. Easier to do the more you upgrade it. You'll think it's magic. Come on, try it now!",
+    "previous_vietnamese": "Ừm, súng trường săn! Đôi khi nó có thể hạ zombie chỉ bằng một phát. Nâng cấp càng cao càng dễ làm được điều đó. Ngươi sẽ tưởng đây là phép thuật. Nào, thử ngay đi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.9,
+        "end": 13.97,
+        "text": "A hunting rifle. Sometimes you can one-shot kill a zombie with it. Easier to do the more you upgrade it. You'll think it's magic. Come on, try it now!",
+        "avg_logprob": -0.2086,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_9_brick_1/bastard_urban_9_1.m4a",
+    "key": "bastard_urban_9_1",
+    "seconds": 15.65,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "07f1e8b50f3b4faaedc458721fd55e34667e0719025b6c8fc319852a5826da04",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You know what this show needs? A bit of comic relief. I've stolen all your bullets, so you're left with your frying pan to survive this challenge. I don't know about you, but I find it screamingly funny.",
+    "previous_vietnamese": "Biết chương trình này còn thiếu gì không? Một màn hài hước! Ta đã lấy sạch đạn của ngươi, nên thử thách này ngươi chỉ còn chiếc chảo rán để sống sót. Ta thấy chuyện ấy buồn cười muốn chết!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.18,
+        "end": 15.21,
+        "text": "You know what this show needs? A bit of comic relief. I've stolen all your bullets, so you're left with your frying pan to survive this challenge. I don't know about you, but I find it screamingly funny.",
+        "avg_logprob": -0.1444,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_2/bastard_tutorial_1_5.m4a",
+    "key": "bastard_tutorial_1_5",
+    "seconds": 15.79,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "97211bee11c97e61d0352265545d250737f1568557700d791beeb53b97483953",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Okay, found the right lever. I'll release Bob's brother, Jim. Say hello to Jim by putting a bullet in his skull. Same as before. Aim and shoot. Aim and shoot.",
+    "previous_vietnamese": "Rồi, tìm được cần đúng rồi. Ta sẽ thả Jim, anh em của Bob. Hãy chào Jim bằng cách bắn một viên vào sọ nó. Như lúc nãy: ngắm rồi bắn, ngắm rồi bắn!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.3,
+        "end": 13.3,
+        "text": "Okay, found the right lever. I'll release Bob's brother, Jim. Say hello to Jim by putting a bullet in his skull. Same as before. Aim and shoot. Aim and shoot.",
+        "avg_logprob": -0.2158,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_4_brick_1/bastard_urban_4_1.m4a",
+    "key": "bastard_urban_4_1",
+    "seconds": 16.068,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "1238628ee900e3f7d9ce475466c9329c739a7a6fa1b9885bee613c575f8b8df1",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Time to pit you against everything you've met so far. Chainsaws, clowns, and farties. All at once. Choose who you shoot first wisely. Oh, why am I helping you? Anyway, here they come!",
+    "previous_vietnamese": "Đến lúc cho ngươi đối mặt tất cả những gì đã gặp: zombie cưa máy, zombie hề và Farty. Tất cả cùng lúc! Hãy khôn ngoan chọn mục tiêu bắn trước. Ủa, sao ta lại giúp ngươi nhỉ? Thôi, chúng tới rồi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.02,
+        "end": 15.02,
+        "text": "Time to pit you against everything you've met so far. Chainsaws, clowns, and farties. All at once. Choose who you shoot first wisely. Oh, why am I helping you? Anyway, here they come!",
+        "avg_logprob": -0.1594,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_10_brick_4/bastard_tutorial_10_3.m4a",
+    "key": "bastard_tutorial_10_3",
+    "seconds": 16.811,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "9e4687351ee73b2975fe1e3932f38d0c1a2c10ddbbd0abd399a1018c2e3e9cf1",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Now, let's do it with music! Did you know my most fearsome zombies have their own theme? I didn't want to break your concentration, but seeing how good you are, you won't mind a touch of epic while you're fighting.",
+    "previous_vietnamese": "Giờ thì thử với âm nhạc nào! Ngươi biết không, những zombie đáng sợ nhất của ta đều có nhạc nền riêng. Ta không muốn làm ngươi phân tâm, nhưng xem ngươi giỏi đến thế thì chắc chẳng phiền chút nhạc hùng tráng trong lúc chiến đấu đâu nhỉ!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.17,
+        "end": 15.23,
+        "text": "Now, let's do it with music! Did you know my most fearsome zombies have their own theme? I didn't want to break your concentration, but seeing how good you are, you won't mind a touch of epic while you're fighting.",
+        "avg_logprob": -0.1675,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_5_brick_5/bastard_maya_5_4.m4a",
+    "key": "bastard_maya_5_4",
+    "seconds": 17.276,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "b5e55329ce476ef38cee639e1c2a498926e816cec0491002c77308eca6aa0d12",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You passed this challenge. What do you want? An applause? Fine! Go buy a tactical rifle in the armory. You'll need it for your next challenges.",
+    "previous_vietnamese": "Được rồi, ngươi vượt qua thử thách này. Muốn gì nữa? Một tràng pháo tay à? Được thôi! Giờ cút đi, đến Kho vũ khí mua một khẩu súng trường chiến thuật. Ngươi sẽ cần nó ở thử thách tiếp theo!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 3.44,
+        "end": 16.4,
+        "text": "You passed this challenge. What do you want? An applause? Fine! Go buy a tactical rifle in the armory. You'll need it for your next challenges.",
+        "avg_logprob": -0.2265,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_5_brick_4/bastard_maya_5_3.m4a",
+    "key": "bastard_maya_5_3",
+    "seconds": 17.694,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "6bf737b2dd81466ad792919d39c2e435bd765776aa551a5e9299de9fb0bf0b92",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You know, it's really annoying when I'm trying out a new zombie and you KILL THEM ALL! Let me try again. Try to find one last whisperer.",
+    "previous_vietnamese": "Thật khó chịu khi ta giới thiệu zombie mới mà ngươi lại giết hết chúng! Để ta thử thêm lần nữa. Hãy tìm con Whisperer cuối cùng đi. Ta mong ngươi không tìm thấy nó!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "text": "You know, it's really annoying when I'm trying out a new zombie and you KILL THEM ALL!",
+        "avg_logprob": -0.2609,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 7.0,
+        "end": 13.61,
+        "text": "Let me try again. Try to find one last whisperer.",
+        "avg_logprob": -0.2609,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_10_brick_1/bastard_zombie_hulk_a.m4a",
+    "key": "bastard_zombie_hulk_a",
+    "seconds": 17.694,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "ceca4208a9366ca7aae1471cc94101104ffceabbcb710ae64779272a7839d716",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Tonight, I am proud to introduce the Hulk. It's what you get when you inject a zombie with an overdose of adrenaline, testosterone and quinoa. I suggest you focus on him the moment you hear him roar. That thing can take a beating.",
+    "previous_vietnamese": "Tối nay, ta hân hạnh giới thiệu Hulk! Đây là kết quả của việc tiêm cho zombie quá liều adrenaline, testosterone và cả hạt quinoa. Ta khuyên ngươi tập trung bắn nó ngay khi nghe tiếng gầm. Thứ này chịu đòn cực kỳ giỏi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.6,
+        "text": "Tonight, I am proud to introduce the Hulk.",
+        "avg_logprob": -0.2176,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 4.6,
+        "end": 11.23,
+        "text": "It's what you get when you inject a zombie with an overdose of adrenaline, testosterone and quinoa.",
+        "avg_logprob": -0.2176,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 11.23,
+        "end": 17.03,
+        "text": "I suggest you focus on him the moment you hear him roar. That thing can take a beating.",
+        "avg_logprob": -0.2176,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_6_brick_1/bastard_maya_6_1.m4a",
+    "key": "bastard_maya_6_1",
+    "seconds": 17.763,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "c1841a31b1ed73e3cd3871e4dacbd5889bb78c2870099d9e90a059b7adb7d259",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Good. You got the tactical rifle. Consider it the big brother of your micro-SMG. You'll want to stick with this one for a long time. Now smile, the audience is watching. Let's see how comfortable you are with this new weapon.",
+    "previous_vietnamese": "Tốt! Ngươi đã có súng trường chiến thuật. Cứ coi đó là người anh lớn của khẩu Micro SMG. Ngươi sẽ gắn bó với nó khá lâu đấy. Nào, cười lên, khán giả đang theo dõi! Để xem ngươi có thành thạo khẩu súng mới không!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 17.03,
+        "text": "Good. You got the tactical rifle. Consider it the big brother of your micro-SMG. You'll want to stick with this one for a long time. Now smile, the audience is watching. Let's see how comfortable you are with this new weapon.",
+        "avg_logprob": -0.145,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_1_brick_2/bastard_urban_1_1.m4a",
+    "key": "bastard_urban_1_1",
+    "seconds": 18.135,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "839d5aeedb28f4760b326a3f8b77f387d6be3e730dcb28f638d59c822a725c72",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Buzzer. You will learn to love the sound. It means you've beaten the challenge. The day you stop hearing it, it's because you died in the arena, which you will someday, but not today.",
+    "previous_vietnamese": "Nghe tiếng còi báo hiệu đó không? Ngươi nên tập yêu thích âm thanh ấy. Nó có nghĩa là ngươi đã vượt qua thử thách! Ngày không còn nghe tiếng còi nữa sẽ là ngày ngươi chết trong đấu trường. Rồi ngày đó cũng đến thôi... nhưng không phải hôm nay!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 3.09,
+        "end": 17.49,
+        "text": "Buzzer. You will learn to love the sound. It means you've beaten the challenge. The day you stop hearing it, it's because you died in the arena, which you will someday, but not today.",
+        "avg_logprob": -0.2629,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_7_brick_1/bastard_tutorial_7_2.m4a",
+    "key": "bastard_tutorial_7_2",
+    "seconds": 18.204,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "38421f6c49fd8db2f454fd23eb369d0831bebc45386c41f5a7484a288e1eea09",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Did you know that being in your ears is the sound of your ear cells dying? I hope this taught you it's better to kill a farty before it gets this close. Let's do it again. I'll release another farty, a little further away this time.",
+    "previous_vietnamese": "Ngươi biết tiếng ù tai chính là dấu hiệu các tế bào tai đang chết dần không? Ta mong ngươi đã hiểu nên giết Farty trước khi nó đến gần như thế. Làm lại nào. Lần này ta sẽ thả một con Farty khác từ xa hơn!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.3,
+        "end": 5.72,
+        "text": "Did you know that being in your ears is the sound of your ear cells dying?",
+        "avg_logprob": -0.1876,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 5.72,
+        "end": 11.42,
+        "text": "I hope this taught you it's better to kill a farty before it gets this close.",
+        "avg_logprob": -0.1876,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 11.42,
+        "end": 16.42,
+        "text": "Let's do it again. I'll release another farty, a little further away this time.",
+        "avg_logprob": -0.1876,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_7_brick_1/bastard_tutorial_7_3.m4a",
+    "key": "bastard_tutorial_7_3",
+    "seconds": 18.321,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "178b50bd4a23ce346b80ae021e9575bacf8afad285dd48f873268496fbbda6f3",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Any better? Okay, now this is the fun bit. There is one upside to having an explosive zombie prancing in my arena. If a farty explodes near other zombies, they'll be blown to bits with it! Ha ha ha! Let's try it!",
+    "previous_vietnamese": "Khá hơn chứ? Giờ đến phần vui nhất! Zombie phát nổ cũng có điểm hay. Nếu một con Farty nổ ngay cạnh những zombie khác, cả đám sẽ bị thổi tung thành từng mảnh! Ha ha ha! Thử nào!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 17.06,
+        "text": "Any better? Okay, now this is the fun bit. There is one upside to having an explosive zombie prancing in my arena. If a farty explodes near other zombies, they'll be blown to bits with it! Ha ha ha! Let's try it!",
+        "avg_logprob": -0.1515,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_9_brick_1/bastard_tutorial_9_1.m4a",
+    "key": "bastard_tutorial_9_1",
+    "seconds": 18.553,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "c8a9ebec2a6c584be3010e799e44646d639d563ec5f16f8b8919ae184d76dd6e",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "That generator in the middle of the arena. Ah, yes. It was me. What's that? Is it a bit disorientating, Blind Warrior? Shoot it a few times and it will turn off. For a while.",
+    "previous_vietnamese": "Ê! Ai để cái máy phát điện giữa đấu trường thế này? À đúng, chính ta! Sao, mất phương hướng hả, chiến binh mù? Cứ bắn nó vài phát, nó sẽ tắt được một lúc!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.97,
+        "end": 17.21,
+        "text": "That generator in the middle of the arena. Ah, yes. It was me. What's that? Is it a bit disorientating, Blind Warrior? Shoot it a few times and it will turn off. For a while.",
+        "avg_logprob": -0.2309,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_2_brick_1/bastard_passerby_cars_a.m4a",
+    "key": "bastard_passerby_cars_a",
+    "seconds": 19.133,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "356667fe859ffd0fc6d092e035e5d403716efdbe092c1a2060126cbbb0295eda",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You know something that boosts ratings? Explosions. So I've parked a lot of cars all around you, and their alarm will go off every now and then. If you don't want a car alarm symphony while trying to fight my zombies, better shoot those cars to make them go BOOM!",
+    "previous_vietnamese": "Biết điều gì giúp chương trình ăn khách hơn không? Những vụ nổ! Vì thế ta đã đậu rất nhiều xe quanh ngươi. Chuông báo động của chúng sẽ thỉnh thoảng lại kêu. Nếu không muốn nghe bản giao hưởng còi xe giữa lúc đánh zombie, tốt nhất hãy bắn cho mấy chiếc xe nổ tung!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.6,
+        "text": "You know something that boosts ratings? Explosions.",
+        "avg_logprob": -0.1634,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 4.6,
+        "end": 10.8,
+        "text": "So I've parked a lot of cars all around you, and their alarm will go off every now and then.",
+        "avg_logprob": -0.1634,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 10.8,
+        "end": 18.6,
+        "text": "If you don't want a car alarm symphony while trying to fight my zombies, better shoot those cars to make them go BOOM!",
+        "avg_logprob": -0.1634,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_2/bastard_tutorial_2_3.m4a",
+    "key": "bastard_tutorial_2_3",
+    "seconds": 19.319,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "428e24408226fbcd981ca722b5e558749488889df76cd1efdd12abf71c3855bd",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Impressive. Really impre- Oh, I missed it again, didn't I? I got distracted looking at my own IQ tests. Tell you what, I'll release two zombies instead of one so I don't get bored watching you. I reanimated Bob and Jim just in case this would happen.",
+    "previous_vietnamese": "Ấn tượng thật. Vô cùng ấn... Ối, ta lại bỏ lỡ rồi, đúng không? Mải nhìn kết quả kiểm tra chỉ số thông minh của chính mình. Thế này nhé, ta sẽ thả hai zombie thay vì một để khỏi buồn chán. Ta đã hồi sinh Bob và Jim, phòng lúc có chuyện như thế này!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "text": "Impressive. Really impre-",
+        "avg_logprob": -0.2035,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 2.0,
+        "end": 6.0,
+        "text": "Oh, I missed it again, didn't I?",
+        "avg_logprob": -0.2035,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 6.0,
+        "end": 9.0,
+        "text": "I got distracted looking at my own IQ tests.",
+        "avg_logprob": -0.2035,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 9.0,
+        "end": 14.0,
+        "text": "Tell you what, I'll release two zombies instead of one so I don't get bored watching you.",
+        "avg_logprob": -0.2035,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 14.0,
+        "end": 18.0,
+        "text": "I reanimated Bob and Jim just in case this would happen.",
+        "avg_logprob": -0.2035,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_4_brick_3/bastard_tutorial_4_2.m4a",
+    "key": "bastard_tutorial_4_2",
+    "seconds": 19.551,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "817c067ded7eb5761e8d49c1fc9621c3b68ad3735723a3ec9bdb061f448483ae",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Don't you love the lingering aroma of burnt meat? I think the fireworks are my favourite power-up, but I've got many more. You never know what you'll get from my slot machines. Let's do it again and see what you get this time!",
+    "previous_vietnamese": "Ngươi có thích mùi thịt cháy còn vương trong không khí không? Ta nghĩ Pháo hoa là vật phẩm hỗ trợ yêu thích nhất của mình, nhưng ta còn nhiều loại khác lắm. Chẳng ai biết trước sẽ nhận được gì từ máy quay thưởng của ta. Làm thêm lần nữa xem ngươi được món nào!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 2.13,
+        "end": 7.13,
+        "text": "Don't you love the lingering aroma of burnt meat?",
+        "avg_logprob": -0.1304,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 7.13,
+        "end": 11.99,
+        "text": "I think the fireworks are my favourite power-up, but I've got many more.",
+        "avg_logprob": -0.1304,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 11.99,
+        "end": 15.99,
+        "text": "You never know what you'll get from my slot machines.",
+        "avg_logprob": -0.1304,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 15.99,
+        "end": 18.99,
+        "text": "Let's do it again and see what you get this time!",
+        "avg_logprob": -0.1304,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_8_brick_4/bastard_maya_8_4.m4a",
+    "key": "bastard_maya_8_4",
+    "seconds": 20.271,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "df2d266067074382aed5733d0d4b56f726e28810be110e706cfe3267b1be7add",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I'd love to continue launching waves of zombies against you, but I've run out of zombies. I have to go down to the lab and reanimate a few more. Oh, you will need to visit the Armory and buy a Banjo for the next challenge. Yes, I said Banjo! Get one!",
+    "previous_vietnamese": "Ta rất muốn tiếp tục thả zombie vào ngươi, nhưng hết zombie mất rồi! Ta phải xuống phòng thí nghiệm hồi sinh thêm vài xác. À, ngươi cần tới Kho vũ khí mua cây đàn banjo cho thử thách sau. Đúng, ta nói banjo đấy! Mua đi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 2.54,
+        "end": 8.38,
+        "text": "I'd love to continue launching waves of zombies against you, but I've run out of zombies.",
+        "avg_logprob": -0.212,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 8.38,
+        "end": 11.94,
+        "text": "I have to go down to the lab and reanimate a few more.",
+        "avg_logprob": -0.212,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 11.94,
+        "end": 16.54,
+        "text": "Oh, you will need to visit the Armory and buy a Banjo for the next challenge.",
+        "avg_logprob": -0.212,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 16.54,
+        "end": 19.54,
+        "text": "Yes, I said Banjo! Get one!",
+        "avg_logprob": -0.212,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_9_brick_1/bastard_maya_9_1.m4a",
+    "key": "bastard_maya_9_1",
+    "seconds": 20.643,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "7c2db819c06187aee94cb1057472904d4437b6ab44077f8cb219f3da335146c9",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I gave you your old revolver and micro-SMG, and a very small handful of bullets to get by. No need to worry, though. You have a banjo! It's better than your frying pan, and even funnier to use on a zombie. Don't you agree? Oh, I don't care if you do. Just kill these zombies!",
+    "previous_vietnamese": "Ta trả lại khẩu súng lục cũ và Micro SMG cho ngươi, cùng một nhúm đạn ít ỏi. Đừng lo! Ngươi có cây đàn banjo không? Nó tốt hơn chảo rán và đập zombie còn buồn cười hơn. Đồng ý chứ? Mà thôi, ta chẳng quan tâm. Cứ giết lũ zombie đi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.4,
+        "end": 7.6,
+        "text": "I gave you your old revolver and micro-SMG, and a very small handful of bullets to get by.",
+        "avg_logprob": -0.1862,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 7.6,
+        "end": 16.2,
+        "text": "No need to worry, though. You have a banjo! It's better than your frying pan, and even funnier to use on a zombie. Don't you agree?",
+        "avg_logprob": -0.1862,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 16.2,
+        "end": 20.0,
+        "text": "Oh, I don't care if you do. Just kill these zombies!",
+        "avg_logprob": -0.1862,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_7_brick_1/bastard_maya_7_1.m4a",
+    "key": "bastard_maya_7_1",
+    "seconds": 21.548,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "1ad8f0e2f53d59622887ab074ac9770e92012b02ff809a5527d4d1c86583b135",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You're getting too comfortable, blind warrior. That's why I've given you a very limited supply of bullets for this challenge. You don't want to miss a single shot. You can always resort to your melee weapon, but you know, it's always safer to kill zombies from a distance. Let's begin.",
+    "previous_vietnamese": "Ngươi đang quá thoải mái đấy, chiến binh mù. Vì vậy, ta chỉ cho ngươi rất ít đạn ở thử thách này. Đừng bắn hụt viên nào. Dĩ nhiên ngươi vẫn có thể dùng vũ khí cận chiến, nhưng giết zombie từ xa luôn an toàn hơn. Bắt đầu nào!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.46,
+        "end": 19.46,
+        "text": "You're getting too comfortable, blind warrior. That's why I've given you a very limited supply of bullets for this challenge. You don't want to miss a single shot. You can always resort to your melee weapon, but you know, it's always safer to kill zombies from a distance. Let's begin.",
+        "avg_logprob": -0.1499,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_6_brick_1/bastard_tutorial_6_1.m4a",
+    "key": "bastard_tutorial_6_1",
+    "seconds": 21.804,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "51adee848202ee5d8e4cef078765b0f7d6efd0260748e9d26a48d49669f6bfbd",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You have shotguns. Massive damage at close range. Huge spread. Aim well and you can hit multiple zombies with one shot. That's especially useful when you're surrounded by zombies. Like you're going to be now. Good luck surviving!",
+    "previous_vietnamese": "Ta rất thích shotgun! Sát thương khổng lồ ở cự ly gần, đạn tỏa rất rộng. Nếu ngắm tốt, một phát có thể bắn trúng nhiều zombie. Đặc biệt hữu dụng khi bị bao vây, như tình huống ngươi sắp gặp đây! Chúc may mắn sống sót! Ha ha ha!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 2.0,
+        "end": 21.06,
+        "text": "You have shotguns. Massive damage at close range. Huge spread. Aim well and you can hit multiple zombies with one shot. That's especially useful when you're surrounded by zombies. Like you're going to be now. Good luck surviving!",
+        "avg_logprob": -0.2587,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_8_brick_5/bastard_urban_8_2.m4a",
+    "key": "bastard_urban_8_2",
+    "seconds": 22.802,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "7a924f4ed38d59934d1006550ab30f8eda0b303c20560eaef0dce46e1f4d61f8",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "From up here. You can relax now. This challenge is over. No, it's not! Here's another wave! I was joking. I was joking. Let's call it a day. You win this one, Blind Warrior.",
+    "previous_vietnamese": "Ừm, ta còn ngửi thấy mùi adrenaline từ tận trên này. Giờ ngươi được thư giãn rồi, thử thách kết thúc! À không, chưa đâu! Lại một đợt zombie nữa! Ha ha ha! Đùa thôi, đùa thôi! Ha ha! Hôm nay đến đây là đủ. Ngươi thắng màn này, chiến binh mù!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 5.23,
+        "end": 22.14,
+        "text": "From up here. You can relax now. This challenge is over. No, it's not! Here's another wave! I was joking. I was joking. Let's call it a day. You win this one, Blind Warrior.",
+        "avg_logprob": -0.2315,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_5_brick_1/bastard_zombie_whisperer_a.m4a",
+    "key": "bastard_zombie_whisperer_a",
+    "seconds": 23.382,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "9f7f1179d9321e8f2c47571d78a6f8487d376c7493e5c60054d13584f66e769a",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "It's a bit scary now. I have released a few whisperers. You may not notice them. They're very quiet until they're very close. Then they emit the most chilling scream you've ever heard, and you will know it's them. But it will probably be too late to react. Let's see how you survive this one.",
+    "previous_vietnamese": "Giờ hơi đáng sợ rồi đây. Ta vừa thả vài zombie Whisperer. Có thể ngươi chẳng nhận ra chúng đâu. Chúng rất im lặng cho đến khi tiến sát. Rồi chúng hét lên một tiếng lạnh sống lưng, và ngươi sẽ biết chúng đã đến. Nhưng lúc ấy có lẽ quá muộn để phản ứng. Để xem ngươi sống sót thế nào! Ha ha ha!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.55,
+        "end": 21.39,
+        "text": "It's a bit scary now. I have released a few whisperers. You may not notice them. They're very quiet until they're very close. Then they emit the most chilling scream you've ever heard, and you will know it's them. But it will probably be too late to react. Let's see how you survive this one.",
+        "avg_logprob": -0.1702,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_6_brick_4/bastard_tutorial_6_3.m4a",
+    "key": "bastard_tutorial_6_3",
+    "seconds": 25.054,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "c1de64a05beea50f791c3fb05e90794e5a25cb6e03adb24a12e345b4648ced63",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You made it! Why not celebrate with a little victory dance? Come on, dance for me. I'm serious. I say, spin around or I will kill you. Is that the best you could do? Okay, okay, maybe forget about dancing and stick to shooting.",
+    "previous_vietnamese": "Ngươi làm được rồi! Sao không ăn mừng bằng một điệu nhảy chiến thắng nhỉ? Nào, nhảy cho ta xem. Ta nói nghiêm túc đấy. Nhảy đi! Xoay vòng nào, không ta giết ngươi bây giờ! Chẳng đẹp chút nào. Thôi được, quên chuyện nhảy múa đi, cứ tập trung bắn súng!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.08,
+        "end": 23.86,
+        "text": "You made it! Why not celebrate with a little victory dance? Come on, dance for me. I'm serious. I say, spin around or I will kill you. Is that the best you could do? Okay, okay, maybe forget about dancing and stick to shooting.",
+        "avg_logprob": -0.2027,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_5_brick_1/bastard_tutorial_5_1.m4a",
+    "key": "bastard_tutorial_5_1",
+    "seconds": 26.053,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "07a584124747acabe6d1ca8eab3aeb026d27b3c2b9f2dc772491f66ab7065758",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Let's talk about money. I'll pay you for surviving my challenges. I'll pay you extra if you have excellent accuracy. And I'll pay you even more for being quick on the trigger. So, for example, if I release two unchained zombies against you, what will you do? I'll tell you what they will do. They will eat you alive if they get close enough.",
+    "previous_vietnamese": "Giờ nói về tiền nào. Ta trả công cho ngươi nếu sống sót qua thử thách. Ngắm bắn thật chính xác thì được thưởng thêm, bóp cò càng nhanh lại càng kiếm nhiều tiền. Ví dụ, nếu ta thả hai zombie không bị xích vào ngươi, ngươi sẽ làm gì? Ta biết chúng sẽ làm gì rồi: chúng sẽ ăn sống ngươi nếu đến đủ gần!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.94,
+        "end": 2.94,
+        "text": "Let's talk about money.",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 2.94,
+        "end": 6.2,
+        "text": "I'll pay you for surviving my challenges.",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 6.2,
+        "end": 9.2,
+        "text": "I'll pay you extra if you have excellent accuracy.",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 9.2,
+        "end": 13.2,
+        "text": "And I'll pay you even more for being quick on the trigger.",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 13.2,
+        "end": 19.2,
+        "text": "So, for example, if I release two unchained zombies against you, what will you do?",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 19.2,
+        "end": 24.2,
+        "text": "I'll tell you what they will do. They will eat you alive if they get close enough.",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_10_brick_1/bastard_zombie_shield_a.m4a",
+    "key": "bastard_zombie_shield_a",
+    "seconds": 26.633,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "d2348627973608a46418278a86a05177b8a0192c4983d53a914d07cf73d31714",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Here comes the Riot Gear Zombie. He will come at you like most zombies, but every time you shoot him, he will pull a massive metal shield in front of him, effectively turning him invincible for a few seconds. I suggest you focus your attention on any other zombie in the arena until you hear him coming towards you, dragging his shield. That means you can shoot him again!",
+    "previous_vietnamese": "Zombie chống bạo động đã xuất hiện! Nó tiến đến như zombie bình thường, nhưng mỗi lần trúng đạn, nó sẽ giương một tấm khiên kim loại khổng lồ và trở nên bất khả xâm phạm trong vài giây. Hãy bắn những zombie khác trước. Khi nghe tiếng nó kéo lê khiên và tiến tới, nghĩa là bạn có thể bắn nó tiếp!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.78,
+        "end": 25.78,
+        "text": "Here comes the Riot Gear Zombie. He will come at you like most zombies, but every time you shoot him, he will pull a massive metal shield in front of him, effectively turning him invincible for a few seconds. I suggest you focus your attention on any other zombie in the arena until you hear him coming towards you, dragging his shield. That means you can shoot him again!",
+        "avg_logprob": -0.112,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_1/bastard_tutorial_2_2.m4a",
+    "key": "bastard_tutorial_2_2",
+    "seconds": 27.028,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "66c5103c483970357778333709905465dece12ab17d5ce3a45e6135f8e000d9a",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You don't have unlimited ammunition during my challenges, so forget about spray-and-pray tactics. Now, shoot another zombie so I can watch you do it. I promise this time you'll have my undivided attention, Blind Warrior. Ready or not, here comes Ted the Undead! On! Sorry, wrong lever.",
+    "previous_vietnamese": "Ngươi không có đạn vô hạn trong thử thách của ta, nên đừng nghĩ đến chuyện nhắm mắt xả súng. Giờ bắn con zombie khác cho ta xem nào. Lần này ta hứa sẽ chăm chú quan sát ngươi, chiến binh mù! Sẵn sàng hay chưa, Ted xác sống đến đây! Ối, xin lỗi, lại nhầm cần gạt.",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.27,
+        "end": 7.77,
+        "text": "You don't have unlimited ammunition during my challenges, so forget about spray-and-pray tactics.",
+        "avg_logprob": -0.2075,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 7.77,
+        "end": 11.27,
+        "text": "Now, shoot another zombie so I can watch you do it.",
+        "avg_logprob": -0.2075,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 11.27,
+        "end": 16.27,
+        "text": "I promise this time you'll have my undivided attention, Blind Warrior.",
+        "avg_logprob": -0.2075,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 16.27,
+        "end": 20.27,
+        "text": "Ready or not, here comes Ted the Undead!",
+        "avg_logprob": -0.2075,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 20.27,
+        "end": 24.97,
+        "text": "On! Sorry, wrong lever.",
+        "avg_logprob": -0.2075,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_5_brick_2/bastard_tutorial_5_2.m4a",
+    "key": "bastard_tutorial_5_2",
+    "seconds": 27.051,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "0e1268839b16437ef3efce04e7a7cbc2c4fda4868dd4aaa4ef820f5c0a46dcef",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Easy, right? Survive, aim well, be fast. That's the way to make money in my challenges. But money isn't everything. We also have diamonds. You will find some items in the armory are priced in diamonds instead of coins. Diamonds are way scarcer than coins. Want some? Then shoot this little fellow I'll release over there.",
+    "previous_vietnamese": "Dễ mà, đúng không? Sống sót, ngắm chuẩn, bắn nhanh. Đó là cách kiếm tiền trong thử thách của ta. Nhưng tiền không phải tất cả. Chúng ta còn có kim cương! Một số vật phẩm trong Kho vũ khí bán bằng kim cương thay vì xu. Kim cương hiếm hơn xu rất nhiều. Muốn kiếm một ít không? Hãy bắn sinh vật nhỏ mà ta sắp thả đằng kia!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.56,
+        "end": 25.76,
+        "text": "Easy, right? Survive, aim well, be fast. That's the way to make money in my challenges. But money isn't everything. We also have diamonds. You will find some items in the armory are priced in diamonds instead of coins. Diamonds are way scarcer than coins. Want some? Then shoot this little fellow I'll release over there.",
+        "avg_logprob": -0.1191,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_7_brick_1/bastard_tutorial_7_1.m4a",
+    "key": "bastard_tutorial_7_1",
+    "seconds": 27.051,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "1abd8612a19efa8c64fba127455284d05ce9dcda4aae0bf8548233314f607ecc",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You've been fighting my classic zombies up until now. It's time to introduce you to one of my experiments. I injected an undead body with obnoxious amounts of explosive gas. I can't find a way to avoid the, uh, leaks. So I called it the Farty. You don't want him to get too close to you. And I'm not talking about the smell. Let me show you why. Try killing this Farty.",
+    "previous_vietnamese": "Đến giờ ngươi chỉ đánh những zombie cổ điển của ta. Giờ ta sẽ giới thiệu một thí nghiệm mới. Ta bơm vào xác sống một lượng khí dễ nổ khủng khiếp. Khổ nỗi ta không tìm được cách ngăn khí rò rỉ, nên đặt tên nó là Farty! Đừng để nó áp sát, mà không chỉ vì mùi đâu. Để ta cho ngươi thấy tại sao. Thử giết con Farty này!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.28,
+        "text": "You've been fighting my classic zombies up until now.",
+        "avg_logprob": -0.1714,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 3.28,
+        "end": 6.08,
+        "text": "It's time to introduce you to one of my experiments.",
+        "avg_logprob": -0.1714,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 6.08,
+        "end": 11.36,
+        "text": "I injected an undead body with obnoxious amounts of explosive gas.",
+        "avg_logprob": -0.1714,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 11.36,
+        "end": 15.2,
+        "text": "I can't find a way to avoid the, uh, leaks.",
+        "avg_logprob": -0.1714,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 15.2,
+        "end": 17.6,
+        "text": "So I called it the Farty.",
+        "avg_logprob": -0.1714,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 17.6,
+        "end": 19.52,
+        "text": "You don't want him to get too close to you.",
+        "avg_logprob": -0.1714,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 19.52,
+        "end": 21.44,
+        "text": "And I'm not talking about the smell.",
+        "avg_logprob": -0.1714,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 21.44,
+        "end": 22.88,
+        "text": "Let me show you why.",
+        "avg_logprob": -0.1714,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 22.88,
+        "end": 25.28,
+        "text": "Try killing this Farty.",
+        "avg_logprob": -0.1714,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_10_brick_4/bastard_city_end.m4a",
+    "key": "bastard_city_end",
+    "seconds": 27.098,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "17c3d0843d8f442babbf7ee57ad48fe6c0c0a5029cbf48ce780dd02304cd1c25",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Dr. Bastard. You have an aversion to dying like I've never seen before. It's time to explore your survival instincts somewhere more appropriate. Dr. Bastard. Congratulations, Blind Warrior. You've won a ticket to my Maya Ruins Arena. You may want to get a malaria shot.",
+    "previous_vietnamese": "Hoan hô! Quả là kỳ tích! Ta chưa từng thấy ai quyết tâm không chết như ngươi. Đến lúc thử bản năng sinh tồn của ngươi ở một nơi phù hợp hơn. Chúc mừng, chiến binh mù! Ngươi đã nhận vé vào đấu trường Tàn tích Maya của ta. Nhớ tiêm phòng sốt rét đấy!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 6.26,
+        "end": 16.35,
+        "text": "Dr. Bastard. You have an aversion to dying like I've never seen before. It's time to explore your survival instincts somewhere more appropriate.",
+        "avg_logprob": -0.2387,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 16.35,
+        "end": 26.38,
+        "text": "Dr. Bastard. Congratulations, Blind Warrior. You've won a ticket to my Maya Ruins Arena. You may want to get a malaria shot.",
+        "avg_logprob": -0.2387,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_2/bastard_tutorial_1_4.m4a",
+    "key": "bastard_tutorial_1_4",
+    "seconds": 27.283,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "df6ed464e5c824f12741638eb700d0538dd9bce109255cb02282da4acd2febe9",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I wasn't looking. No matter, I'll release another zombie right now. Wrong lever. Not this one, maybe that one. Reload your weapon while I find the right lever in this stupid control board.",
+    "previous_vietnamese": "Tuyệt vời! Chắc thế. Ta có nhìn đâu. Không sao. Giờ ta sẽ thả một zombie khác. Ối, gạt nhầm cần rồi. Thử cái này. Hay cái kia? Không phải! Thôi thế này đi, ngươi nạp đạn trong lúc ta tìm đúng cần gạt trên bảng điều khiển ngu ngốc này!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 4.72,
+        "end": 25.33,
+        "text": "I wasn't looking. No matter, I'll release another zombie right now. Wrong lever. Not this one, maybe that one. Reload your weapon while I find the right lever in this stupid control board.",
+        "avg_logprob": -0.1587,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_5_brick_2/bastard_urban_5_2.m4a",
+    "key": "bastard_urban_5_2",
+    "seconds": 27.632,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "70ac917f8a58610fd684f8cc425466414b552c8fa1b3b2fd563218b44e5f5b6b",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Poor Snufflehogs. Oh, wait. I have a whole army of these in a cage down in my lab. As for you, Blind Warrior, you need to get a hunting rifle for your next challenges. Go buy one in the armory. If you're short on coins, play a few endless mode games, or hunt some stars you missed in the previous challenges.",
+    "previous_vietnamese": "Tội nghiệp đám Snufflehog! À mà khoan, ta vẫn còn cả một đội quân nhốt dưới phòng thí nghiệm! Ha ha ha! Còn ngươi, chiến binh mù, hãy mua một khẩu súng trường săn cho các thử thách sắp tới. Đến Kho vũ khí mua đi. Nếu thiếu xu, hãy chơi vài ván Vô tận hoặc săn những ngôi sao ngươi bỏ lỡ ở thử thách trước!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 3.12,
+        "end": 12.4,
+        "text": "Poor Snufflehogs. Oh, wait. I have a whole army of these in a cage down in my lab.",
+        "avg_logprob": -0.2154,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 12.4,
+        "end": 18.08,
+        "text": "As for you, Blind Warrior, you need to get a hunting rifle for your next challenges.",
+        "avg_logprob": -0.2154,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 18.08,
+        "end": 23.76,
+        "text": "Go buy one in the armory. If you're short on coins, play a few endless mode games,",
+        "avg_logprob": -0.2154,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 23.76,
+        "end": 27.12,
+        "text": "or hunt some stars you missed in the previous challenges.",
+        "avg_logprob": -0.2154,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_5_brick_3/bastard_tutorial_5_3.m4a",
+    "key": "bastard_tutorial_5_3",
+    "seconds": 28.05,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "db646485f914b1dfb5f5123ed5b739a93e948f2dc79640469ff52d4bd0aa384d",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Ta-da! You just collected your first diamond. These little parasites like shiny things instead of human flesh. They'll never attack you, but if you don't shoot them fast, they'll escape. It's harder than you think. Let's put you through a practical and deathly example. Try to hit the zombies and get the diamond. Or die trying.",
+    "previous_vietnamese": "Ta đa! Ngươi vừa nhặt viên kim cương đầu tiên! Những con ký sinh nhỏ này thích đồ lấp lánh hơn thịt người. Chúng không tấn công, nhưng nếu ngươi không bắn nhanh thì chúng sẽ chạy mất. Khó hơn ngươi tưởng đấy! Thử một tình huống thực tế và chết người nào. Hãy bắn zombie rồi lấy viên kim cương. Hoặc chết khi đang cố!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 26.48,
+        "text": "Ta-da! You just collected your first diamond. These little parasites like shiny things instead of human flesh. They'll never attack you, but if you don't shoot them fast, they'll escape. It's harder than you think. Let's put you through a practical and deathly example. Try to hit the zombies and get the diamond. Or die trying.",
+        "avg_logprob": -0.1219,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_1/bastard_tutorial_3_2.m4a",
+    "key": "bastard_tutorial_3_2",
+    "seconds": 28.444,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "075272fae536cccac57dfbc3d79ae5cb1bda18d20d46be4bd2c5f989d4dae084",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Don't you love the ring that pan makes when it hits a zombie's skull? Ah, but how do you know when a zombie is close enough to actually hit him with it? Fair question, Blind Warrior. The answer is in your heart. Let's try it now. I'll release Bob. You've met him before. Show me your most brutal side by beating him down with your frying pan.",
+    "previous_vietnamese": "Ngươi có thích tiếng chảo kêu khi đập vào sọ zombie không? Nhưng làm sao biết zombie đã đủ gần để vung trúng? Câu hỏi hay đấy, chiến binh mù. Đáp án nằm ở trái tim ngươi. Thử ngay nhé! Ta sẽ thả Bob, ngươi đã gặp nó rồi. Hãy cho ta thấy mặt tàn bạo nhất của ngươi bằng cách đập nó với chiếc chảo!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.69,
+        "end": 5.69,
+        "text": "Don't you love the ring that pan makes when it hits a zombie's skull?",
+        "avg_logprob": -0.1019,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 5.69,
+        "end": 10.69,
+        "text": "Ah, but how do you know when a zombie is close enough to actually hit him with it?",
+        "avg_logprob": -0.1019,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 10.69,
+        "end": 16.69,
+        "text": "Fair question, Blind Warrior. The answer is in your heart.",
+        "avg_logprob": -0.1019,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 16.69,
+        "end": 20.69,
+        "text": "Let's try it now. I'll release Bob. You've met him before.",
+        "avg_logprob": -0.1019,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 20.69,
+        "end": 26.69,
+        "text": "Show me your most brutal side by beating him down with your frying pan.",
+        "avg_logprob": -0.1019,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_8_brick_1/bastard_tutorial_8_1.m4a",
+    "key": "bastard_tutorial_8_1",
+    "seconds": 28.561,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "36396066d433fd45d4ab4364ba65e0785d7c8e7e80bfe8f9447083594471f75c",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "It's time to think about upgrading your weapons. It's a solid investment if you're interested in living. So, let's do a little experiment. I'll release so many zombies you'll probably die. Don't worry, I am a doctor. I can revive you. My point is, if you die, go back to the armory and upgrade your weapons before coming back to try again. Good luck!",
+    "previous_vietnamese": "Đã đến lúc nghĩ đến nâng cấp vũ khí. Nếu ngươi muốn sống, đây là khoản đầu tư rất đáng giá. Nào, làm thí nghiệm nhỏ nhé. Ta sẽ thả nhiều zombie đến mức ngươi có lẽ sẽ chết. Đừng lo, ta là bác sĩ mà. Ta hồi sinh ngươi được. Ý ta là, nếu chết, hãy trở lại Kho vũ khí nâng cấp súng rồi mới chơi thử lần nữa. Chúc may mắn!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.27,
+        "end": 7.27,
+        "text": "It's time to think about upgrading your weapons. It's a solid investment if you're interested in living.",
+        "avg_logprob": -0.1184,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 7.27,
+        "end": 18.27,
+        "text": "So, let's do a little experiment. I'll release so many zombies you'll probably die. Don't worry, I am a doctor. I can revive you.",
+        "avg_logprob": -0.1184,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 18.27,
+        "end": 27.34,
+        "text": "My point is, if you die, go back to the armory and upgrade your weapons before coming back to try again. Good luck!",
+        "avg_logprob": -0.1184,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_1/bastard_tutorial_3_1.m4a",
+    "key": "bastard_tutorial_3_1",
+    "seconds": 29.304,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "6baf60a39c992a5b59cfd0f78d01bfcdc39d60b1993f7f1d919555f7eaf4f7ad",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Imagine you run out of bullets during one of my challenges. Or worse, having enough bullets but being unable to shoot in the middle of reloading. Or even worse, having me steal all your bullets before you realise, like I just did. That's why all zombie fighters carry a melee weapon. You know, something they can just swing around. I provided you with one. It's a carbon steel wok pan. Try it. Swing it around.",
+    "previous_vietnamese": "Hãy tưởng tượng ngươi hết đạn giữa thử thách. Hoặc tệ hơn, còn đạn nhưng đang nạp nên không bắn được. Hoặc tệ hơn nữa, ta ăn cắp hết đạn của ngươi mà ngươi không hay, như ta vừa làm đây! Bởi vậy, chiến binh diệt zombie nào cũng mang vũ khí cận chiến, thứ có thể vung lên ngay lập tức. Ta đã chuẩn bị một món cho ngươi: chiếc chảo thép carbon. Thử đi! Vung nó lên nào!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 28.63,
+        "text": "Imagine you run out of bullets during one of my challenges. Or worse, having enough bullets but being unable to shoot in the middle of reloading. Or even worse, having me steal all your bullets before you realise, like I just did. That's why all zombie fighters carry a melee weapon. You know, something they can just swing around. I provided you with one. It's a carbon steel wok pan. Try it. Swing it around.",
+        "avg_logprob": -0.1035,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/bastard_tutorial_1_2.m4a",
+    "key": "bastard_tutorial_1_2",
+    "seconds": 29.396,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "4a436db315f9e3ceb567553f560892bc4b8bd95f937a7028b8a94620eec13887",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Okay, that's enough. Stop! Now, let's see if you have the guts to point your gun at a zombie and shoot it down before he eats you alive. Because that's what's gonna happen if one of my zombies reaches you. Listen, I'm gonna release Bob the Zombie. Don't worry, he can't attack you. He's chained to the wall. I want you to take your time to aim and, you know, shoot him!",
+    "previous_vietnamese": "Được rồi, đủ rồi. Dừng lại! Giờ xem ngươi có đủ gan chĩa súng vào zombie và bắn hạ nó trước khi bị ăn sống không. Vì đó chính là chuyện sẽ xảy ra nếu zombie của ta đến sát ngươi. Ta sẽ thả Bob, một con zombie. Đừng lo, nó không tấn công được đâu, vì đã bị xích vào tường. Cứ thong thả ngắm, rồi bắn nó!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 28.02,
+        "text": "Okay, that's enough. Stop! Now, let's see if you have the guts to point your gun at a zombie and shoot it down before he eats you alive. Because that's what's gonna happen if one of my zombies reaches you. Listen, I'm gonna release Bob the Zombie. Don't worry, he can't attack you. He's chained to the wall. I want you to take your time to aim and, you know, shoot him!",
+        "avg_logprob": -0.1154,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_8_brick_1/bastard_zombie_berserk_a.m4a",
+    "key": "bastard_zombie_berserk_a",
+    "seconds": 29.884,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "680e9249a39dbea143b6e3804d41974863df45a6f014ba923d6e515a55d86ca4",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "It's time to throw something new at you. Meet the Berserk. He's blind, like you, so he tends to walk slowly, sniffing around. Stay still, and it will go away. Or you can shoot him if you want to make him angry, and he'll come after you. It's next to impossible to kill one of these guys, I warn you. And now that I've introduced you to him, let me bring one down to the arena and introduce him to you.",
+    "previous_vietnamese": "Đã đến lúc cho ngươi gặp thứ mới. Đây là Berserk. Nó cũng mù như ngươi, nên thường chậm rãi đi quanh đánh hơi. Cứ để yên, nó sẽ tự bỏ đi. Hoặc ngươi cứ bắn cho nó nổi điên rồi đuổi theo ngươi. Loại này gần như không thể giết nổi, ta cảnh báo đấy! Giờ ta đã giới thiệu xong, để ta thả một con xuống đấu trường cho hai người làm quen!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.62,
+        "end": 11.66,
+        "text": "It's time to throw something new at you. Meet the Berserk. He's blind, like you, so he tends to walk slowly, sniffing around.",
+        "avg_logprob": -0.1013,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 11.66,
+        "end": 18.66,
+        "text": "Stay still, and it will go away. Or you can shoot him if you want to make him angry, and he'll come after you.",
+        "avg_logprob": -0.1013,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 18.66,
+        "end": 22.88,
+        "text": "It's next to impossible to kill one of these guys, I warn you.",
+        "avg_logprob": -0.1013,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 22.88,
+        "end": 29.88,
+        "text": "And now that I've introduced you to him, let me bring one down to the arena and introduce him to you.",
+        "avg_logprob": -0.1013,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_10_brick_1/bastard_tutorial_10_1.m4a",
+    "key": "bastard_tutorial_10_1",
+    "seconds": 32.067,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "294795ab49aa2b67bbbc40f434324d4db45383bc8e491463139bbd87023d6741",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Welcome to your final test. You seem to have a nasty habit of surviving, blind warrior, but you've only fought my weakest zombie experiments so far. They just moan and come at you walking slowly in a straight line. Well, let's spice things up a bit with the chainsaw zombie, the crowd's favourite. This one will approach you, circling around you and running a little bit faster than his weaker friends. Now listen carefully, and survive!",
+    "previous_vietnamese": "Chào mừng đến bài kiểm tra cuối. Có vẻ ngươi có thói quen sống sót rất khó chịu, chiến binh mù ạ. Nhưng từ trước tới nay, ngươi chỉ đánh với những thí nghiệm zombie yếu nhất của ta. Chúng rên rỉ rồi chậm chạp đi thẳng về phía ngươi. Giờ ta muốn thêm chút gay cấn bằng zombie cưa máy, loại khán giả yêu thích nhất! Nó sẽ vừa tiến tới vừa chạy vòng quanh, nhanh hơn những người bạn yếu ớt một chút. Hãy lắng nghe thật kỹ và sống sót!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 27.8,
+        "text": "Welcome to your final test. You seem to have a nasty habit of surviving, blind warrior, but you've only fought my weakest zombie experiments so far. They just moan and come at you walking slowly in a straight line. Well, let's spice things up a bit with the chainsaw zombie, the crowd's favourite. This one will approach you, circling around you and running a little bit faster than his weaker friends.",
+        "avg_logprob": -0.1447,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 27.8,
+        "end": 30.8,
+        "text": "Now listen carefully, and survive!",
+        "avg_logprob": -0.5314,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_4_brick_1/bastard_tutorial_4_1.m4a",
+    "key": "bastard_tutorial_4_1",
+    "seconds": 32.322,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "67085889445952daed3532038bc5629b9b4c0e7b06a71a83e84e1091a0c81f0b",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "We all feel we can have some help every now and then. That's why we have power ups. Sometimes I call in a helicopter to drop a very heavy slot machine in the arena. It pays out every time if you feed it with bullets instead of coins. Shoot it quick though, or it will turn off and yield nothing. Let's try it, eh? I'll release Bob, Jim and Ted at once. Then I'll call in a chopper, shoot the slot machine when it drops. Thank you.",
+    "previous_vietnamese": "Ai mà chẳng có lúc cần giúp đỡ, đúng không? Vì thế mới có vật phẩm hỗ trợ. Thỉnh thoảng ta gọi trực thăng thả xuống một chiếc máy quay thưởng rất nặng. Nó sẽ luôn cho phần thưởng nếu ngươi cho nó ăn đạn thay vì xu. Nhưng phải bắn nhanh, nếu không máy sẽ tắt và chẳng cho gì cả. Thử nào! Ta sẽ thả Bob, Jim và Ted cùng lúc. Trực thăng đang đến đấy, nhớ bắn máy quay thưởng khi nó rơi xuống!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.21,
+        "end": 30.67,
+        "text": "We all feel we can have some help every now and then. That's why we have power ups. Sometimes I call in a helicopter to drop a very heavy slot machine in the arena. It pays out every time if you feed it with bullets instead of coins. Shoot it quick though, or it will turn off and yield nothing. Let's try it, eh? I'll release Bob, Jim and Ted at once. Then I'll call in a chopper, shoot the slot machine when it drops.",
+        "avg_logprob": -0.1097,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 30.69,
+        "end": 60.67,
+        "text": "Thank you.",
+        "avg_logprob": -0.6164,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_3_brick_1/bastard_zombie_clown_a.m4a",
+    "key": "bastard_zombie_clown_a",
+    "seconds": 32.647,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "e6656521935f297e98f7bb8fdcce357e405de65c87ade86e62cf63b40e5310cf",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "And now, for some classic entertainment. I'll release the clown! What? I'm serious! They have a wig, make-up, squishy shoes, and a pair of rusty unsharpened knives. They'll cut you into little pieces if they get you, same as any other of my zombies! But they like to tease the crowd and move in wide circles around you, so go ahead, amuse my crowd, and be amusing! by the clown.",
+    "previous_vietnamese": "Giờ là tiết mục giải trí cổ điển: ta sẽ thả zombie hề! Gì cơ? Ta nghiêm túc đấy! Chúng có tóc giả, mặt hóa trang, giày mềm oặt và một cặp dao rỉ sét chưa mài. Nếu bắt được ngươi, chúng vẫn băm ngươi thành từng mảnh như lũ zombie khác. Nhưng chúng thích trêu chọc khán giả và chạy vòng rộng quanh ngươi. Nào, hãy thưởng thức tiết mục của những chú hề đi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 29.98,
+        "text": "And now, for some classic entertainment. I'll release the clown! What? I'm serious! They have a wig, make-up, squishy shoes, and a pair of rusty unsharpened knives. They'll cut you into little pieces if they get you, same as any other of my zombies! But they like to tease the crowd and move in wide circles around you, so go ahead, amuse my crowd, and be amusing!",
+        "avg_logprob": -0.1939,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 30.0,
+        "end": 31.56,
+        "text": "by the clown.",
+        "avg_logprob": -0.3688,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_2/bastard_tutorial_3_3.m4a",
+    "key": "bastard_tutorial_3_3",
+    "seconds": 33.553,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "0d6b4fde6c6b6918e535da799b22af44c187fb81bebd49d4aa420e9b222de530",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "That was hilarious, Blind Warrior. I'm starting to hate you. Did you hear your own heartbeat? I'll release Jim now, so close you'll smell his refreshing zombie breath. My favourite fragrance. You'll notice how much faster your heart beats when a zombie is right next to you, so kill it quick. I wouldn't want you to have a heart attack. Ha, ha, ha.",
+    "previous_vietnamese": "Buồn cười quá, chiến binh mù! Ta bắt đầu ghét ngươi rồi đấy. Ngươi nghe thấy tim mình đập không? Giờ ta sẽ thả Jim thật gần, đủ để ngươi ngửi thấy hơi thở zombie thơm mát của nó, mùi hương ta thích nhất! Ngươi sẽ thấy tim đập nhanh hơn nhiều khi zombie ở ngay bên cạnh. Vì vậy hãy giết nó thật nhanh. Ta không muốn ngươi lên cơn đau tim đâu!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.01,
+        "end": 21.62,
+        "text": "That was hilarious, Blind Warrior. I'm starting to hate you. Did you hear your own heartbeat? I'll release Jim now, so close you'll smell his refreshing zombie breath. My favourite fragrance.",
+        "avg_logprob": -0.1403,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 21.62,
+        "end": 30.65,
+        "text": "You'll notice how much faster your heart beats when a zombie is right next to you, so kill it quick. I wouldn't want you to have a heart attack.",
+        "avg_logprob": -0.1403,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 31.65,
+        "end": 32.03,
+        "text": "Ha, ha, ha.",
+        "avg_logprob": -0.8207,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_2/bastard_tutorial_1_6.m4a",
+    "key": "bastard_tutorial_1_6",
+    "seconds": 33.692,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "ff6952d3ef51bf9fd9db313944eb879bb2c9a4c85708c0aba9ef8b1b700d0820",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I feel so light. Forgot about you and Jim. You killed him already. I really wanted to see that. Anyway, you passed your first test. Congratulations. I would pat you on the back, but I feel way safer up in this bulletproof control room. See you in the next challenge.",
+    "previous_vietnamese": "Phù! Cảm giác thật tuyệt. Ồ! Ta quên mất ngươi và Jim. Ngươi giết nó rồi à? Tiếc thật, ta rất muốn xem. Dù sao ngươi đã vượt bài kiểm tra đầu tiên. Chúc mừng! Ta sẽ không vỗ lưng khen ngươi đâu, vì ta thấy an toàn hơn nhiều trong phòng điều khiển chống đạn này. Hẹn gặp ở thử thách tiếp theo!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 10.83,
+        "end": 31.7,
+        "text": "I feel so light. Forgot about you and Jim. You killed him already. I really wanted to see that. Anyway, you passed your first test. Congratulations. I would pat you on the back, but I feel way safer up in this bulletproof control room. See you in the next challenge.",
+        "avg_logprob": -0.219,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/urban_1_brick_1/bastard_city_intro.m4a",
+    "key": "bastard_city_intro",
+    "seconds": 33.808,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "9566447372904468bded34c41fdb6f07fd5847d93093d70fa503ed3df2ec1f8c",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Welcome to another edition of Dr. Bastard Zombie Arena. Tonight's show is taking place on a wide city crossroad lit by a burning pile of cars. Members of the audience, I present to you the Blind Warrior. We have no audience watching. This is an abandoned city after all. You have to earn the right to be cheered for, Blind Warrior. Now, try to survive my killer welcome party.",
+    "previous_vietnamese": "Chào mừng đến một số mới của Đấu trường zombie, do tiến sĩ Bastard tổ chức! Chương trình tối nay diễn ra ở ngã tư rộng lớn của thành phố, rực sáng nhờ đống xe đang cháy. Kính thưa quý khán giả, xin giới thiệu Chiến binh mù! À khoan, làm gì có khán giả nào ở đây! Ha ha ha! Đây là thành phố bị bỏ hoang mà. Ngươi phải tự giành lấy quyền được mọi người reo hò, chiến binh mù ạ. Giờ hãy sống sót qua bữa tiệc chào mừng chết người của ta!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.72,
+        "end": 27.71,
+        "text": "Welcome to another edition of Dr. Bastard Zombie Arena. Tonight's show is taking place on a wide city crossroad lit by a burning pile of cars. Members of the audience, I present to you the Blind Warrior. We have no audience watching. This is an abandoned city after all. You have to earn the right to be cheered for, Blind Warrior.",
+        "avg_logprob": -0.1328,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 27.71,
+        "end": 32.51,
+        "text": "Now, try to survive my killer welcome party.",
+        "avg_logprob": -0.2327,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_10_brick_5/bastard_tutorial_10_4.m4a",
+    "key": "bastard_tutorial_10_4",
+    "seconds": 37.059,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "975a486d5903e461b82a4c95ed9105a1ad55a918c571233b90b8c99e4e1cd3ac",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "You survived the last test. You may actually be the Staff of Legends. That means you're hired! Congratulations, Blind Warrior! Let's party! Party's over. You're not ready for my Zombie Arena yet. I have to build you up. I'll send you to my smaller arenas first to let your legend grow and spread while you survive real challenges. Once you're a real veteran, I'll let you in my infamous zombie arena, where only the best zombie fighters are allowed.",
+    "previous_vietnamese": "Ha ha! Ngươi sống sót qua bài kiểm tra cuối! Có lẽ ngươi thật sự là chiến binh huyền thoại. Vậy là ngươi được tuyển! Chúc mừng, chiến binh mù! Mở tiệc nào! Được rồi, hết tiệc. Ngươi vẫn chưa sẵn sàng bước vào đấu trường zombie lớn của ta. Ta phải rèn luyện ngươi thêm. Trước hết ta sẽ đưa ngươi tới những đấu trường nhỏ, cho danh tiếng của ngươi lan rộng khi vượt qua những thử thách thực sự. Khi đã thành cựu binh, ta sẽ cho ngươi vào đấu trường zombie riêng, nơi chỉ những chiến binh giỏi nhất được phép góp mặt!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.55,
+        "end": 8.05,
+        "text": "You survived the last test. You may actually be the Staff of Legends.",
+        "avg_logprob": -0.1584,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 8.05,
+        "end": 14.05,
+        "text": "That means you're hired! Congratulations, Blind Warrior! Let's party!",
+        "avg_logprob": -0.1584,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 14.05,
+        "end": 20.81,
+        "text": "Party's over. You're not ready for my Zombie Arena yet. I have to build you up.",
+        "avg_logprob": -0.1584,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 20.81,
+        "end": 27.81,
+        "text": "I'll send you to my smaller arenas first to let your legend grow and spread while you survive real challenges.",
+        "avg_logprob": -0.1584,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 27.81,
+        "end": 35.7,
+        "text": "Once you're a real veteran, I'll let you in my infamous zombie arena, where only the best zombie fighters are allowed.",
+        "avg_logprob": -0.2073,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_10_brick_4/bastard_maya_10_4.m4a",
+    "key": "bastard_maya_10_4",
+    "seconds": 41.053,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "a9eb16dcc381ef4ccebea5ee7116fef6911632480cd498bcad5dd0d1b6013a3e",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "I was sure it was humanly impossible to survive that last bit. How did you do it? You cannot be that good, can you? Well, we'll find out soon, in the next arena. You'll have to wait a bit though. I need to take care of a few final arrangements. Bribing some people, hiring underpaid construction workers, digging up graves to get more dead bodies to reanimate. Why don't you go play Endless Mode in the meantime? You'll earn money, diamonds, and best of all, you can choose your own weapons loadout. Farewell, blind warrior.",
+    "previous_vietnamese": "Cái gì?! Ta cứ tưởng chẳng con người nào sống sót nổi đoạn vừa rồi! Ngươi làm thế nào? Không thể giỏi đến mức đó được! Thôi được, ta sẽ sớm kiểm chứng ở đấu trường tiếp theo. Ngươi sẽ phải đợi một chút. Ta còn phải thu xếp vài việc: đút lót vài người, thuê công nhân rẻ mạt, đào thêm mộ để lấy xác hồi sinh. Trong lúc đó, sao không thử chế độ Vô tận? Ở đó ngươi có thể kiếm xu, kim cương và nhất là tự chọn bộ vũ khí. Tạm biệt, chiến binh mù!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 1.49,
+        "end": 9.89,
+        "text": "I was sure it was humanly impossible to survive that last bit. How did you do it? You cannot be that good, can you?",
+        "avg_logprob": -0.162,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 9.89,
+        "end": 18.93,
+        "text": "Well, we'll find out soon, in the next arena. You'll have to wait a bit though. I need to take care of a few final arrangements.",
+        "avg_logprob": -0.162,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 18.93,
+        "end": 26.45,
+        "text": "Bribing some people, hiring underpaid construction workers, digging up graves to get more dead bodies to reanimate.",
+        "avg_logprob": -0.162,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 26.45,
+        "end": 29.77,
+        "text": "Why don't you go play Endless Mode in the meantime?",
+        "avg_logprob": -0.2086,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 30.67,
+        "end": 36.67,
+        "text": "You'll earn money, diamonds, and best of all, you can choose your own weapons loadout.",
+        "avg_logprob": -0.2086,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 37.56,
+        "end": 39.18,
+        "text": "Farewell, blind warrior.",
+        "avg_logprob": -0.2086,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/maya_1_brick_1/bastard_ruins_intro.m4a",
+    "key": "bastard_ruins_intro",
+    "seconds": 41.564,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "e27aedb27bc357cfe5e40408d1065d9202e2f05ffe735baacd2979219d5d207f",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Welcome to my most exotic arena. Can you hear that beautiful waterfall nearby? I love it here in the jungle. It reminds me we're all just beasts trying to eat each other. Members of the audience, I'm proud to present to you the Blind Warrior. Oh, don't expect them to cheer for you, blind warrior. The people around here cut out their tongues in ritual sacrifices. And they won't clap, because I cut their hands off. Now let's see how you manage in the Maya Ruins Arena.",
+    "previous_vietnamese": "Chào mừng đến đấu trường kỳ lạ nhất của ta! Nghe thác nước tuyệt đẹp kia không? Ta rất thích khu rừng này. Nó nhắc ta nhớ rằng tất cả chỉ là những con thú đang tìm cách ăn thịt lẫn nhau. Thưa quý khán giả, ta hân hạnh giới thiệu Chiến binh mù! Đừng mong họ reo hò, chiến binh mù ạ. Người ở đây đã cắt lưỡi trong các nghi lễ hiến tế. Còn vỗ tay thì không thể, vì ta đã cắt hết tay họ rồi. Nào, xem ngươi xoay xở thế nào tại Tàn tích Maya!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.24,
+        "end": 24.06,
+        "text": "Welcome to my most exotic arena. Can you hear that beautiful waterfall nearby? I love it here in the jungle. It reminds me we're all just beasts trying to eat each other. Members of the audience, I'm proud to present to you the Blind Warrior.",
+        "avg_logprob": -0.1311,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 24.06,
+        "end": 27.35,
+        "text": "Oh, don't expect them to cheer for you, blind warrior.",
+        "avg_logprob": -0.1574,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 27.81,
+        "end": 31.23,
+        "text": "The people around here cut out their tongues in ritual sacrifices.",
+        "avg_logprob": -0.1574,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 31.95,
+        "end": 35.07,
+        "text": "And they won't clap, because I cut their hands off.",
+        "avg_logprob": -0.1574,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 36.51,
+        "end": 40.25,
+        "text": "Now let's see how you manage in the Maya Ruins Arena.",
+        "avg_logprob": -0.1574,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_5_brick_4/bastard_tutorial_5_4.m4a",
+    "key": "bastard_tutorial_5_4",
+    "seconds": 41.564,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "e7715eb8c6aaf3eb3c99334a614aa82dcf27db56994eae172eefd8d4fb8e0438",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "One last thing you need to know about diamonds. I only release them in Endless Mode, which I'll grant you access to right after this challenge. And now that you understand how to become rich, let me ask you a question. All this money, all these diamonds, what do you want them for? Well, duh! To buy more weapons! Or upgrade the ones you have. In fact, why not go to our official armory after this challenge? Go and buy a new weapon. You will need the sawn-off shotgun for my next challenges. Come back when you have it. Or don't come back at all!",
+    "previous_vietnamese": "Còn một điều cuối về kim cương. Ta chỉ thả chúng trong chế độ Vô tận, nơi ngươi sẽ được vào ngay sau thử thách này. Giờ ngươi đã hiểu cách làm giàu, ta hỏi nhé: Ngươi định làm gì với đống xu và kim cương ấy? Tất nhiên là mua thêm vũ khí! Hoặc nâng cấp những món đang có. Thế nên khi vượt xong thử thách, hãy đến Kho vũ khí chính thức của chúng ta và mua một khẩu súng mới. Ngươi cần súng shotgun nòng ngắn cho các thử thách tiếp theo. Mua xong thì quay lại, không thì đừng trở lại nữa!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.34,
+        "end": 10.34,
+        "text": "One last thing you need to know about diamonds. I only release them in Endless Mode, which I'll grant you access to right after this challenge.",
+        "avg_logprob": -0.1548,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 10.34,
+        "end": 20.22,
+        "text": "And now that you understand how to become rich, let me ask you a question. All this money, all these diamonds, what do you want them for?",
+        "avg_logprob": -0.1548,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 20.22,
+        "end": 30.22,
+        "text": "Well, duh! To buy more weapons! Or upgrade the ones you have. In fact, why not go to our official armory after this challenge?",
+        "avg_logprob": -0.1548,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 30.22,
+        "end": 31.8,
+        "text": "Go and buy a new weapon.",
+        "avg_logprob": -0.2056,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 32.48,
+        "end": 35.36,
+        "text": "You will need the sawn-off shotgun for my next challenges.",
+        "avg_logprob": -0.2056,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 35.98,
+        "end": 37.36,
+        "text": "Come back when you have it.",
+        "avg_logprob": -0.2056,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 37.82,
+        "end": 39.68,
+        "text": "Or don't come back at all!",
+        "avg_logprob": -0.2056,
+        "no_speech_prob": 0.0
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/bastard_tutorial_1_1.m4a",
+    "key": "bastard_tutorial_1_1",
+    "seconds": 53.986,
+    "group": "challenge_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "audio_sha256": "3eee4a7eba3e4ff62569e0b113af4a4ae32f29767c28b443551ec7a1cce94016",
+    "model": "large-v3-turbo / CPU int8 / beam 5 / VAD",
+    "english_asr": "Did I scare you? Welcome to Dr. Bastard's Zombie Arena audition. I am Dr. Bastard and you are the Blind Warrior. Really? Oh, this will be fun! Alright, Blind Warrior, I need a new hero for my show. A brave champion for the audience to love and applaud. You could be that champion if your fighting skills are as amazing as you claim they are. What better place to test them than in this crumbling Roman theatre? We even have that pyre over there to keep you warm. Or to burn your corpse if things don't work out. So, let's do some tests to see what you're made of, eh? Go on, turn around, stretch your neck, twist your waist.",
+    "previous_vietnamese": "Hù! Ha ha! Ta làm ngươi sợ à? Chào mừng buổi tuyển chọn cho Đấu trường zombie của tiến sĩ Bastard! Ta là tiến sĩ Bastard, còn ngươi là Chiến binh mù. Thật sao? Vui đây! Nghe này, chiến binh mù, ta cần một anh hùng mới cho chương trình của mình. Một nhà vô địch dũng cảm để khán giả yêu mến và hoan hô. Ngươi có thể là người đó, nếu tài chiến đấu đúng như lời ngươi khoe. Còn nơi nào tốt hơn nhà hát La Mã đổ nát này để thử sức? Ta còn có giàn thiêu đằng kia để sưởi ấm cho ngươi. Hoặc thiêu xác ngươi nếu mọi chuyện không suôn sẻ. Nào, làm vài bài kiểm tra xem ngươi có bản lĩnh không! Xoay người, khởi động cổ, vặn mình nào!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 2.06,
+        "end": 33.02,
+        "text": "Did I scare you? Welcome to Dr. Bastard's Zombie Arena audition. I am Dr. Bastard and you are the Blind Warrior. Really? Oh, this will be fun! Alright, Blind Warrior, I need a new hero for my show. A brave champion for the audience to love and applaud. You could be that champion if your fighting skills are as amazing as you claim they are.",
+        "avg_logprob": -0.1656,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 33.02,
+        "end": 37.34,
+        "text": "What better place to test them than in this crumbling Roman theatre?",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 38.06,
+        "end": 41.0,
+        "text": "We even have that pyre over there to keep you warm.",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 41.5,
+        "end": 44.1,
+        "text": "Or to burn your corpse if things don't work out.",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 44.92,
+        "end": 47.58,
+        "text": "So, let's do some tests to see what you're made of, eh?",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      },
+      {
+        "start": 48.1,
+        "end": 51.62,
+        "text": "Go on, turn around, stretch your neck, twist your waist.",
+        "avg_logprob": -0.1283,
+        "no_speech_prob": 0.0
+      }
+    ]
+  }
+]

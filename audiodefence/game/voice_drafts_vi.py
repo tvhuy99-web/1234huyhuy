@@ -3,6 +3,8 @@
 Drafts were translated from machine-recognized English audio. Accuracy of the
 underlying English transcripts requires listening review. These captions are
 not approved final dialogue. Only speech recordings should be mapped here.
+All 114 entries were compared with two fresh ASR passes on 2026-10-08;
+per-file evidence and unresolved clips are in analysis/voice_asr_review_20261008.json.
 """
 from __future__ import annotations
 
@@ -30,21 +32,21 @@ ASR_DRAFT_VI = {
     "bastard_maya_6_3": "Và bùm! Giờ ngươi là bậc thầy súng trường chiến thuật!",
     "bastard_maya_7_1": "Ngươi đang quá thoải mái đấy, chiến binh mù. Vì vậy, ta chỉ cho ngươi rất ít đạn ở thử thách này. Đừng bắn hụt viên nào. Dĩ nhiên ngươi vẫn có thể dùng vũ khí cận chiến, nhưng giết zombie từ xa luôn an toàn hơn. Bắt đầu nào!",
     "bastard_maya_7_2": "Ngươi nên cảm ơn ta vì đã ép ngươi ra khỏi vùng an toàn. Những việc như thế mới giúp con người tiến bộ!",
-    "bastard_zombie_berserk_a": "Đã đến lúc cho ngươi gặp thứ mới. Đây là Berserk. Nó cũng mù như ngươi, nên thường chậm rãi đi quanh đánh hơi. Cứ để yên, nó sẽ tự bỏ đi. Hoặc ngươi cứ bắn cho nó nổi điên rồi đuổi theo ngươi. Loại này gần như không thể giết nổi, ta cảnh báo đấy! Giờ ta đã giới thiệu xong, để ta thả một con xuống đấu trường cho hai người làm quen!",
+    "bastard_zombie_berserk_a": "Đã đến lúc cho ngươi gặp thứ mới. Đây là Berserk. Nó cũng mù như ngươi, nên thường chậm rãi đi quanh đánh hơi. Hãy đứng yên, nó sẽ tự bỏ đi. Hoặc ngươi cứ bắn cho nó nổi điên rồi đuổi theo ngươi. Loại này gần như không thể giết nổi, ta cảnh báo đấy! Giờ ta đã giới thiệu xong, để ta thả một con xuống đấu trường cho hai người làm quen!",
     "bastard_maya_8_2": "Ờ, màn đó dễ thôi. Nhưng sống sót trước Berserk sẽ khó hơn khi bị gây áp lực. Để ta làm ngươi căng thẳng thêm!",
     "bastard_maya_8_3": "Ta có cảm giác ngươi vẫn chưa đủ căng thẳng. Để ta sửa bằng một bầy zombie mới, kèm thêm Berserk!",
     "bastard_maya_8_4": "Ta rất muốn tiếp tục thả zombie vào ngươi, nhưng hết zombie mất rồi! Ta phải xuống phòng thí nghiệm hồi sinh thêm vài xác. À, ngươi cần tới Kho vũ khí mua cây đàn banjo cho thử thách sau. Đúng, ta nói banjo đấy! Mua đi!",
-    "bastard_maya_9_1": "Ta trả lại khẩu súng lục cũ và Micro SMG cho ngươi, cùng một nhúm đạn ít ỏi. Đừng lo! Ngươi có cây đàn banjo không? Nó tốt hơn chảo rán và đập zombie còn buồn cười hơn. Đồng ý chứ? Mà thôi, ta chẳng quan tâm. Cứ giết lũ zombie đi!",
+    "bastard_maya_9_1": "Ta trả lại khẩu súng lục cũ và Micro SMG cho ngươi, cùng một nhúm đạn ít ỏi. Đừng lo, ngươi đã có cây đàn banjo rồi! Nó tốt hơn chảo rán và đập zombie còn buồn cười hơn. Đồng ý chứ? Mà thôi, ta chẳng quan tâm. Cứ giết lũ zombie đi!",
     "bastard_maya_9_2": "Ngươi vừa sáng tạo ra một thể loại âm nhạc mới bằng màn biểu diễn vừa rồi đấy. Ta thích lắm!",
     "bastard_tutorial_10_1": "Chào mừng đến bài kiểm tra cuối. Có vẻ ngươi có thói quen sống sót rất khó chịu, chiến binh mù ạ. Nhưng từ trước tới nay, ngươi chỉ đánh với những thí nghiệm zombie yếu nhất của ta. Chúng rên rỉ rồi chậm chạp đi thẳng về phía ngươi. Giờ ta muốn thêm chút gay cấn bằng zombie cưa máy, loại khán giả yêu thích nhất! Nó sẽ vừa tiến tới vừa chạy vòng quanh, nhanh hơn những người bạn yếu ớt một chút. Hãy lắng nghe thật kỹ và sống sót!",
     "bastard_tutorial_10_2": "Cái gì? Không, vừa rồi chỉ là may mắn! Thả thêm một con cưa máy nữa!",
     "bastard_tutorial_10_3": "Giờ thì thử với âm nhạc nào! Ngươi biết không, những zombie đáng sợ nhất của ta đều có nhạc nền riêng. Ta không muốn làm ngươi phân tâm, nhưng xem ngươi giỏi đến thế thì chắc chẳng phiền chút nhạc hùng tráng trong lúc chiến đấu đâu nhỉ!",
-    "bastard_tutorial_10_4": "Ha ha! Ngươi sống sót qua bài kiểm tra cuối! Có lẽ ngươi thật sự là chiến binh huyền thoại. Vậy là ngươi được tuyển! Chúc mừng, chiến binh mù! Mở tiệc nào! Được rồi, hết tiệc. Ngươi vẫn chưa sẵn sàng bước vào đấu trường zombie lớn của ta. Ta phải rèn luyện ngươi thêm. Trước hết ta sẽ đưa ngươi tới những đấu trường nhỏ, cho danh tiếng của ngươi lan rộng khi vượt qua những thử thách thực sự. Khi đã thành cựu binh, ta sẽ cho ngươi vào đấu trường zombie riêng, nơi chỉ những chiến binh giỏi nhất được phép góp mặt!",
+    "bastard_tutorial_10_4": "Ha ha! Ngươi sống sót qua bài kiểm tra cuối! Có lẽ ngươi thật sự là chiến binh huyền thoại. Vậy là ngươi được tuyển! Chúc mừng, chiến binh mù! Mở tiệc nào! Được rồi, hết tiệc. Ngươi vẫn chưa sẵn sàng bước vào đấu trường zombie lớn của ta. Ta phải rèn luyện ngươi thêm. Trước hết ta sẽ đưa ngươi tới những đấu trường nhỏ, cho danh tiếng của ngươi lan rộng khi vượt qua những thử thách thực sự. Khi đã thành cựu binh, ta sẽ cho ngươi vào đấu trường zombie khét tiếng của ta, nơi chỉ những chiến binh giỏi nhất được phép góp mặt!",
     "bastard_tutorial_1_1": "Hù! Ha ha! Ta làm ngươi sợ à? Chào mừng buổi tuyển chọn cho Đấu trường zombie của tiến sĩ Bastard! Ta là tiến sĩ Bastard, còn ngươi là Chiến binh mù. Thật sao? Vui đây! Nghe này, chiến binh mù, ta cần một anh hùng mới cho chương trình của mình. Một nhà vô địch dũng cảm để khán giả yêu mến và hoan hô. Ngươi có thể là người đó, nếu tài chiến đấu đúng như lời ngươi khoe. Còn nơi nào tốt hơn nhà hát La Mã đổ nát này để thử sức? Ta còn có giàn thiêu đằng kia để sưởi ấm cho ngươi. Hoặc thiêu xác ngươi nếu mọi chuyện không suôn sẻ. Nào, làm vài bài kiểm tra xem ngươi có bản lĩnh không! Xoay người, khởi động cổ, vặn mình nào!",
     "bastard_tutorial_1_2": "Được rồi, đủ rồi. Dừng lại! Giờ xem ngươi có đủ gan chĩa súng vào zombie và bắn hạ nó trước khi bị ăn sống không. Vì đó chính là chuyện sẽ xảy ra nếu zombie của ta đến sát ngươi. Ta sẽ thả Bob, một con zombie. Đừng lo, nó không tấn công được đâu, vì đã bị xích vào tường. Cứ thong thả ngắm, rồi bắn nó!",
     "bastard_tutorial_1_4": "Tuyệt vời! Chắc thế. Ta có nhìn đâu. Không sao. Giờ ta sẽ thả một zombie khác. Ối, gạt nhầm cần rồi. Thử cái này. Hay cái kia? Không phải! Thôi thế này đi, ngươi nạp đạn trong lúc ta tìm đúng cần gạt trên bảng điều khiển ngu ngốc này!",
     "bastard_tutorial_1_5": "Rồi, tìm được cần đúng rồi. Ta sẽ thả Jim, anh em của Bob. Hãy chào Jim bằng cách bắn một viên vào sọ nó. Như lúc nãy: ngắm rồi bắn, ngắm rồi bắn!",
-    "bastard_tutorial_1_6": "Phù! Cảm giác thật tuyệt. Ồ! Ta quên mất ngươi và Jim. Ngươi giết nó rồi à? Tiếc thật, ta rất muốn xem. Dù sao ngươi đã vượt bài kiểm tra đầu tiên. Chúc mừng! Ta sẽ không vỗ lưng khen ngươi đâu, vì ta thấy an toàn hơn nhiều trong phòng điều khiển chống đạn này. Hẹn gặp ở thử thách tiếp theo!",
+    "bastard_tutorial_1_6": "Phù! Cảm giác thật tuyệt. Ồ! Ta quên mất ngươi và Jim. Ngươi giết nó rồi à? Tiếc thật, ta rất muốn xem. Dù sao ngươi đã vượt bài kiểm tra đầu tiên. Chúc mừng! Ta muốn vỗ lưng chúc mừng ngươi, nhưng ở trong phòng điều khiển chống đạn này thì an toàn hơn nhiều. Hẹn gặp ở thử thách tiếp theo!",
     "bastard_tutorial_2_1": "Ồ, có vẻ ngươi hết đạn rồi. Không sao. Ta cho các chiến binh mang theo hai khẩu súng cùng lúc. Thật ra ta thấy ngươi có khẩu lớn hơn ở thắt lưng. Nào, đổi vũ khí đi!",
     "bastard_tutorial_2_2": "Ngươi không có đạn vô hạn trong thử thách của ta, nên đừng nghĩ đến chuyện nhắm mắt xả súng. Giờ bắn con zombie khác cho ta xem nào. Lần này ta hứa sẽ chăm chú quan sát ngươi, chiến binh mù! Sẵn sàng hay chưa, Ted xác sống đến đây! Ối, xin lỗi, lại nhầm cần gạt.",
     "bastard_tutorial_2_3": "Ấn tượng thật. Vô cùng ấn... Ối, ta lại bỏ lỡ rồi, đúng không? Mải nhìn kết quả kiểm tra chỉ số thông minh của chính mình. Thế này nhé, ta sẽ thả hai zombie thay vì một để khỏi buồn chán. Ta đã hồi sinh Bob và Jim, phòng lúc có chuyện như thế này!",
@@ -58,10 +60,11 @@ ASR_DRAFT_VI = {
     "bastard_gameover_c": "Ồ, ta vừa bắt đầu thích ngươi thì ngươi đã thua mất rồi!",
     "bastard_gameover_d": "Ôi trời! Ai đó dọn cái đống lộn xộn này đi!",
     "bastard_gameover_e": "Ta thất vọng về ngươi quá!",
-    "bastard_gameover_f": "Thật phí một mạng người. Nhưng không sao, ta vẫn có thể tận dụng xác ngươi.",
+    "bastard_gameover_f": "Thật lãng phí một mạng người. Không sao, ta có thể biến ngươi thành zombie.",
     "bastard_gameover_g": "Nhìn ngươi kìa! Nhìn ngươi chết ngay dưới chân ta kìa! Ha ha ha!",
     "bastard_gameover_h": "Suỵt! Không sao đâu.",
     "bastard_gameover_i": "Không! Không! Không! Ta đâu trả tiền để ngươi bị ăn sống sớm thế này!",
+    # Unresolved by fresh ASR passes; retained old draft, not a verified line.
     "bastard_gameover_j": "Thế là xong! Bùm!",
     "bastard_gameover_k": "Ha ha ha! Ngươi thua rồi! Ha ha ha!",
     "bastard_gameover_l": "Cũng không tệ đến thế đâu! Ít nhất ngươi... Ồ, ta lừa ai chứ? Tệ khủng khiếp!",
@@ -72,6 +75,7 @@ ASR_DRAFT_VI = {
     "OPENER_DRBASTARD_SPA": "Và bắt đầu nào!",
     "OPENER_LIFT_VOICE_1_SPA": "Đang đi lên.",
     "OPENER_LIFT_VOICE_2_SPA": "Tầng ba. Đấu trường chính.",
+    # Both revive drafts remain unsupported by the new ASR evidence.
     "revive_no": "Hết rồi!",
     "revive_yes": "Audio Defence!",
     "announcer_revive_a": "Hồi sinh!",
@@ -88,7 +92,7 @@ ASR_DRAFT_VI.update({
     "bastard_tutorial_4_1": "Ai mà chẳng có lúc cần giúp đỡ, đúng không? Vì thế mới có vật phẩm hỗ trợ. Thỉnh thoảng ta gọi trực thăng thả xuống một chiếc máy quay thưởng rất nặng. Nó sẽ luôn cho phần thưởng nếu ngươi cho nó ăn đạn thay vì xu. Nhưng phải bắn nhanh, nếu không máy sẽ tắt và chẳng cho gì cả. Thử nào! Ta sẽ thả Bob, Jim và Ted cùng lúc. Trực thăng đang đến đấy, nhớ bắn máy quay thưởng khi nó rơi xuống!",
     "bastard_tutorial_4_2": "Ngươi có thích mùi thịt cháy còn vương trong không khí không? Ta nghĩ Pháo hoa là vật phẩm hỗ trợ yêu thích nhất của mình, nhưng ta còn nhiều loại khác lắm. Chẳng ai biết trước sẽ nhận được gì từ máy quay thưởng của ta. Làm thêm lần nữa xem ngươi được món nào!",
     "bastard_tutorial_4_4": "Xong rồi à? Ta vừa ra ngoài làm cho mình một chiếc bánh kẹp. Dù sao thì nhớ bài học nhé! Bắn máy quay thưởng ngay là tốt. Chờ quá lâu mới bắn là dở!",
-    "bastard_tutorial_5_1": "Giờ nói về tiền nào. Ta trả công cho ngươi nếu sống sót qua thử thách. Ngắm bắn thật chính xác thì được thưởng thêm, bóp cò càng nhanh lại càng kiếm nhiều tiền. Ví dụ, nếu ta thả hai zombie không bị xích vào ngươi, ngươi sẽ làm gì? Ta biết chúng sẽ làm gì rồi: chúng sẽ ăn sống ngươi nếu đến đủ gần!",
+    "bastard_tutorial_5_1": "Giờ nói về tiền nào. Ta trả công cho ngươi nếu sống sót qua thử thách. Ngắm bắn thật chính xác thì được thưởng thêm, bóp cò càng nhanh lại càng kiếm nhiều tiền. Ví dụ, nếu ta thả hai zombie không bị xích vào ngươi, ngươi sẽ làm gì? Ta nói cho ngươi biết chúng sẽ làm gì: chúng sẽ ăn sống ngươi nếu đến đủ gần!",
     "bastard_tutorial_5_2": "Dễ mà, đúng không? Sống sót, ngắm chuẩn, bắn nhanh. Đó là cách kiếm tiền trong thử thách của ta. Nhưng tiền không phải tất cả. Chúng ta còn có kim cương! Một số vật phẩm trong Kho vũ khí bán bằng kim cương thay vì xu. Kim cương hiếm hơn xu rất nhiều. Muốn kiếm một ít không? Hãy bắn sinh vật nhỏ mà ta sắp thả đằng kia!",
     "bastard_tutorial_5_3": "Ta đa! Ngươi vừa nhặt viên kim cương đầu tiên! Những con ký sinh nhỏ này thích đồ lấp lánh hơn thịt người. Chúng không tấn công, nhưng nếu ngươi không bắn nhanh thì chúng sẽ chạy mất. Khó hơn ngươi tưởng đấy! Thử một tình huống thực tế và chết người nào. Hãy bắn zombie rồi lấy viên kim cương. Hoặc chết khi đang cố!",
     "bastard_tutorial_5_4": "Còn một điều cuối về kim cương. Ta chỉ thả chúng trong chế độ Vô tận, nơi ngươi sẽ được vào ngay sau thử thách này. Giờ ngươi đã hiểu cách làm giàu, ta hỏi nhé: Ngươi định làm gì với đống xu và kim cương ấy? Tất nhiên là mua thêm vũ khí! Hoặc nâng cấp những món đang có. Thế nên khi vượt xong thử thách, hãy đến Kho vũ khí chính thức của chúng ta và mua một khẩu súng mới. Ngươi cần súng shotgun nòng ngắn cho các thử thách tiếp theo. Mua xong thì quay lại, không thì đừng trở lại nữa!",
@@ -105,13 +109,13 @@ ASR_DRAFT_VI.update({
     "bastard_tutorial_9_2": "Ngươi phải tập quen với những trò tăng độ khó nho nhỏ này, chiến binh mù ạ. Tất cả nhằm làm thử thách thú vị hơn. Cho khán giả xem!",
     "bastard_urban_10_1": "Hu hu! Tưởng giết được một con Hulk là ngươi vô địch thiên hạ rồi sao? Đó chỉ là màn nhử thôi. Thử thách thực sự bắt đầu ngay bây giờ!",
     "bastard_zombie_hulk_a": "Tối nay, ta hân hạnh giới thiệu Hulk! Đây là kết quả của việc tiêm cho zombie quá liều adrenaline, testosterone và cả hạt quinoa. Ta khuyên ngươi tập trung bắn nó ngay khi nghe tiếng gầm. Thứ này chịu đòn cực kỳ giỏi!",
-    "bastard_urban_10_2": "Chưa đâu, ngươi mới đi được nửa đường thôi! Giờ đến tiết mục của Hulk với nhạc nền riêng, giai điệu quái vật!",
+    "bastard_urban_10_2": "Chưa đâu, ngươi mới đi được nửa đường thôi! Giờ đến nhạc nền riêng của Hulk. Nhạc trưởng, nổi nhạc lên!",
     "bastard_city_end": "Hoan hô! Quả là kỳ tích! Ta chưa từng thấy ai quyết tâm không chết như ngươi. Đến lúc thử bản năng sinh tồn của ngươi ở một nơi phù hợp hơn. Chúc mừng, chiến binh mù! Ngươi đã nhận vé vào đấu trường Tàn tích Maya của ta. Nhớ tiêm phòng sốt rét đấy!",
     "bastard_city_intro": "Chào mừng đến một số mới của Đấu trường zombie, do tiến sĩ Bastard tổ chức! Chương trình tối nay diễn ra ở ngã tư rộng lớn của thành phố, rực sáng nhờ đống xe đang cháy. Kính thưa quý khán giả, xin giới thiệu Chiến binh mù! À khoan, làm gì có khán giả nào ở đây! Ha ha ha! Đây là thành phố bị bỏ hoang mà. Ngươi phải tự giành lấy quyền được mọi người reo hò, chiến binh mù ạ. Giờ hãy sống sót qua bữa tiệc chào mừng chết người của ta!",
     "bastard_urban_1_1": "Nghe tiếng còi báo hiệu đó không? Ngươi nên tập yêu thích âm thanh ấy. Nó có nghĩa là ngươi đã vượt qua thử thách! Ngày không còn nghe tiếng còi nữa sẽ là ngày ngươi chết trong đấu trường. Rồi ngày đó cũng đến thôi... nhưng không phải hôm nay!",
     "bastard_passerby_cars_a": "Biết điều gì giúp chương trình ăn khách hơn không? Những vụ nổ! Vì thế ta đã đậu rất nhiều xe quanh ngươi. Chuông báo động của chúng sẽ thỉnh thoảng lại kêu. Nếu không muốn nghe bản giao hưởng còi xe giữa lúc đánh zombie, tốt nhất hãy bắn cho mấy chiếc xe nổ tung!",
     "bastard_urban_2_1": "Đừng lo cho chủ của những chiếc xe đó. Họ chính là lũ zombie ngươi sắp đối mặt trong thử thách tiếp theo!",
-    "bastard_zombie_clown_a": "Giờ là tiết mục giải trí cổ điển: ta sẽ thả zombie hề! Gì cơ? Ta nghiêm túc đấy! Chúng có tóc giả, mặt hóa trang, giày mềm oặt và một cặp dao rỉ sét chưa mài. Nếu bắt được ngươi, chúng vẫn băm ngươi thành từng mảnh như lũ zombie khác. Nhưng chúng thích trêu chọc khán giả và chạy vòng rộng quanh ngươi. Nào, hãy thưởng thức tiết mục của những chú hề đi!",
+    "bastard_zombie_clown_a": "Giờ là tiết mục giải trí cổ điển: ta sẽ thả zombie hề! Gì cơ? Ta nghiêm túc đấy! Chúng có tóc giả, mặt hóa trang, giày mềm oặt và một cặp dao rỉ sét chưa mài. Nếu bắt được ngươi, chúng vẫn băm ngươi thành từng mảnh như lũ zombie khác. Nhưng chúng thích trêu chọc khán giả và chạy vòng rộng quanh ngươi. Nào, hãy làm khán giả của ta vui và thưởng thức tiết mục của những chú hề đi!",
     "bastard_zombie_clown_b": "Hãy thả thêm vài con zombie cùng chú hề tiếp theo!",
     "bastard_zombie_clown_c": "Lũ hề đâu hết rồi?",
     "bastard_urban_3_1": "Tội nghiệp lũ hề! Sao ai cũng ghét hề thế nhỉ?",

@@ -10,7 +10,7 @@ from unittest.mock import patch
 from audiodefence import localization
 from audiodefence.platform.speech_android import phone_words
 from audiodefence.game.recorded_voice_text import CHALLENGE_VOICE_LINES, companion_for
-from audiodefence.game.voice_labels import LABELS, companion_label
+from audiodefence.game.voice_labels import LABELS, companion_label, speak_short_voice
 from audiodefence.game.voice_drafts_vi import ASR_DRAFT_VI, draft_for
 from pathlib import Path
 
@@ -72,7 +72,7 @@ class VietnameseSpeechTests(unittest.TestCase):
             [],
         )
         total, issues = audit()
-        self.assertGreaterEqual(total, 1651)
+        self.assertGreaterEqual(total, 1655)
         self.assertEqual(issues, [])
 
     def test_all_assembled_phone_tutorial_phrases_are_vietnamese(self):
@@ -103,6 +103,7 @@ class VietnameseSpeechTests(unittest.TestCase):
 
     def test_about_credits_retain_names_but_not_english_roles(self):
         import ast
+        from audiodefence.ui.credits_text import ABOUT_TEXT
         tree = ast.parse(Path("audiodefence/ui/credits_text.py").read_text(encoding="utf-8"))
         values = {}
         for node in tree.body:
@@ -112,6 +113,9 @@ class VietnameseSpeechTests(unittest.TestCase):
                             "STUDIO_TEXT", "CREDITS_TEXT", "PORT_CREDITS_TEXT"):
                         values[target.id] = ast.literal_eval(node.value)
         self.assertEqual(len(values), 3)
+        about_vi = localization.translate(ABOUT_TEXT)
+        self.assertNotIn("For the most immersive experience", about_vi)
+        self.assertIn("Cảm biến xoay", about_vi)
         translated = localization.translate(values["STUDIO_TEXT"] + values["CREDITS_TEXT"])
         translated += localization.translate(values["PORT_CREDITS_TEXT"])
         for english in (
@@ -121,6 +125,21 @@ class VietnameseSpeechTests(unittest.TestCase):
             with self.subTest(english=english):
                 self.assertNotIn(english, translated)
         self.assertIn("Loh Boon Keat", translated)  # creator name is not translated
+
+    def test_dynamic_opener_labels_and_extra_description_translate(self):
+        import json
+        phrases = json.loads(Path("localization/Tiếng Việt.json").read_text(encoding="utf-8"))
+        for english in (
+                "Move the device", "Swipe the screen", "Tilt the device",
+                "Swipe the screen or move the device"):
+            with self.subTest(label=english):
+                self.assertIn(english, phrases)
+                self.assertNotEqual(localization.translate(english), english)
+        extra = next(key for key in phrases if key.startswith(
+            "These arenas are not from the original game."))
+        extra_vi = localization.translate(extra)
+        self.assertNotEqual(extra_vi, extra)
+        self.assertNotIn("None of them tells you", extra_vi)
 
     def test_all_dynamic_keyboard_tutorial_lines_translate(self):
         import ast
@@ -301,6 +320,43 @@ class VietnameseSpeechTests(unittest.TestCase):
                 self.assertTrue(translated.strip())
                 self.assertEqual(companion_label(key), translated)
         self.assertIsNone(companion_label("weapon_gun_pistol_fire_a"))
+
+    def test_short_voice_companion_is_not_android_only(self):
+        from types import SimpleNamespace
+        from unittest.mock import Mock
+        from audiodefence.game.parameters import GameParameters
+        params = SimpleNamespace(language=lambda: "Tiếng Việt", last_announcer_value=lambda: True)
+        speech = Mock()
+        sound = SimpleNamespace(key="announcer_reload_b", gain=0.8, set_gain=Mock())
+        with patch.object(GameParameters, "shared", return_value=params), \
+             patch("audiodefence.platform.speech.Speech.shared", return_value=speech):
+            self.assertTrue(speak_short_voice(sound))
+        sound.set_gain.assert_called_once_with(0.8 * 0.32)
+        speech.speak_in_game.assert_called_once_with("Nạp đạn!", False)
+
+    def test_challenge_voice_companion_is_not_android_only(self):
+        from types import SimpleNamespace
+        from unittest.mock import Mock
+        from audiodefence.game.adsound import ADSound
+        from audiodefence.game.parameters import GameParameters
+        params = SimpleNamespace(language=lambda: "Tiếng Việt")
+        speech = Mock()
+        sound = SimpleNamespace(
+            key="bastard_zombie_shield_a", gain=0.8, set_gain=Mock())
+        scripted = ADSound.__new__(ADSound)
+        scripted.sound = sound
+        scripted._vi_voice_text = None
+        scripted._vi_voice_wait = 0.0
+        scripted._vi_original_gain = None
+        with patch.object(GameParameters, "shared", return_value=params), \
+             patch("audiodefence.platform.speech.Speech.shared", return_value=speech), \
+             patch("audiodefence.ui.reading.in_game_speech", return_value=None), \
+             patch("audiodefence.ui.reading.reading_seconds", return_value=8.0):
+            scripted.speak_recorded_voice_companion()
+        self.assertEqual(scripted._vi_voice_text, ASR_DRAFT_VI[sound.key])
+        self.assertEqual(scripted._vi_voice_wait, 8.0)
+        sound.set_gain.assert_called_once_with(0.8 * 0.32)
+        speech.speak_in_game.assert_called_once_with(ASR_DRAFT_VI[sound.key], False)
 
     def test_english_keyboard_remains_correct(self):
         self.assertEqual(
