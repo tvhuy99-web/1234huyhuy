@@ -1,8 +1,7 @@
 name: Draft transcripts of original English voice clips
 
 on:
-  push:
-    branches: [feat/vietnamese-localization]
+  pull_request:
     paths:
       - '.github/workflows/transcribe-voice.yml'
       - 'tools/transcribe_recorded_voice.py'
@@ -12,6 +11,10 @@ on:
 
 permissions:
   contents: read
+
+concurrency:
+  group: voice-transcript-drafts-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   draft-transcripts:
