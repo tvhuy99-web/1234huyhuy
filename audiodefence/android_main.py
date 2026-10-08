@@ -579,6 +579,11 @@ def run(home: str, fake: bool = False) -> int:
     except Exception:
         log.exception('could not set the shake sensitivity')
     params = GameParameters.shared()
+    # Restore the chosen voice language before the Android speech engines begin speaking.
+    try:
+        b.setGameSpeechLanguage('vi-VN' if params.language() == 'Tiếng Việt' else '')
+    except Exception:
+        log.exception('could not restore the Android speech language')
     GameParameters.screen_reader_running = Speech.shared().screen_reader_running()
     Speech.shared().choice = params.speech_output()
     params.forget_saved_voice()                          # PORT ADDITION (user request): each engine's own voice

@@ -17,6 +17,11 @@ import android.view.accessibility.AccessibilityManager;
 import com.chaquo.python.Python;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.Locale;
+import org.json.JSONObject;
 
 /**
  * Audio Defence for Android.  Opens the touch surface, unpacks the game's data the first time and what changed of
@@ -29,6 +34,8 @@ public final class MainActivity extends Activity {
 
     private Bridge bridge;
     private boolean started;
+    /** The chosen language must be known before Chaquopy/Python starts. */
+    private volatile boolean bootVietnamese;
 
     @Override
     protected void onCreate(Bundle state) {
@@ -156,9 +163,42 @@ public final class MainActivity extends Activity {
         }
     }
 
+    /**
+     * Read the persisted language from the game's settings before the Python runtime has started.
+     * On a first installation, prefer the phone's language. An existing English selection must
+     * override a Vietnamese phone locale, and vice versa.
+     */
+    private boolean vietnameseForStartup(File home) {
+        File settings = new File(new File(home, "AudioDefence"), "settings.json");
+        if (!settings.isFile()) {
+            return "vi".equals(Locale.getDefault().getLanguage());
+        }
+        try (FileInputStream stream = new FileInputStream(settings);
+             InputStreamReader reader = new InputStreamReader(stream, StandardCharsets.UTF_8)) {
+            StringBuilder value = new StringBuilder();
+            char[] buffer = new char[1024];
+            int length;
+            while ((length = reader.read(buffer)) != -1) {
+                value.append(buffer, 0, length);
+            }
+            JSONObject saved = new JSONObject(value.toString());
+            return "Tiếng Việt".equals(saved.optString("language", ""));
+        } catch (Exception e) {
+            Log.w(TAG, "could not read game language before startup", e);
+            return "vi".equals(Locale.getDefault().getLanguage());
+        }
+    }
+
+    private String startupText(String english, String vietnamese) {
+        return bootVietnamese ? vietnamese : english;
+    }
+
     private void boot() {
         try {
             File home = new File(getFilesDir(), "adhome");
+            bootVietnamese = vietnameseForStartup(home);
+            bridge.setGameSpeechLanguage(bootVietnamese ? "vi-VN" : "");
+
             // The game's data is built into each APK from the repository it is made in.  DataSync compares the
             // APK's list of it with the list of what was unpacked last time and unpacks only what changed, so a
             // start after an update that left the data alone goes straight to the game.  It comes first, before
@@ -167,22 +207,26 @@ public final class MainActivity extends Activity {
                 @Override
                 public void starting(DataSync.Plan plan) {
                     if (plan.full) {
-                        bridge.speak("Setting up the game. This only happens the first time and takes a minute "
-                                + "or two.", true);
+                        bridge.speak(startupText(
+                                "Setting up the game. This only happens the first time and takes a minute or two.",
+                                "Đang chuẩn bị dữ liệu trò chơi. Việc này chỉ diễn ra trong lần đầu "
+                                        + "và mất khoảng một đến hai phút."), true);
                     } else if (plan.announce()) {
-                        bridge.speak("Unpacking the update.", true);
+                        bridge.speak(startupText("Unpacking the update.",
+                                "Đang giải nén bản cập nhật."), true);
                     }
                 }
 
                 @Override
                 public void progress(int percent) {
-                    bridge.speak(percent + " percent", false);
+                    bridge.speak(percent + startupText(" percent", " phần trăm"), false);
                 }
 
                 @Override
                 public void finished(DataSync.Plan plan) {
                     if (plan.announce()) {
-                        bridge.speak("The game is ready.", false);
+                        bridge.speak(startupText("The game is ready.",
+                                "Trò chơi đã sẵn sàng."), false);
                     }
                 }
             });
@@ -193,14 +237,18 @@ public final class MainActivity extends Activity {
             // phone set to speak slowly.
             AccessibilityManager am = (AccessibilityManager) getSystemService(ACCESSIBILITY_SERVICE);
             if (am != null && am.isTouchExplorationEnabled()) {
-                bridge.speak("TalkBack is on. Please turn it off: the game speaks for itself.", false);
+                bridge.speak(startupText(
+                        "TalkBack is on. Please turn it off: the game speaks for itself.",
+                        "TalkBack đang bật. Vui lòng tắt TalkBack vì trò chơi có hệ thống giọng đọc riêng."), false);
                 waitForSpeech(30000);
             }
             Python.getInstance().getModule("audiodefence.android_main")
                     .callAttr("run", home.getAbsolutePath());
         } catch (Throwable t) {
             Log.e(TAG, "the game could not start", t);
-            bridge.speak("Sorry, the game could not start. " + t.getClass().getSimpleName(), true);
+            bridge.speak(startupText("Sorry, the game could not start. ",
+                    "Xin lỗi, trò chơi không thể khởi động. ")
+                    + t.getClass().getSimpleName(), true);
             try {
                 Thread.sleep(6000);
             } catch (InterruptedException ignored) {

@@ -39,7 +39,15 @@ SAPI_DEFAULTS = {'voice': None, 'rate': None, 'boost': False, 'pitch': 0, 'volum
 #: challenge", "Shift plus Enter for the previous", "Escape to cancel".  On the phone they name the touches
 #: that do those things instead, VoiceOver's: a double tap is Enter, a double tap and hold is Shift + Enter,
 #: a two-finger scrub is Escape, and swipes are the arrow keys.  Order matters: the longer phrases go first.
-PHONE_WORDS = (
+VI_PHONE_WORDS = (
+    (re.compile(r'\bShift (?:cộng|và) Enter\b'), 'chạm đúp và giữ'),
+    (re.compile(r'\bNhấn Enter\b'), 'Chạm đúp'),
+    (re.compile(r'\bnhấn Enter\b'), 'chạm đúp'),
+    (re.compile(r'\bNhấn Escape\b'), 'Vuốt qua lại bằng hai ngón'),
+    (re.compile(r'\bnhấn Escape\b'), 'vuốt qua lại bằng hai ngón'),
+    (re.compile(r'\bEscape\b'), 'vuốt qua lại bằng hai ngón'),
+)
+EN_PHONE_WORDS = (
     (re.compile(r'\bShift (?:plus |\+ ?)?Enter\b'), 'double tap and hold'),
     (re.compile(r'\bPress Enter\b'), 'Double tap'),
     (re.compile(r'\bpress Enter\b'), 'double tap'),
@@ -51,7 +59,12 @@ PHONE_WORDS = (
 
 
 def phone_words(text: str) -> str:
-    for pattern, words in PHONE_WORDS:
+    # Phone gestures have language-specific wording. Translating "Escape" to
+    # a Vietnamese gesture in English mode made English instructions bilingual.
+    # Check the *selected* language, not whether a sentence has diacritics:
+    # some proper names and button labels have no accented characters.
+    rules = VI_PHONE_WORDS if localization.language() == 'Tiếng Việt' else EN_PHONE_WORDS
+    for pattern, words in rules:
         text = pattern.sub(words, text)
     return text
 

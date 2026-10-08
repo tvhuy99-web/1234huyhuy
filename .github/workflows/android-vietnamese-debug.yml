@@ -1,0 +1,99 @@
+name: Vietnamese Android debug APK
+
+on:
+  pull_request:
+    paths:
+      - 'android/**'
+      - 'audiodefence/**'
+      - 'game/**'
+      - 'localization/**'
+      - 'VERSION'
+      - '.github/workflows/android-vietnamese-debug.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vietnamese-android-debug-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-debug-apk:
+    name: Build Android test APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out sources and original game assets
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Python 3.13 for Chaquopy
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Check the Android SDK already provided by the Ubuntu runner
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --version
+
+      - name: Install required Android SDK packages
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --install "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Set up Gradle 8.13
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.13'
+
+      - name: Verify Vietnamese translation
+        run: |
+          python tools/check_vietnamese.py --strict
+          python tools/verify_localization.py --language "Tiếng Việt"
+
+      - name: Build debug APK (automatically signed with a debug key)
+        run: gradle -p android --no-daemon :app:assembleDebug -PbuildPython="$(command -v python)" --stacktrace
+
+      - name: Verify Vietnamese assets are inside APK
+        run: |
+          python - <<'PY'
+          import glob, json, zipfile
+          apks = glob.glob('android/app/build/outputs/apk/debug/*.apk')
+          assert len(apks) == 1, f'Expected exactly one debug APK, got {apks}'
+          with zipfile.ZipFile(apks[0]) as apk:
+              # Android's APK ZIP writer may store UTF-8 filename bytes without the ZIP
+              # Unicode flag. Python then decodes them as CP437, unlike Android/Java.
+              # Normalize names for verification only; the APK itself is unchanged.
+              def unicode_name(filename):
+                  try:
+                      return filename.encode('cp437').decode('utf-8')
+                  except (UnicodeError, ValueError):
+                      return filename
+              names = {unicode_name(name): name for name in apk.namelist()}
+              print('Localization entries:', [n for n in names if n.startswith('assets/localization/')])
+              assert 'assets/localization/Tiếng Việt.json' in names, 'Vietnamese JSON is absent from APK'
+              assert 'assets/data-manifest.txt' in names, 'Game data manifest is absent from APK'
+              assert any(p.startswith('assets/game/') for p in names), 'Original game sound/data assets are absent'
+              language = json.loads(apk.read(names['assets/localization/Tiếng Việt.json']))
+              assert language['@plural'] == 'none'
+              assert language['Play'] == 'Chơi'
+              assert len([k for k in language if not k.startswith('@')]) >= 1495
+              print('VERIFIED:', apks[0], 'Vietnamese phrases:', len(language)-1,
+                    'assets:', len(names))
+          PY
+
+      - name: Upload installable test APK (not a production release)
+        uses: actions/upload-artifact@v4
+        with:
+          name: AudioDefence-Vietnamese-Android-DEBUG
+          path: android/app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0

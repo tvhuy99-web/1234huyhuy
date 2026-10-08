@@ -194,7 +194,8 @@ class PowerUp:
             felt_when_it_starts(self)                     # PORT ADDITION: felt with the sound it starts
 
         announce.add_3d_sound_end_callback(started)
-        if not GameParameters.shared().last_announcer_value():
+        announcer_enabled = GameParameters.shared().last_announcer_value()
+        if not announcer_enabled:
             announce.set_gain(0.0)
         announce.play(False)
 

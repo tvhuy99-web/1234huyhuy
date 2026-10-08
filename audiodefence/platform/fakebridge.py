@@ -244,6 +244,10 @@ class FakeBridge:
     def speechReady(self):
         return self.speech_ready
 
+    def setGameSpeechLanguage(self, language_tag):
+        # Match the Android Bridge API so desktop-side phone tests can inspect language selection.
+        self.game_speech_language = language_tag or ''
+
     def engineList(self):
         return ''.join('%s\t%s\n' % (p, n) for p, n in sorted(self.ENGINES.items(), key=lambda e: e[1]))
 

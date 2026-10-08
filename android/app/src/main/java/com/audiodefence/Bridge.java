@@ -94,6 +94,8 @@ public final class Bridge implements SensorEventListener {
     // volume.  The second is only its settings until it is first asked to speak: its TextToSpeech is made then.
     private final Voice first = new Voice("ad");
     private final Voice second = new Voice("ad2-");
+    // A translated game can request a voice in that language. Empty keeps the phone's own locale.
+    private volatile String gameSpeechLanguage = "";
     private final Handler main = new Handler(Looper.getMainLooper());
     /** How long a chosen engine has to start before the phone's default takes its place. */
     private static final long ENGINE_START_LIMIT_MS = 10000;
@@ -968,6 +970,22 @@ public final class Bridge implements SensorEventListener {
             }
         }
 
+        /** Change language on an already running engine, without restarting it or discarding speech. */
+        void updateLanguage() {
+            TextToSpeech t;
+            synchronized (spokenBeforeReady) {
+                t = ready ? tts : null;
+            }
+            if (t != null) {
+                try {
+                    speakTheLanguage(t);
+                    applySettings();             // preserve the user's speed and pitch after voice switching
+                } catch (RuntimeException e) {
+                    Log.w(TAG, "could not change speech language", e);
+                }
+            }
+        }
+
         /** The rate and pitch, on the engine speaking; the volume goes with each line (speak). */
         void applySettings() {
             TextToSpeech t;
@@ -1122,13 +1140,32 @@ public final class Bridge implements SensorEventListener {
         }
     }
 
-    /**
-     * The phone's language, or US English when the engine has not got it - and with it the engine's own voice:
-     * setLanguage puts the voice the engine's settings give that language (getDefaultVoiceNameFor).  Every
-     * start of an engine does this, and nothing here chooses another voice (user request, 2026-10-02: the
-     * player chooses the engine, and each engine speaks with the voice set in its own settings on the phone).
+    /** Python: choose Vietnamese TTS for Vietnamese UI, or "" for the phone's normal locale.
+     * Updates both voices, including the one used for in-game narration, if it is already running.
+     * The second voice also picks this up when it is first created.
      */
-    private static void speakTheLanguage(TextToSpeech t) {
+    public void setGameSpeechLanguage(String languageTag) {
+        gameSpeechLanguage = languageTag == null ? "" : languageTag;
+        main.post(() -> {
+            first.updateLanguage();
+            second.updateLanguage();
+        });
+    }
+
+    /** The game's language when a suitable voice exists; otherwise the phone's language, then US English. */
+    private void speakTheLanguage(TextToSpeech t) {
+        String languageTag = gameSpeechLanguage;
+        if (!languageTag.isEmpty()) {
+            try {
+                int r = t.setLanguage(Locale.forLanguageTag(languageTag));
+                if (r != TextToSpeech.LANG_MISSING_DATA && r != TextToSpeech.LANG_NOT_SUPPORTED) {
+                    return;
+                }
+                Log.w(TAG, "the speech engine has no language data for " + languageTag);
+            } catch (RuntimeException e) {
+                Log.w(TAG, "could not select " + languageTag + " for speech", e);
+            }
+        }
         int r = t.setLanguage(Locale.getDefault());
         if (r == TextToSpeech.LANG_MISSING_DATA || r == TextToSpeech.LANG_NOT_SUPPORTED) {
             t.setLanguage(Locale.US);

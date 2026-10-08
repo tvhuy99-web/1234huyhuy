@@ -1,0 +1,53 @@
+name: Vietnamese localization checks
+
+on:
+  push:
+    branches:
+      - feat/vietnamese-localization
+    paths:
+      - 'audiodefence/**'
+      - 'game/**'
+      - 'localization/**'
+      - 'tools/**'
+      - 'tests/test_vietnamese.py'
+      - '.github/workflows/vietnamese.yml'
+  pull_request:
+    paths:
+      - 'audiodefence/**'
+      - 'game/**'
+      - 'localization/**'
+      - 'tools/**'
+      - 'tests/test_vietnamese.py'
+      - '.github/workflows/vietnamese.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vietnamese-localization-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-vietnamese:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the game and translation
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Validate source, translation, and data
+        run: |
+          python tools/check_vietnamese.py --strict
+          python tools/verify_localization.py --language "Tiếng Việt"
+      - name: Run Vietnamese localization regression tests
+        run: python -m unittest discover -s tests -p 'test_vietnamese.py' -v
+      - name: Review dynamic English phrase candidates (informational)
+        run: python tools/audit_vietnamese_dynamic.py
+      - name: Reject English clauses accidentally left inside Vietnamese strings
+        run: python tools/check_vietnamese_embedded_english.py
+      - name: Check Python syntax
+        run: python -m compileall -q audiodefence tools

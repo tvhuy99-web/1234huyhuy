@@ -16,6 +16,20 @@ It is playable from the logo to the last challenge. If you find something that
 sounds wrong, say so — most of what is fixed in here was found by someone
 playing it and describing what they heard.
 
+## Bản tiếng Việt trên Android (đang kiểm thử)
+
+Bản dịch tiếng Việt dành cho Audio Defence được phát triển trên nhánh
+[`feat/vietnamese-localization`](https://github.com/tvhuy99-web/1234huyhuy/tree/feat/vietnamese-localization).
+Bản dịch hiện có **1.516 mục tiếng Việt**; bộ kiểm tra mở rộng nhận diện
+**1.063 câu/mục người chơi có thể đọc hoặc nghe**, tất cả đều có bản dịch.
+TTS Android sử dụng `vi-VN` khi chọn **Tiếng Việt**. Lời thoại thu âm gốc vẫn
+là tiếng Anh, với TTS tiếng Việt đọc đi kèm dựa trên bản chép lời nháp cần duyệt.
+
+**GitHub Actions đã biên dịch được APK debug, nhưng chưa có kiểm thử thực tế
+trên điện thoại.** Trước khi cài đặt hãy sao lưu tiến trình, kiểm tra giọng đọc
+và thử các chế độ chơi. Xem [hướng dẫn tiếng Việt](docs/VIETNAMESE.md) để biết cách sử
+dụng, kiểm tra bản dịch, sao lưu dữ liệu và biên dịch Android.
+
 ## Accessibility
 
 The port is built for a screen reader, not adapted to one afterwards. It speaks
@@ -261,9 +275,13 @@ Language** chooses it, and the choice is kept with your other settings. English
 is the default, and a player who never opens that row sees and hears exactly
 what the port always showed.
 
-**What stays English** is the recorded audio — the announcer calling out your
-kills, and the game's own spoken lines. Those are sound files, not text, so no
-translation can reach them.
+**The original recorded audio stays in English.** On Android, Vietnamese mode now
+has an experimental spoken companion for a small set of identified Challenge
+recordings: an Android Vietnamese TTS voice gives a short explanation at the
+same moment, with the original actor's volume lowered. This does not replace
+the recordings. Most prerecorded lines (and the opener, announcer, and
+encyclopedia voices) have no verified transcripts yet, so they remain English
+only. See [the Vietnamese status and limitations](docs/VIETNAMESE.md).
 
 ### The language files
 

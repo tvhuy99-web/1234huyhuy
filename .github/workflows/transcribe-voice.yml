@@ -1,0 +1,50 @@
+name: Draft transcripts of original English voice clips
+
+# Speech recognition is expensive and its results require human review.
+# Only run on explicit request, not once for every localization fix.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: voice-transcript-drafts-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  draft-transcripts:
+    name: Draft speech recognition (${{ matrix.name }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 105
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: challenge
+            groups: challenge_dialogue
+          - name: other
+            groups: tutorial_voice,gameover_dialogue,announcer,weapon_names,powerup_names,revive_dialogue,opener_dialogue
+    steps:
+      - name: Check out original voice audio and scripts
+        uses: actions/checkout@v4
+      - name: Python with pretrained English speech recognition
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU speech recognition (runs locally, no audio uploaded)
+        run: pip install --disable-pip-version-check "faster-whisper==1.2.1"
+      - name: Create English DRAFT transcripts, not translated/verified dialogue
+        run: |
+          python tools/transcribe_recorded_voice.py \
+            --groups "${{ matrix.groups }}" \
+            --model small.en \
+            --output "analysis/draft_transcripts_${{ matrix.name }}.json"
+      - name: Save drafts for human listening and correction
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: English-voice-DRAFT-${{ matrix.name }}
+          path: analysis/draft_transcripts_${{ matrix.name }}.json
+          if-no-files-found: warn
+          retention-days: 21

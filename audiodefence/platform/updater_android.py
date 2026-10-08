@@ -44,7 +44,7 @@ log = logging.getLogger('platform.updater')
 
 #: the repository the app updates itself from.  The same as `REPOSITORY` in platform/updater.py, which the
 #: phone cannot import (it reads zips with remotezip, which the APK leaves out): change both together.
-REPOSITORY = 'lbk2907/AudioDefence'
+REPOSITORY = 'tvhuy99-web/1234huyhuy'
 LATEST_RELEASE = 'https://api.github.com/repos/%s/releases/latest' % REPOSITORY
 RELEASES_PAGE = 'https://github.com/%s/releases' % REPOSITORY
 USER_AGENT = 'AudioDefence-Updater'

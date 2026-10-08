@@ -840,6 +840,13 @@ class S3DSound:
             self.stored_fade = fadein
             self.play_when_loaded = True
             self.activate()
+        # The central sound play event can announce *any* precisely named voice
+        # clip, including short callouts played outside Challenge's ADSound.
+        # The key whitelist prevents all ordinary sound effects from speaking.
+        if _host.ANDROID:
+            from ..game.voice_labels import companion_label, speak_short_voice
+            if companion_label(self.key):
+                speak_short_voice(self)
 
     def _setup_either(self) -> None:                                # 0x100105da4
         self._build_source()
@@ -898,6 +905,13 @@ class S3DSound:
             self.engine.dispatch(self._stop_internal)
 
     def _stop_internal(self) -> None:                               # 0x1001067f8
+        # Restore a voice clip's original gain before reusing the sound agent.
+        # Important: do this here, not with an end monitor, because gameplay
+        # relies on existing single-monitor callbacks for power-up activation.
+        voice_gain = getattr(self, "_vi_voice_original_gain", None)
+        if voice_gain is not None:
+            self.set_gain(voice_gain)
+            self._vi_voice_original_gain = None
         self.stopping = False
         self.play_rate = 0.0
         self.looping_flag = False

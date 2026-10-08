@@ -191,6 +191,88 @@ def code_phrases():
                 if body and isinstance(body[0], ast.Expr) and isinstance(body[0].value, ast.Constant):
                     docstrings.add(id(body[0].value))
             logged = _log_calls(tree)
+
+            # A few user-facing tutorials are assembled from constant dictionaries
+            # instead of being passed directly to View/speak/translate.  Their
+            # literals must be included or the verifier can report false 100%
+            # coverage while Android still speaks English navigation instructions.
+            if os.path.relpath(path, ROOT).replace(os.sep, '/') == 'audiodefence/game/tutorial_text.py':
+                text_tables = {'PHONE_AIM', 'PHONE_LINES', 'PHONE_BUTTON_LINES',
+                               'PAD_AIM', 'PAD_AIM_BUTTONS', 'PAD_SHAKE'}
+                for stmt in tree.body:
+                    if not isinstance(stmt, ast.Assign):
+                        continue
+                    if not any(isinstance(target, ast.Name) and target.id in text_tables
+                               for target in stmt.targets):
+                        continue
+                    for item in ast.walk(stmt.value):
+                        if not isinstance(item, ast.Constant) or not isinstance(item.value, str):
+                            continue
+                        phrase = ' '.join(item.value.split())
+                        if len(phrase) >= 3 and re.search('[A-Za-z]', phrase) and not is_plumbing(phrase):
+                            yield phrase, '%s:%d (tutorial text table)' % (
+                                os.path.relpath(path, ROOT), item.lineno)
+
+            # The Credits/About view reads multiline constants rather than
+            # call-site literals. Preserve proper names, but inventory actual
+            # English descriptive sentences and the attribution prepositions.
+            if os.path.relpath(path, ROOT).replace(os.sep, '/') == 'audiodefence/ui/credits_text.py':
+                for stmt in tree.body:
+                    if not isinstance(stmt, ast.Assign):
+                        continue
+                    if not any(isinstance(target, ast.Name) and target.id in (
+                            'PORT_CREDITS_TEXT', 'STUDIO_TEXT') for target in stmt.targets):
+                        continue
+                    if not isinstance(stmt.value, ast.Constant) or not isinstance(stmt.value.value, str):
+                        continue
+                    for phrase in stmt.value.value.splitlines():
+                        phrase = phrase.strip()
+                        if (len(phrase) > 10 and
+                                re.search(r'\b(?:by|The|Built|is)\b', phrase) and
+                                not is_plumbing(phrase)):
+                            yield phrase, '%s:%d (credit text line)' % (
+                                os.path.relpath(path, ROOT), stmt.lineno)
+
+            # Voice hints are chosen from two platform-specific module-level
+            # phrases, then interpolated into a longer screen-reader message.
+            # The interpolated variants have different names for the voice, so
+            # a source-only scan misses the very words that must be translated.
+            if os.path.relpath(path, ROOT).replace(os.sep, '/') == 'audiodefence/ui/settings.py':
+                for stmt in tree.body:
+                    if not isinstance(stmt, ast.Assign):
+                        continue
+                    if not any(isinstance(target, ast.Name) and target.id == 'VOICE_DEFAULT_HINT'
+                               for target in stmt.targets):
+                        continue
+                    for item in ast.walk(stmt.value):
+                        if isinstance(item, ast.Constant) and isinstance(item.value, str):
+                            yield item.value.strip(), '%s:%d (voice default hint)' % (
+                                os.path.relpath(path, ROOT), item.lineno)
+
+            # A label or hint assigned *after* a widget is created is also
+            # user-facing. Previously only constructor arguments and keyword
+            # fields were inspected; Tarot's shuffle price hint escaped the
+            # inventory even though it is spoken by the screen reader.
+            for stmt in ast.walk(tree):
+                if isinstance(stmt, ast.Assign):
+                    targets, source_value = stmt.targets, stmt.value
+                elif isinstance(stmt, ast.AnnAssign):
+                    targets, source_value = [stmt.target], stmt.value
+                else:
+                    continue
+                if source_value is None or not any(
+                        isinstance(target, ast.Attribute) and target.attr in TEXT_KEYWORDS
+                        for target in targets):
+                    continue
+                for item in ast.walk(source_value):
+                    if not isinstance(item, ast.Constant) or not isinstance(item.value, str):
+                        continue
+                    phrase = ' '.join(item.value.split())
+                    if len(phrase) < 3 or not re.search('[A-Za-z]', phrase) or is_plumbing(phrase):
+                        continue
+                    yield phrase, '%s:%d (assigned UI text)' % (
+                        os.path.relpath(path, ROOT), item.lineno)
+
             for node in ast.walk(tree):
                 if not isinstance(node, ast.Call):
                     continue
