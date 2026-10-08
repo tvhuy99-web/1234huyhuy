@@ -188,30 +188,35 @@ class ADSound:
             Speech.shared().speak_in_game(text, False)
 
     def speak_recorded_voice_companion(self) -> None:
-        """Read a reviewed Vietnamese explanation alongside an ORIGINAL challenge recording.
+        """Read a Vietnamese ASR-draft translation alongside an ORIGINAL challenge recording.
 
-        This is not speech recognition or dubbing. Only keyed recordings with a
-        contextual companion line are read; unknown audio is never given made-up text.
+        This is not live speech recognition. Draft transcripts need listening review;
+        unknown recordings are not given guessed dialogue.
         Tutorial announcer speech already has tutorial_text.py and is not duplicated.
         """
         from ..platform import host
         if not host.ANDROID or self.sound is None or GameParameters.shared().language() != 'Tiếng Việt':
             return
+        from .voice_drafts_vi import draft_for
         from .recorded_voice_text import companion_for
-        text = companion_for(getattr(self.sound, 'key', None))
-        if not text:
-            return
         from .. import localization
         from ..platform.speech import Speech
         from ..ui.reading import in_game_speech, reading_seconds
-        translated = localization.translate(text)
-        # A missing translation should never be spoken in English by the Vietnamese voice.
-        if translated == text:
-            log.warning('no Vietnamese text for recorded speech %s', getattr(self.sound, 'key', None))
-            return
+        sound_key = getattr(self.sound, 'key', None)
+        # Prefer a Vietnamese rendering of the actual audio ASR draft, rather
+        # than the older 11 general-purpose descriptions of enemy mechanics.
+        text = draft_for(sound_key)
+        if not text:
+            old_phrase = companion_for(sound_key)
+            if not old_phrase:
+                return
+            text = localization.translate(old_phrase)
+            if text == old_phrase:
+                log.warning('no Vietnamese text for recorded speech %s', sound_key)
+                return
         self._vi_voice_text = text
-        self._vi_voice_wait = max(0.0, reading_seconds(translated, in_game_speech()))
-        # Duck only the actor's own recording, not ambient audio, zombies or gunfire.
+        self._vi_voice_wait = max(0.0, reading_seconds(text, in_game_speech()))
+        # Duck only the actor's recording, not ambient audio or gameplay sounds.
         self._vi_original_gain = self.sound.gain
         self.sound.set_gain(self._vi_original_gain * 0.32)
         Speech.shared().speak_in_game(text, False)
