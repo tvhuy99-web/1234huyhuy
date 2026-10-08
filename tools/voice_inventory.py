@@ -24,16 +24,25 @@ from collections import Counter
 ROOT = Path(__file__).resolve().parent.parent
 SOUNDS = ROOT / "analysis/data/sounds.tsv"
 CAPTIONS = ROOT / "audiodefence/game/recorded_voice_text.py"
+SHORT_LABELS = ROOT / "audiodefence/game/voice_labels.py"
 TUTORIAL_NO_TEXT = {"announcer_tutorial_aimhelp", "announcer_tutorial_aimprompt"}
 
 
-def companion_keys():
-    # This small table has no imports that initialize the game or Android.
-    spec = importlib.util.spec_from_file_location("ad_recorded_voice_text", CAPTIONS)
-    module = importlib.util.module_from_spec(spec)
+def _load_module(filename: Path, name: str):
+    # Tables are safe to inspect without starting the game or Android.
+    spec = importlib.util.spec_from_file_location(name, filename)
     assert spec and spec.loader
+    module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    return set(module.CHALLENGE_VOICE_LINES)
+    return module
+
+
+def companion_keys():
+    return set(_load_module(CAPTIONS, "ad_recorded_voice_text").CHALLENGE_VOICE_LINES)
+
+
+def short_label_keys():
+    return set(_load_module(SHORT_LABELS, "ad_voice_labels").LABELS)
 
 
 def classify(path: str):
@@ -67,6 +76,7 @@ def classify(path: str):
 
 def inventory():
     reviewed_companions = companion_keys()
+    short_labels = short_label_keys()
     items = []
     with SOUNDS.open(encoding="utf-8", newline="") as f:
         for row in csv.DictReader(f, delimiter="\t"):
@@ -80,6 +90,8 @@ def inventory():
                 state = "tutorial_text_existing"
             elif key in reviewed_companions:
                 state = "contextual_companion_existing"
+            elif key in short_labels:
+                state = "short_label_existing"
             elif not confirmed_voice:
                 state = "review_if_voice"
             else:
