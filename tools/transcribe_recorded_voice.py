@@ -31,7 +31,7 @@ def main():
              if x["group"] != "encyclopedia_preview"
              and (groups is None or x["group"] in groups)]
     if args.limit:
-        clips = clips[:limit] if (limit := args.limit) else clips
+        clips = clips[:args.limit]
     if not clips:
         raise SystemExit("No clips selected")
     print(f"Transcribing {len(clips)} recordings with {args.model}", flush=True)
