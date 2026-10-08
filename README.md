@@ -16,6 +16,19 @@ It is playable from the logo to the last challenge. If you find something that
 sounds wrong, say so — most of what is fixed in here was found by someone
 playing it and describing what they heard.
 
+## Bản tiếng Việt trên Android (đang kiểm thử)
+
+Bản dịch tiếng Việt dành cho Audio Defence được phát triển trên nhánh
+[`feat/vietnamese-localization`](https://github.com/tvhuy99-web/1234huyhuy/tree/feat/vietnamese-localization).
+Hiện đã có bản dịch vòng đầu cho **1.495 câu và mục giao diện** theo danh sách
+tham chiếu; những câu do TTS đọc được đặt ngôn ngữ `vi-VN` trên Android khi
+người chơi chọn **Tiếng Việt**. Lời thoại thu âm gốc vẫn bằng tiếng Anh.
+
+**Đây chưa phải APK đã được thử nghiệm hoặc phát hành.** Trước khi cài trên
+điện thoại cần biên dịch APK từ nhánh Việt hóa, kiểm tra giọng đọc và thử các
+chế độ chơi. Xem [hướng dẫn tiếng Việt](docs/VIETNAMESE.md) để biết cách sử
+dụng, kiểm tra bản dịch, sao lưu dữ liệu và biên dịch Android.
+
 ## Accessibility
 
 The port is built for a screen reader, not adapted to one afterwards. It speaks
