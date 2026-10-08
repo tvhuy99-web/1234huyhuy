@@ -1,8 +1,7 @@
 name: Vietnamese Android debug APK
 
 on:
-  push:
-    branches: [feat/vietnamese-localization]
+  pull_request:
     paths:
       - 'android/**'
       - 'audiodefence/**'
