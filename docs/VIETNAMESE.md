@@ -5,8 +5,8 @@ Bản dịch đang được thực hiện trên nhánh `feat/vietnamese-localiza
 
 ## Trạng thái
 
-- Bản dịch: `localization/Tiếng Việt.json`, có **1.514 khóa** (1.495 khóa tham chiếu cộng 19 câu hướng dẫn, Ghi công và hint tạo động tìm thấy qua rà soát).
-- **Kiểm tra nguồn: 1.061/1.061 câu phát sinh từ mã và dữ liệu có bản dịch**, và kiểm tra 1.514/1.514 mục JSON thành công. Đây là kiểm tra tĩnh, không thay thế thử nghiệm TTS trên thiết bị thật hoặc đối chiếu lời thoại thu âm.
+- Bản dịch: `localization/Tiếng Việt.json`, có **1.516 khóa** (1.495 khóa tham chiếu cộng 21 câu hướng dẫn, Ghi công, Tarot và giọng TTS mặc định tìm thấy qua rà soát).
+- **Kiểm tra nguồn: 1.063/1.063 câu phát sinh từ mã và dữ liệu có bản dịch**, và kiểm tra 1.516/1.516 mục JSON thành công. Đây là kiểm tra tĩnh, không thay thế thử nghiệm TTS trên thiết bị thật hoặc đối chiếu lời thoại thu âm.
 - Quy tắc số nhiều: `"@plural": "none"`. Tiếng Việt không cần những dạng số nhiều như tiếng Anh hoặc tiếng Nga.
 - Trên Android, chọn **Tiếng Việt** sẽ yêu cầu cả giọng TTS thứ nhất và thứ hai dùng `vi-VN`. Nếu máy thiếu giọng Việt, bộ máy đọc quay về ngôn ngữ điện thoại, rồi tiếng Anh nếu cần.
 - Các tệp thoại gốc vẫn là tiếng Anh; cơ chế TTS tiếng Việt đọc đi kèm đã bao phủ đa số tệp thoại ở mức bản nháp, chưa được duyệt từng bản chép lời. Xem mục **Đọc tiếng Việt đồng thời với lời thoại gốc**.
@@ -68,7 +68,7 @@ trong trận không che âm thanh định hướng.
 
 ## Công việc còn lại trước khi phát hành
 
-1. Bộ trích xuất và kiểm thử CI hiện có 1.514 mục, trong đó có 19 câu nằm ngoài danh mục Nga cũ. Cần tiếp tục chạy chúng và rà soát các chuỗi ghép động khi mã game thay đổi.
+1. Bộ trích xuất và kiểm thử CI hiện có 1.516 mục, trong đó có 21 câu nằm ngoài danh mục Nga cũ. Cần tiếp tục chạy chúng và rà soát các chuỗi ghép động khi mã game thay đổi.
 2. Bộ kiểm tra Python và bản dịch đã chạy thành công trên GitHub Actions. Tiếp tục chạy lại mỗi khi chỉnh mã TTS, theo dõi các câu mới và xử lý lỗi CI phát sinh.
 3. Nhờ người chơi nghe thử toàn bộ hướng dẫn, thông báo chiến đấu và các đoạn văn dài. Chỉnh những câu quá dài hoặc khó hiểu khi đọc TTS.
 4. Kiểm thử cả hai giọng TTS tiếng Việt trên điện thoại, kể cả thay đổi ngôn ngữ trong lúc game đang chạy và khi thiết bị thiếu giọng Việt.
