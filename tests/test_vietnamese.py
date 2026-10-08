@@ -81,6 +81,44 @@ class VietnameseSpeechTests(unittest.TestCase):
                 self.assertNotIn(english, translated)
         self.assertIn("Loh Boon Keat", translated)  # creator name is not translated
 
+    def test_android_menu_touch_words_stay_vietnamese(self):
+        # The in-game menu hint converter uses a keyboard-independent table.
+        # Inspect its patterns without importing pygame/controller hardware.
+        import ast
+        import re
+        tree = ast.parse(Path("audiodefence/platform/pad.py").read_text(encoding="utf-8"))
+        matches = [node for node in tree.body if isinstance(node, ast.Assign)
+                   and any(isinstance(t, ast.Name) and t.id == "_TOUCH_WORDS_VI"
+                           for t in node.targets)]
+        self.assertEqual(len(matches), 1)
+        rules = ast.literal_eval(matches[0].value)
+        for original, expected in (
+            ("Nhấn Enter để chọn.", "Chạm đúp để chọn."),
+            ("Nhấn Escape để hủy.", "Vuốt qua lại bằng hai ngón để hủy."),
+            ("Shift cộng Enter để quay lại.", "chạm đúp và giữ để quay lại."),
+        ):
+            said = original
+            for pattern, words in rules:
+                said = re.sub(pattern, words, said)
+            self.assertEqual(said, expected)
+
+    def test_default_voice_hints_for_both_desktop_systems(self):
+        import ast
+        import json
+        tree = ast.parse(Path("audiodefence/ui/settings.py").read_text(encoding="utf-8"))
+        vi = json.loads(Path("localization/Tiếng Việt.json").read_text(encoding="utf-8"))
+        nodes = [node for node in tree.body if isinstance(node, ast.Assign)
+                 and any(isinstance(t, ast.Name) and t.id == "VOICE_DEFAULT_HINT"
+                         for t in node.targets)]
+        self.assertEqual(len(nodes), 1)
+        versions = [item.value for item in ast.walk(nodes[0].value)
+                    if isinstance(item, ast.Constant) and isinstance(item.value, str)]
+        self.assertEqual(len(versions), 2)
+        for english in versions:
+            with self.subTest(english=english):
+                self.assertIn(english, vi)
+                self.assertNotEqual(localization.translate(english), english)
+
     def test_tarot_shuffle_price_read_in_vietnamese(self):
         sentence = "%i diamonds and %i coins. You have %i diamonds and %i coins" % (
             5, 200, 8, 1000)
