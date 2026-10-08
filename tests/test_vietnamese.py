@@ -12,6 +12,7 @@ from audiodefence.platform.speech_android import phone_words
 from audiodefence.game.recorded_voice_text import CHALLENGE_VOICE_LINES, companion_for
 from audiodefence.game.voice_labels import LABELS, companion_label
 from audiodefence.game.voice_drafts_vi import ASR_DRAFT_VI, draft_for
+from audiodefence.game import tutorial_text
 from pathlib import Path
 
 
@@ -33,6 +34,36 @@ class VietnameseSpeechTests(unittest.TestCase):
 
     def tearDown(self):
         self._language_patch.stop()
+
+    def test_all_assembled_phone_tutorial_phrases_are_vietnamese(self):
+        import json
+        phrases = json.loads(Path("localization/Tiếng Việt.json").read_text(encoding="utf-8"))
+        values = (list(tutorial_text.PHONE_AIM.values()) +
+                  list(tutorial_text.PHONE_LINES.values()) +
+                  list(tutorial_text.PHONE_BUTTON_LINES.values()) +
+                  [tutorial_text.PAD_AIM, tutorial_text.PAD_AIM_BUTTONS,
+                   tutorial_text.PAD_SHAKE])
+        self.assertEqual(len(values), 16)
+        for english in values:
+            with self.subTest(english=english):
+                self.assertIn(english, phrases, "Spoken tutorial text lacks a translation key")
+                self.assertTrue(phrases[english].strip())
+                self.assertNotEqual(localization.translate(english), english)
+        # The tutorial dynamically chooses the phone's aiming mode.
+        with patch.object(tutorial_text.host, 'ANDROID', True):
+            from audiodefence.game.parameters import GameParameters
+            with patch.object(GameParameters, 'shared') as shared:
+                shared.return_value.control_scheme = 1
+                shared.return_value.button_mode = False
+                self.assertEqual(
+                    localization.translate(tutorial_text.phone_text_for("announcer_tutorial_aim_gyroMode")),
+                    phrases[tutorial_text.PHONE_AIM[1]],
+                )
+                shared.return_value.button_mode = True
+                self.assertEqual(
+                    localization.translate(tutorial_text.phone_text_for("announcer_tutorial_reload_buttonMode")),
+                    phrases[tutorial_text.PHONE_BUTTON_LINES['reload']],
+                )
 
     def test_english_gesture_keeps_english_words(self):
         with patch('audiodefence.localization.language', return_value=localization.ENGLISH):
