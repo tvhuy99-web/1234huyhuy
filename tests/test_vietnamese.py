@@ -10,6 +10,7 @@ from audiodefence import localization
 from audiodefence.platform.speech_android import phone_words
 from audiodefence.game.recorded_voice_text import CHALLENGE_VOICE_LINES, companion_for
 from audiodefence.game.voice_labels import LABELS, companion_label
+from audiodefence.game.voice_drafts_vi import ASR_DRAFT_VI, draft_for
 from pathlib import Path
 
 
@@ -72,6 +73,23 @@ class VietnameseSpeechTests(unittest.TestCase):
                     any(path.glob('*/' + key + '.m4a')),
                     'No corresponding recording found for ' + key,
                 )
+
+    def test_asr_draft_coverage_is_declared_not_verified(self):
+        import json
+        inventory = json.loads(Path("analysis/voice_inventory.json").read_text(encoding="utf-8"))
+        mapped = {item["key"] for item in inventory}
+        self.assertGreaterEqual(len(ASR_DRAFT_VI), 71)
+        for key, vietnamese in ASR_DRAFT_VI.items():
+            with self.subTest(voice_key=key):
+                self.assertIn(key, mapped, "Translation refers to unknown audio")
+                self.assertTrue(vietnamese.strip())
+                self.assertTrue(any(ord(char) > 127 for char in vietnamese))
+                self.assertEqual(draft_for(key), vietnamese)
+        for clip in inventory:
+            if clip["status"] == "asr_draft_vi_needs_review":
+                self.assertIn(clip["key"], ASR_DRAFT_VI)
+                self.assertFalse(clip["verified_transcript"])
+        self.assertIsNone(draft_for("ambient_arena"))
 
     def test_short_spoken_labels_match_audio_files(self):
         sound_paths = Path("analysis/data/sounds.tsv").read_text(encoding="utf-8").splitlines()[1:]
