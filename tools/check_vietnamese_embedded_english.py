@@ -63,6 +63,32 @@ def suspect_fragments(vietnamese: str) -> list[str]:
     return list(dict.fromkeys(found))
 
 
+# Even a fragment with no function words ("Zombies attack now") can be an
+# untranslated English sentence if it is copied verbatim from the source.
+# Ignore technical strings and credit names which should remain unchanged.
+NON_SPEECH = re.compile(
+    r"github\.com/[^\s,;]+|AudioDefence backup\.zip|"
+    r"\b(?:Loh Boon Keat|Wong Wee Xiang|Muhammad Hajjar|Somethin' Else|Papa Sangre)\b|"
+    r"%(?:\d+\$)?[-+#0-9.]*[diufsxc%]|[\w.-]+\.(?:json|zip|mhr|sofa)",
+    re.IGNORECASE,
+)
+
+
+def repeated_source_phrases(source: str, translated: str) -> list[str]:
+    """Find 3+ English source words copied as an uninterrupted phrase.
+
+    Requires the original English source, so this check only applies to
+    localization JSON; prerecorded dialogue drafts have no verified English
+    transcripts in the source tree. The independent function-word check
+    still examines all voice drafts.
+    """
+    original = [m.group(0).lower() for m in WORD.finditer(NON_SPEECH.sub(" ", source))]
+    target = [m.group(0).lower() for m in WORD.finditer(NON_SPEECH.sub(" ", translated))]
+    source_groups = {tuple(original[i:i+3]) for i in range(len(original)-2)}
+    return sorted({" ".join(target[i:i+3]) for i in range(len(target)-2)
+                   if tuple(target[i:i+3]) in source_groups})
+
+
 def literals_from(path: Path, variable: str) -> dict[str, str]:
     """Read a dict and any .update(dict) calls *without importing game code*."""
     tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
@@ -103,6 +129,10 @@ def audit() -> tuple[int, list[str]]:
                 problems.append(f"{category}: {key!r} has non-string value")
                 continue
             hits = suspect_fragments(value)
+            # The English original is the JSON key, never the voice filename.
+            # Compare copied *word sequences* as well as grammar markers.
+            if category == "localization":
+                hits.extend(repeated_source_phrases(key, value))
             if hits:
                 problems.append(f"{category}: {key[:95]!r}: {hits!r} in {value[:150]!r}")
         print(f"{category}: {len(items)} values reviewed for embedded English clauses.")
