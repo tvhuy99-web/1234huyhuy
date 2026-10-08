@@ -25,6 +25,10 @@ VIETNAMESE = ROOT / "localization" / "Tiếng Việt.json"
 # percentage is excluded, so "20% faster" is not mistaken for a "% f" placeholder.
 FORMAT = re.compile(r"%(?:\d+\$)?[-+#0]*(?:\d+|\*)?(?:\.\d+)?[diufsxc%]")
 
+# The English "%s" here is only an optional plural *s*, not a game value.
+# Vietnamese "sao" does not inflect; deliberately leave the suffix out.
+OPTIONAL_ENGLISH_SUFFIX = {"%i star%s unlocked": "%s"}
+
 
 def unique_pairs(items):
     out = {}
@@ -66,7 +70,10 @@ def check(source, translation, strict=False):
             untranslated.append(key)
             continue
         translated += 1
-        if Counter(FORMAT.findall(key)) != Counter(FORMAT.findall(value)):
+        original_slots = FORMAT.findall(key)
+        if key in OPTIONAL_ENGLISH_SUFFIX:
+            original_slots.remove(OPTIONAL_ENGLISH_SUFFIX[key])
+        if Counter(original_slots) != Counter(FORMAT.findall(value)):
             errors.append("format parameters changed: " + repr(key))
         if value.count("{") != value.count("}"):
             errors.append("unbalanced plural braces: " + repr(key))
