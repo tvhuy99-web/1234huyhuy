@@ -198,7 +198,6 @@ class PowerUp:
         if not announcer_enabled:
             announce.set_gain(0.0)
         announce.play(False)
-        if announcer_enabled:
 
     #: PORT ADDITION: how long the power-up starting is felt for when it has nothing of its own to go by,
     #: and the most it is felt for however long its start sound runs.  The Tornado's launch is 5.7 seconds
