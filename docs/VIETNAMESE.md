@@ -32,6 +32,35 @@ Lưu ý: một số câu của Java được đọc lúc khởi động **trư�
 - Trong tệp JSON dùng **Nhấn Enter**, **Shift cộng Enter** và **Escape** cho bàn phím máy tính. Trên điện thoại, `speech_android.phone_words` chuyển hướng dẫn thành **chạm đúp**, **chạm đúp và giữ** và **vuốt qua lại bằng hai ngón** khi phát. Cách này giúp một tệp dịch dùng được ở cả Android và Windows.
 - Các hướng dẫn trong trận cần tránh dài dòng để không che tiếng bước chân và tiếng định hướng zombie.
 
+## Đọc tiếng Việt đồng thời với lời thoại gốc
+
+Bản thử nghiệm có cơ chế **đọc lời nhắc tiếng Việt bằng TTS khi một tệp thoại gốc đã định danh
+bắt đầu phát** trong Challenge. Tiếng Anh thu âm vẫn được giữ lại, nhưng riêng tiếng của
+nhân vật sẽ được giảm còn khoảng 32% để giọng Việt dễ nghe. **Tiếng zombie, súng, tiếng
+bước chân và hiệu ứng âm thanh khác không bị giảm âm lượng.**
+
+- Các lời hướng dẫn tutorial vẫn dùng `game/tutorial_text.py`: chế độ **As the announcer
+  speaks** đã có từ bản gốc của port và được giữ nguyên; không phát hai câu TTS trùng nhau.
+- Các đoạn lời thoại Challenge đã được đối chiếu theo tên tệp ghi âm và nội dung mô tả
+  trong game được ánh xạ ở `audiodefence/game/recorded_voice_text.py`.
+- **Hiện mới có 11 tệp lời thoại được gán câu TTS đi kèm**, với các nội dung về thời tiết,
+  bầy zombie, một số loại zombie và vật cản. Đây là **các câu diễn giải đúng chủ đề**,
+  không phải bản chép lại từng chữ những gì diễn viên gốc nói.
+- Những đoạn chưa có văn bản đáng tin cậy vẫn phát tiếng Anh như bình thường; game sẽ
+  **không đoán lời thoại** dựa trên tên tệp.
+- Với lời thoại chặn đợt zombie mới, game chờ cả lời ghi âm gốc và thời lượng ước tính
+  của TTS tiếng Việt; nút bỏ qua vẫn có tác dụng dừng TTS và tiếp tục trận.
+- Khi tạm dừng, Android không thể tạm dừng TTS giữa câu. Game sẽ dừng lời Việt và đọc
+  lại từ đầu khi tiếp tục. Cần nghe kiểm thử để bảo đảm không chồng âm bất lợi.
+
+Để mở rộng bản thoại đi kèm, trước tiên **nghe và chép chính xác** nội dung tiếng Anh của
+mỗi tệp trong `game/sounds/challenges/`, sau đó dịch sang tiếng Việt và thêm vào bảng
+ánh xạ. Không dùng các đoạn nội dung suy đoán làm bản dịch chính thức. Các lời thoại
+trong phần mở đầu, Zombiepedia, người thông báo (announcer) và những bản thu khác còn
+cần đánh giá riêng vì chúng không đi qua `ADSound` trong Challenge.
+
+**Đây là thử nghiệm trên mã nguồn, chưa kiểm thử âm thanh đồng thời trên điện thoại.**
+
 ## Công việc còn lại trước khi phát hành
 
 1. Chạy bộ trích xuất `tools/make_language.py` trên môi trường có đầy đủ nguồn game để phát hiện câu mới ngoài 1.495 mục tham chiếu; dịch ngay những mục đó.
