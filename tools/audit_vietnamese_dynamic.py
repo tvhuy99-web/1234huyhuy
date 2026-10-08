@@ -23,7 +23,7 @@ VI = ROOT / "localization" / "Tiếng Việt.json"
 CODE = ROOT / "audiodefence"
 NAME = re.compile(r"(?:text|line|message|label|title|hint|help|description|prompt|notice|instruction|caption|story|speech|words|credit|tip)", re.I)
 ENGLISH = re.compile(r"\b(?:the|your|you|to|with|from|on|for|in|of|and|press|tap|swipe|shoot|game|weapon|are|when|then|will|can|try|this|please|that)\b", re.I)
-NOT_TEXT = re.compile(r"^(?:https?://|www\.|[a-zA-Z_][\w.\\/]+|def |class )", re.I)
+NOT_TEXT = re.compile(r"^(?:https?://|www\.)|^[a-zA-Z_][\w.\\/]+\Z", re.I)
 
 
 def assigned_names(node):
