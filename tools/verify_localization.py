@@ -233,6 +233,30 @@ def code_phrases():
                             yield phrase, '%s:%d (credit text line)' % (
                                 os.path.relpath(path, ROOT), stmt.lineno)
 
+            # A label or hint assigned *after* a widget is created is also
+            # user-facing. Previously only constructor arguments and keyword
+            # fields were inspected; Tarot's shuffle price hint escaped the
+            # inventory even though it is spoken by the screen reader.
+            for stmt in ast.walk(tree):
+                if isinstance(stmt, ast.Assign):
+                    targets, source_value = stmt.targets, stmt.value
+                elif isinstance(stmt, ast.AnnAssign):
+                    targets, source_value = [stmt.target], stmt.value
+                else:
+                    continue
+                if source_value is None or not any(
+                        isinstance(target, ast.Attribute) and target.attr in TEXT_KEYWORDS
+                        for target in targets):
+                    continue
+                for item in ast.walk(source_value):
+                    if not isinstance(item, ast.Constant) or not isinstance(item.value, str):
+                        continue
+                    phrase = ' '.join(item.value.split())
+                    if len(phrase) < 3 or not re.search('[A-Za-z]', phrase) or is_plumbing(phrase):
+                        continue
+                    yield phrase, '%s:%d (assigned UI text)' % (
+                        os.path.relpath(path, ROOT), item.lineno)
+
             for node in ast.walk(tree):
                 if not isinstance(node, ast.Call):
                     continue
