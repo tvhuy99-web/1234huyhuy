@@ -1,0 +1,1346 @@
+[
+  {
+    "path": "game/sounds/announcer/announcer_outofammo_c.m4a",
+    "key": "announcer_outofammo_c",
+    "seconds": 0.952,
+    "group": "announcer",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/announcer/announcer_reload_b.m4a",
+    "key": "announcer_reload_b",
+    "seconds": 1.138,
+    "group": "announcer",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/announcer/announcer_reload_g.m4a",
+    "key": "announcer_reload_g",
+    "seconds": 0.906,
+    "group": "announcer",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/announcer/announcer_revive_a.m4a",
+    "key": "announcer_revive_a",
+    "seconds": 1.602,
+    "group": "announcer",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/announcer/announcer_revive_b.m4a",
+    "key": "announcer_revive_b",
+    "seconds": 1.556,
+    "group": "announcer",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/announcer/announcer_reviveyes.m4a",
+    "key": "announcer_reviveyes",
+    "seconds": 1.741,
+    "group": "announcer",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/announcer/fireworks_announce_b.m4a",
+    "key": "fireworks_announce_b",
+    "seconds": 1.486,
+    "group": "announcer",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/announcer/minigun_announce_c.m4a",
+    "key": "minigun_announce_c",
+    "seconds": 1.091,
+    "group": "announcer",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/announcer/tesla_announce_a.m4a",
+    "key": "tesla_announce_a",
+    "seconds": 1.324,
+    "group": "announcer",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/announcer/tornado_announce_a.m4a",
+    "key": "tornado_announce_a",
+    "seconds": 0.998,
+    "group": "announcer",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_1_brick_1/bastard_ruins_intro.m4a",
+    "key": "bastard_ruins_intro",
+    "seconds": 41.564,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_1_brick_3/bastard_maya_1_1.m4a",
+    "key": "bastard_maya_1_1",
+    "seconds": 8.777,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_10_brick_1/bastard_zombie_shield_a.m4a",
+    "key": "bastard_zombie_shield_a",
+    "seconds": 26.633,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_10_brick_2/bastard_maya_10_2.m4a",
+    "key": "bastard_maya_10_2",
+    "seconds": 6.014,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_10_brick_3/bastard_maya_10_3.m4a",
+    "key": "bastard_maya_10_3",
+    "seconds": 12.028,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_10_brick_4/bastard_maya_10_4.m4a",
+    "key": "bastard_maya_10_4",
+    "seconds": 41.053,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_2_brick_1/bastard_passerby_storm_a.m4a",
+    "key": "bastard_passerby_storm_a",
+    "seconds": 11.564,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_2_brick_3/bastard_maya_2_2.m4a",
+    "key": "bastard_maya_2_2",
+    "seconds": 10.519,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_3_brick_1/bastard_zombie_horde_c.m4a",
+    "key": "bastard_zombie_horde_c",
+    "seconds": 7.314,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_3_brick_3/bastard_maya_3_1.m4a",
+    "key": "bastard_maya_3_1",
+    "seconds": 7.779,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_3_brick_5/bastard_maya_3_2.m4a",
+    "key": "bastard_maya_3_2",
+    "seconds": 6.757,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_4_brick_1/bastard_passerby_cows_a.m4a",
+    "key": "bastard_passerby_cows_a",
+    "seconds": 12.446,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_4_brick_3/bastard_maya_4_2.m4a",
+    "key": "bastard_maya_4_2",
+    "seconds": 7.384,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_5_brick_1/bastard_zombie_whisperer_a.m4a",
+    "key": "bastard_zombie_whisperer_a",
+    "seconds": 23.382,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_5_brick_2/bastard_maya_5_2.m4a",
+    "key": "bastard_maya_5_2",
+    "seconds": 10.403,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_5_brick_4/bastard_maya_5_3.m4a",
+    "key": "bastard_maya_5_3",
+    "seconds": 17.694,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_5_brick_5/bastard_maya_5_4.m4a",
+    "key": "bastard_maya_5_4",
+    "seconds": 17.276,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_6_brick_1/bastard_maya_6_1.m4a",
+    "key": "bastard_maya_6_1",
+    "seconds": 17.763,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_6_brick_3/bastard_maya_6_2.m4a",
+    "key": "bastard_maya_6_2",
+    "seconds": 7.523,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_6_brick_4/bastard_maya_6_3.m4a",
+    "key": "bastard_maya_6_3",
+    "seconds": 8.522,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_7_brick_1/bastard_maya_7_1.m4a",
+    "key": "bastard_maya_7_1",
+    "seconds": 21.548,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_7_brick_4/bastard_maya_7_2.m4a",
+    "key": "bastard_maya_7_2",
+    "seconds": 9.52,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_8_brick_1/bastard_zombie_berserk_a.m4a",
+    "key": "bastard_zombie_berserk_a",
+    "seconds": 29.884,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_8_brick_2/bastard_maya_8_2.m4a",
+    "key": "bastard_maya_8_2",
+    "seconds": 10.565,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_8_brick_3/bastard_maya_8_3.m4a",
+    "key": "bastard_maya_8_3",
+    "seconds": 9.056,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_8_brick_4/bastard_maya_8_4.m4a",
+    "key": "bastard_maya_8_4",
+    "seconds": 20.271,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_9_brick_1/bastard_maya_9_1.m4a",
+    "key": "bastard_maya_9_1",
+    "seconds": 20.643,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/maya_9_brick_3/bastard_maya_9_2.m4a",
+    "key": "bastard_maya_9_2",
+    "seconds": 9.311,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/bastard_tutorial_1_1.m4a",
+    "key": "bastard_tutorial_1_1",
+    "seconds": 53.986,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/bastard_tutorial_1_2.m4a",
+    "key": "bastard_tutorial_1_2",
+    "seconds": 29.396,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_2/bastard_tutorial_1_4.m4a",
+    "key": "bastard_tutorial_1_4",
+    "seconds": 27.283,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_2/bastard_tutorial_1_5.m4a",
+    "key": "bastard_tutorial_1_5",
+    "seconds": 15.79,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_2/bastard_tutorial_1_6.m4a",
+    "key": "bastard_tutorial_1_6",
+    "seconds": 33.692,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_10_brick_1/bastard_tutorial_10_1.m4a",
+    "key": "bastard_tutorial_10_1",
+    "seconds": 32.067,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_10_brick_2/bastard_tutorial_10_2.m4a",
+    "key": "bastard_tutorial_10_2",
+    "seconds": 5.503,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_10_brick_4/bastard_tutorial_10_3.m4a",
+    "key": "bastard_tutorial_10_3",
+    "seconds": 16.811,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_10_brick_5/bastard_tutorial_10_4.m4a",
+    "key": "bastard_tutorial_10_4",
+    "seconds": 37.059,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_1/bastard_tutorial_2_1.m4a",
+    "key": "bastard_tutorial_2_1",
+    "seconds": 13.816,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_1/bastard_tutorial_2_2.m4a",
+    "key": "bastard_tutorial_2_2",
+    "seconds": 27.028,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_2/bastard_tutorial_2_3.m4a",
+    "key": "bastard_tutorial_2_3",
+    "seconds": 19.319,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_3/bastard_tutorial_2_4.m4a",
+    "key": "bastard_tutorial_2_4",
+    "seconds": 10.82,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_1/bastard_tutorial_3_1.m4a",
+    "key": "bastard_tutorial_3_1",
+    "seconds": 29.304,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_1/bastard_tutorial_3_2.m4a",
+    "key": "bastard_tutorial_3_2",
+    "seconds": 28.444,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_2/bastard_tutorial_3_3.m4a",
+    "key": "bastard_tutorial_3_3",
+    "seconds": 33.553,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_2/bastard_tutorial_3_4.m4a",
+    "key": "bastard_tutorial_3_4",
+    "seconds": 9.567,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_4_brick_1/bastard_tutorial_4_1.m4a",
+    "key": "bastard_tutorial_4_1",
+    "seconds": 32.322,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_4_brick_3/bastard_tutorial_4_2.m4a",
+    "key": "bastard_tutorial_4_2",
+    "seconds": 19.551,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_4_brick_5/bastard_tutorial_4_4.m4a",
+    "key": "bastard_tutorial_4_4",
+    "seconds": 15.07,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_5_brick_1/bastard_tutorial_5_1.m4a",
+    "key": "bastard_tutorial_5_1",
+    "seconds": 26.053,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_5_brick_2/bastard_tutorial_5_2.m4a",
+    "key": "bastard_tutorial_5_2",
+    "seconds": 27.051,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_5_brick_3/bastard_tutorial_5_3.m4a",
+    "key": "bastard_tutorial_5_3",
+    "seconds": 28.05,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_5_brick_4/bastard_tutorial_5_4.m4a",
+    "key": "bastard_tutorial_5_4",
+    "seconds": 41.564,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_6_brick_1/bastard_tutorial_6_1.m4a",
+    "key": "bastard_tutorial_6_1",
+    "seconds": 21.804,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_6_brick_3/bastard_tutorial_6_2.m4a",
+    "key": "bastard_tutorial_6_2",
+    "seconds": 13.189,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_6_brick_4/bastard_tutorial_6_3.m4a",
+    "key": "bastard_tutorial_6_3",
+    "seconds": 25.054,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_7_brick_1/bastard_tutorial_7_1.m4a",
+    "key": "bastard_tutorial_7_1",
+    "seconds": 27.051,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_7_brick_1/bastard_tutorial_7_2.m4a",
+    "key": "bastard_tutorial_7_2",
+    "seconds": 18.204,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_7_brick_1/bastard_tutorial_7_3.m4a",
+    "key": "bastard_tutorial_7_3",
+    "seconds": 18.321,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_7_brick_4/bastard_tutorial_7_4.m4a",
+    "key": "bastard_tutorial_7_4",
+    "seconds": 2.647,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_8_brick_1/bastard_tutorial_8_1.m4a",
+    "key": "bastard_tutorial_8_1",
+    "seconds": 28.561,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_8_brick_4/bastard_tutorial_8_2.m4a",
+    "key": "bastard_tutorial_8_2",
+    "seconds": 12.817,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_9_brick_1/bastard_tutorial_9_1.m4a",
+    "key": "bastard_tutorial_9_1",
+    "seconds": 18.553,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_9_brick_4/bastard_tutorial_9_2.m4a",
+    "key": "bastard_tutorial_9_2",
+    "seconds": 14.303,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_1_brick_1/bastard_city_intro.m4a",
+    "key": "bastard_city_intro",
+    "seconds": 33.808,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_1_brick_2/bastard_urban_1_1.m4a",
+    "key": "bastard_urban_1_1",
+    "seconds": 18.135,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_10_brick_1/bastard_urban_10_1.m4a",
+    "key": "bastard_urban_10_1",
+    "seconds": 10.635,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_10_brick_1/bastard_zombie_hulk_a.m4a",
+    "key": "bastard_zombie_hulk_a",
+    "seconds": 17.694,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_10_brick_2/bastard_urban_10_2.m4a",
+    "key": "bastard_urban_10_2",
+    "seconds": 9.404,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_10_brick_4/bastard_city_end.m4a",
+    "key": "bastard_city_end",
+    "seconds": 27.098,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_2_brick_1/bastard_passerby_cars_a.m4a",
+    "key": "bastard_passerby_cars_a",
+    "seconds": 19.133,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_2_brick_3/bastard_urban_2_1.m4a",
+    "key": "bastard_urban_2_1",
+    "seconds": 10.658,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_3_brick_1/bastard_zombie_clown_a.m4a",
+    "key": "bastard_zombie_clown_a",
+    "seconds": 32.647,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_3_brick_2/bastard_zombie_clown_b.m4a",
+    "key": "bastard_zombie_clown_b",
+    "seconds": 4.644,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_3_brick_3/bastard_zombie_clown_c.m4a",
+    "key": "bastard_zombie_clown_c",
+    "seconds": 3.901,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_3_brick_4/bastard_urban_3_1.m4a",
+    "key": "bastard_urban_3_1",
+    "seconds": 9.404,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_4_brick_1/bastard_urban_4_1.m4a",
+    "key": "bastard_urban_4_1",
+    "seconds": 16.068,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_4_brick_2/bastard_urban_4_2.m4a",
+    "key": "bastard_urban_4_2",
+    "seconds": 10.635,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_5_brick_1/bastard_zombie_runner_a.m4a",
+    "key": "bastard_zombie_runner_a",
+    "seconds": 14.048,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_5_brick_2/bastard_urban_5_2.m4a",
+    "key": "bastard_urban_5_2",
+    "seconds": 27.632,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_6_brick_1/bastard_urban_6_1.m4a",
+    "key": "bastard_urban_6_1",
+    "seconds": 15.557,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_6_brick_2/bastard_urban_6_2.m4a",
+    "key": "bastard_urban_6_2",
+    "seconds": 10.89,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_7_brick_1/bastard_passerby_jukebox_a.m4a",
+    "key": "bastard_passerby_jukebox_a",
+    "seconds": 12.817,
+    "group": "challenge_dialogue",
+    "status": "contextual_companion_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_7_brick_4/bastard_urban_7_2.m4a",
+    "key": "bastard_urban_7_2",
+    "seconds": 14.652,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_8_brick_1/bastard_zombie_horde_b.m4a",
+    "key": "bastard_zombie_horde_b",
+    "seconds": 8.777,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_8_brick_3/bastard_urban_8_1.m4a",
+    "key": "bastard_urban_8_1",
+    "seconds": 14.884,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_8_brick_5/bastard_urban_8_2.m4a",
+    "key": "bastard_urban_8_2",
+    "seconds": 22.802,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_9_brick_1/bastard_urban_9_1.m4a",
+    "key": "bastard_urban_9_1",
+    "seconds": 15.65,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/urban_9_brick_2/bastard_urban_9_2.m4a",
+    "key": "bastard_urban_9_2",
+    "seconds": 12.144,
+    "group": "challenge_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Berserk.m4a",
+    "key": "Berserk",
+    "seconds": 1.741,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Chainsaw.m4a",
+    "key": "Chainsaw",
+    "seconds": 4.644,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Clown.m4a",
+    "key": "Clown",
+    "seconds": 2.647,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Colossus.m4a",
+    "key": "Colossus",
+    "seconds": 3.46,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Diamond.m4a",
+    "key": "Diamond",
+    "seconds": 3.947,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Dodge.m4a",
+    "key": "Dodge",
+    "seconds": 3.599,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Farty.m4a",
+    "key": "Farty",
+    "seconds": 2.133,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Hulk.m4a",
+    "key": "Hulk",
+    "seconds": 3.715,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/locked_Berserk.m4a",
+    "key": "locked_Berserk",
+    "seconds": 2.554,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/locked_Colossus.m4a",
+    "key": "locked_Colossus",
+    "seconds": 3.529,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/locked_Dodge.m4a",
+    "key": "locked_Dodge",
+    "seconds": 3.669,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/locked_Farty.m4a",
+    "key": "locked_Farty",
+    "seconds": 2.229,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/locked_QuietZombie.m4a",
+    "key": "locked_QuietZombie",
+    "seconds": 10.17,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/locked_Shield.m4a",
+    "key": "locked_Shield",
+    "seconds": 4.365,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/QuietZombie.m4a",
+    "key": "QuietZombie",
+    "seconds": 6.153,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Runner.m4a",
+    "key": "Runner",
+    "seconds": 1.92,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Shield.m4a",
+    "key": "Shield",
+    "seconds": 4.296,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/WeakZombieB.m4a",
+    "key": "WeakZombieB",
+    "seconds": 2.647,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/encyclopedia/Zombie.m4a",
+    "key": "Zombie",
+    "seconds": 1.707,
+    "group": "encyclopedia_preview",
+    "status": "review_if_voice",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_1/bastard_gameover_a.m4a",
+    "key": "bastard_gameover_a",
+    "seconds": 4.69,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_1/bastard_gameover_b.m4a",
+    "key": "bastard_gameover_b",
+    "seconds": 7.198,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_1/bastard_gameover_c.m4a",
+    "key": "bastard_gameover_c",
+    "seconds": 5.805,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_1/bastard_gameover_d.m4a",
+    "key": "bastard_gameover_d",
+    "seconds": 3.344,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_1/bastard_gameover_e.m4a",
+    "key": "bastard_gameover_e",
+    "seconds": 3.692,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_f.m4a",
+    "key": "bastard_gameover_f",
+    "seconds": 6.502,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_g.m4a",
+    "key": "bastard_gameover_g",
+    "seconds": 8.429,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_h.m4a",
+    "key": "bastard_gameover_h",
+    "seconds": 3.622,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_i.m4a",
+    "key": "bastard_gameover_i",
+    "seconds": 6.803,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_j.m4a",
+    "key": "bastard_gameover_j",
+    "seconds": 2.81,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_3/bastard_gameover_k.m4a",
+    "key": "bastard_gameover_k",
+    "seconds": 7.5,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_3/bastard_gameover_l.m4a",
+    "key": "bastard_gameover_l",
+    "seconds": 6.618,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_3/bastard_gameover_m.m4a",
+    "key": "bastard_gameover_m",
+    "seconds": 5.062,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_3/bastard_gameover_n.m4a",
+    "key": "bastard_gameover_n",
+    "seconds": 3.39,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/gameover_3/bastard_gameover_o.m4a",
+    "key": "bastard_gameover_o",
+    "seconds": 4.807,
+    "group": "gameover_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/opener/OPENER_DRBASTARD_B_SPA.m4a",
+    "key": "OPENER_DRBASTARD_B_SPA",
+    "seconds": 6.06,
+    "group": "opener_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/opener/OPENER_DRBASTARD_SPA.m4a",
+    "key": "OPENER_DRBASTARD_SPA",
+    "seconds": 6.06,
+    "group": "opener_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/opener/OPENER_LIFT_VOICE_1_SPA.m4a",
+    "key": "OPENER_LIFT_VOICE_1_SPA",
+    "seconds": 2.067,
+    "group": "opener_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/opener/OPENER_LIFT_VOICE_2_SPA.m4a",
+    "key": "OPENER_LIFT_VOICE_2_SPA",
+    "seconds": 4.063,
+    "group": "opener_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/powerup/fireworks/fireworks_announce.m4a",
+    "key": "fireworks_announce",
+    "seconds": 0.836,
+    "group": "powerup_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/powerup/minigun/minigun_announce.m4a",
+    "key": "minigun_announce",
+    "seconds": 0.743,
+    "group": "powerup_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/powerup/tesla_powerup/tesla_announce.m4a",
+    "key": "tesla_announce",
+    "seconds": 0.906,
+    "group": "powerup_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/powerup/tornado/tornado_announce.m4a",
+    "key": "tornado_announce",
+    "seconds": 0.813,
+    "group": "powerup_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/revive/revive_no.m4a",
+    "key": "revive_no",
+    "seconds": 4.063,
+    "group": "revive_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/revive/revive_standby.m4a",
+    "key": "revive_standby",
+    "seconds": 8.057,
+    "group": "revive_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/revive/revive_yes.m4a",
+    "key": "revive_yes",
+    "seconds": 2.322,
+    "group": "revive_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/announcer_tutorial_aim_gyroMode.m4a",
+    "key": "announcer_tutorial_aim_gyroMode",
+    "seconds": 3.019,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/announcer_tutorial_aim_swipeMode.m4a",
+    "key": "announcer_tutorial_aim_swipeMode",
+    "seconds": 4.087,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/announcer_tutorial_aim_tiltMode.m4a",
+    "key": "announcer_tutorial_aim_tiltMode",
+    "seconds": 4.249,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/announcer_tutorial_aimhelp.m4a",
+    "key": "announcer_tutorial_aimhelp",
+    "seconds": 6.548,
+    "group": "tutorial_voice",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/announcer_tutorial_aimprompt.m4a",
+    "key": "announcer_tutorial_aimprompt",
+    "seconds": 5.062,
+    "group": "tutorial_voice",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/announcer_tutorial_shoot_buttonMode.m4a",
+    "key": "announcer_tutorial_shoot_buttonMode",
+    "seconds": 8.8,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_1/announcer_tutorial_shoot_gestureMode.m4a",
+    "key": "announcer_tutorial_shoot_gestureMode",
+    "seconds": 8.313,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_2/announcer_tutorial_reload_buttonMode.m4a",
+    "key": "announcer_tutorial_reload_buttonMode",
+    "seconds": 4.226,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_1_brick_2/announcer_tutorial_reload_gestureMode.m4a",
+    "key": "announcer_tutorial_reload_gestureMode",
+    "seconds": 4.319,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_1/announcer_tutorial_changeControl.m4a",
+    "key": "announcer_tutorial_changeControl",
+    "seconds": 7.059,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_1/announcer_tutorial_switch_buttonMode.m4a",
+    "key": "announcer_tutorial_switch_buttonMode",
+    "seconds": 4.714,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_2_brick_1/announcer_tutorial_switch_gestureMode.m4a",
+    "key": "announcer_tutorial_switch_gestureMode",
+    "seconds": 4.319,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_1/announcer_tutorial_melee_buttonMode.m4a",
+    "key": "announcer_tutorial_melee_buttonMode",
+    "seconds": 6.107,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_1/announcer_tutorial_melee_gestureMode.m4a",
+    "key": "announcer_tutorial_melee_gestureMode",
+    "seconds": 4.853,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/challenges/tutorial_3_brick_1/announcer_tutorial_skip.m4a",
+    "key": "announcer_tutorial_skip",
+    "seconds": 4.342,
+    "group": "tutorial_voice",
+    "status": "tutorial_text_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/_weapons/bazooka/weapon_gun_bazooka_voice.m4a",
+    "key": "weapon_gun_bazooka_voice",
+    "seconds": 1.068,
+    "group": "weapon_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/_weapons/grenade/weapon_gun_grenade_voice.m4a",
+    "key": "weapon_gun_grenade_voice",
+    "seconds": 1.138,
+    "group": "weapon_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/_weapons/hunting/weapon_gun_hunting_voice.m4a",
+    "key": "weapon_gun_hunting_voice",
+    "seconds": 1.184,
+    "group": "weapon_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/_weapons/machinegun/weapon_gun_machinegun_voice.m4a",
+    "key": "weapon_gun_machinegun_voice",
+    "seconds": 1.091,
+    "group": "weapon_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/_weapons/microsmg/weapon_gun_microsmg_voice.m4a",
+    "key": "weapon_gun_microsmg_voice",
+    "seconds": 1.533,
+    "group": "weapon_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/_weapons/pistol/weapon_gun_pistol_voice.m4a",
+    "key": "weapon_gun_pistol_voice",
+    "seconds": 0.929,
+    "group": "weapon_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/_weapons/policeshotgun/weapon_gun_policeshotgun_voice.m4a",
+    "key": "weapon_gun_policeshotgun_voice",
+    "seconds": 1.231,
+    "group": "weapon_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/_weapons/sawnoff/weapon_gun_sawnoff_voice.m4a",
+    "key": "weapon_gun_sawnoff_voice",
+    "seconds": 1.324,
+    "group": "weapon_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/_weapons/sonic/weapon_gun_sonic_voice.m4a",
+    "key": "weapon_gun_sonic_voice",
+    "seconds": 1.3,
+    "group": "weapon_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  },
+  {
+    "path": "game/sounds/_weapons/tactical/weapon_gun_tactical_voice.m4a",
+    "key": "weapon_gun_tactical_voice",
+    "seconds": 1.254,
+    "group": "weapon_names",
+    "status": "short_label_existing",
+    "verified_transcript": false
+  }
+]
