@@ -34,37 +34,42 @@ Lưu ý: một số câu của Java được đọc lúc khởi động **trư�
 
 ## Đọc tiếng Việt đồng thời với lời thoại gốc
 
-Bản thử nghiệm có cơ chế **đọc lời nhắc tiếng Việt bằng TTS khi một tệp thoại gốc đã định danh
-bắt đầu phát** trong Challenge. Tiếng Anh thu âm vẫn được giữ lại, nhưng riêng tiếng của
-nhân vật sẽ được giảm còn khoảng 32% để giọng Việt dễ nghe. **Tiếng zombie, súng, tiếng
-bước chân và hiệu ứng âm thanh khác không bị giảm âm lượng.**
+Khi người chơi chọn **Tiếng Việt** trên Android, bản thử nghiệm phát câu TTS
+tiếng Việt cùng lúc với bản ghi âm tiếng Anh được định danh. Chỉ giảm âm
+lượng **tệp giọng người nói gốc** còn khoảng 32%; **tiếng zombie, bước chân,
+tiếng súng, vật cản và âm thanh HRTF không bị giảm**.
 
-- Các lời hướng dẫn tutorial vẫn dùng `game/tutorial_text.py`: chế độ **As the announcer
-  speaks** đã có từ bản gốc của port và được giữ nguyên; không phát hai câu TTS trùng nhau.
-- Các đoạn lời thoại Challenge đã được đối chiếu theo tên tệp ghi âm và nội dung mô tả
-  trong game được ánh xạ ở `audiodefence/game/recorded_voice_text.py`.
-- **Hiện mới có 11 tệp lời thoại được gán câu TTS đi kèm**, với các nội dung về thời tiết,
-  bầy zombie, một số loại zombie và vật cản. Đây là **các câu diễn giải đúng chủ đề**,
-  không phải bản chép lại từng chữ những gì diễn viên gốc nói.
-- Những đoạn chưa có văn bản đáng tin cậy vẫn phát tiếng Anh như bình thường; game sẽ
-  **không đoán lời thoại** dựa trên tên tệp.
-- Với lời thoại chặn đợt zombie mới, game chờ cả lời ghi âm gốc và thời lượng ước tính
-  của TTS tiếng Việt; nút bỏ qua vẫn có tác dụng dừng TTS và tiếp tục trận.
-- Khi tạm dừng, Android không thể tạm dừng TTS giữa câu. Game sẽ dừng lời Việt và đọc
-  lại từ đầu khi tiếp tục. Cần nghe kiểm thử để bảo đảm không chồng âm bất lợi.
+**Phạm vi bản nháp:** **88/88 lời thoại Challenge** đã có bản dịch từ bản
+chép lời tiếng Anh bằng nhận dạng giọng nói. Các nhóm khác có thêm 21 nhãn
+vũ khí/thông báo ngắn, 13 hướng dẫn dùng điều khiển, 15 câu khi thua, 4 giọng
+trong mở đầu, cùng các câu hồi sinh và hướng dẫn bổ sung. Tổng cộng có
+**114 lời dịch từ ASR** trong `audiodefence/game/voice_drafts_vi.py`.
+Những câu này **chưa được nghe đối chiếu xác nhận**, không được phép gọi là
+bản dịch chính xác hoàn chỉnh.
 
-Để mở rộng bản thoại đi kèm, trước tiên **nghe và chép chính xác** nội dung tiếng Anh của
-mỗi tệp trong `game/sounds/challenges/`, sau đó dịch sang tiếng Việt và thêm vào bảng
-ánh xạ. Không dùng các đoạn nội dung suy đoán làm bản dịch chính thức. Các lời thoại
-trong phần mở đầu, Zombiepedia, người thông báo (announcer) và những bản thu khác còn
-cần đánh giá riêng vì chúng không đi qua `ADSound` trong Challenge.
+- Mã `ADSound` đọc lời Việt theo từng tệp Challenge và kéo dài thời gian
+  chặn đợt zombie khi TTS tiếng Việt dài hơn bản thu. **Bỏ qua** dừng TTS;
+  **tạm dừng/tiếp tục** đọc lại từ đầu, vì Android TTS không thể dừng giữa câu.
+- Các thông báo ngắn, phần mở đầu, thua trận và hồi sinh dùng điểm phát
+  `S3DSound.play`. Trình phát ngăn câu TTS trùng, khôi phục âm lượng bản thu
+  khi kết thúc và không ghi đè callback điều khiển diễn biến game.
+- Tutorial tiếp tục dùng `game/tutorial_text.py` để nhắc đúng thao tác
+  trên điện thoại. Không phát trùng cùng câu ở hai cơ chế.
+- `revive_standby` chưa có lời TTS vì nhận dạng giọng nói trả ra những
+  câu mâu thuẫn, chưa xác định đó có phải lời nói có nghĩa không.
+- 19 tệp nghe thử ở Zombiepedia là **âm thanh của zombie** theo mã nút
+  `Preview sound`; chúng được giữ nguyên, không phải lời thoại để dịch.
+- Xem bảng đầy đủ ở `analysis/voice_inventory.json` và tiêu chuẩn nghiệm
+  thu tại [VOICEOVER_COVERAGE.md](VOICEOVER_COVERAGE.md).
 
-**Đây là thử nghiệm trên mã nguồn, chưa kiểm thử âm thanh đồng thời trên điện thoại.**
+**Để đạt 100% đã xác minh**, cần nghe sửa từng bản chép lời Anh, rà soát ý
+nghĩa câu Việt, thử Android thật với giọng `vi-VN`, và kiểm tra tiếng
+trong trận không che âm thanh định hướng.
 
 ## Công việc còn lại trước khi phát hành
 
 1. Chạy bộ trích xuất `tools/make_language.py` trên môi trường có đầy đủ nguồn game để phát hiện câu mới ngoài 1.495 mục tham chiếu; dịch ngay những mục đó.
-2. Chạy trình kiểm tra bằng Python, xác minh tính đầy đủ, tham số và ngữ pháp số nhiều. Hiện mới xác minh **tĩnh trên dữ liệu GitHub**, chưa thực thi lệnh trên môi trường build thực tế.
+2. Bộ kiểm tra Python và bản dịch đã chạy thành công trên GitHub Actions. Tiếp tục chạy lại mỗi khi chỉnh mã TTS, theo dõi các câu mới và xử lý lỗi CI phát sinh.
 3. Nhờ người chơi nghe thử toàn bộ hướng dẫn, thông báo chiến đấu và các đoạn văn dài. Chỉnh những câu quá dài hoặc khó hiểu khi đọc TTS.
 4. Kiểm thử cả hai giọng TTS tiếng Việt trên điện thoại, kể cả thay đổi ngôn ngữ trong lúc game đang chạy và khi thiết bị thiếu giọng Việt.
 5. Rà soát lời thoại thu âm tiếng Anh; nếu bổ sung lời dẫn TTS tiếng Việt thì phải kiểm tra không phát đè tiếng zombie, không làm trễ đợt tấn công.
