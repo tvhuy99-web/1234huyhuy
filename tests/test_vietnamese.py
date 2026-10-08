@@ -5,6 +5,7 @@ Run: python -m unittest discover -s tests -p 'test_vietnamese.py' -v
 from __future__ import annotations
 
 import unittest
+from unittest.mock import patch
 
 from audiodefence import localization
 from audiodefence.platform.speech_android import phone_words
@@ -23,6 +24,22 @@ class VietnameseSpeechTests(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         localization.load(localization.ENGLISH, force=True)
+
+    def setUp(self):
+        # localization.load() changes the loaded table; real phone gesture
+        # wording uses the language *selected in settings* instead.
+        self._language_patch = patch('audiodefence.localization.language', return_value='Tiếng Việt')
+        self._language_patch.start()
+
+    def tearDown(self):
+        self._language_patch.stop()
+
+    def test_english_gesture_keeps_english_words(self):
+        with patch('audiodefence.localization.language', return_value=localization.ENGLISH):
+            self.assertEqual(phone_words('Press Escape to cancel.'), 'Press a two-finger scrub to cancel.')
+            self.assertEqual(phone_words('Press Enter to select.'), 'Double tap to select.')
+            self.assertEqual(phone_words('Shift + Enter to go back.'), 'double tap and hold to go back.')
+            self.assertNotIn('ngón', phone_words('Escape on the keyboard'))
 
     def test_game_offers_vietnamese(self):
         self.assertIn("Tiếng Việt", localization.available())
