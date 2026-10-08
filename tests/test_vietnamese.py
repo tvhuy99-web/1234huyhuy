@@ -35,7 +35,8 @@ class VietnameseSpeechTests(unittest.TestCase):
         self._language_patch.stop()
 
     def test_no_english_subsentences_inside_vietnamese_ui_or_tts(self):
-        from tools.check_vietnamese_embedded_english import suspect_fragments, audit
+        from tools.check_vietnamese_embedded_english import (
+            suspect_fragments, repeated_source_phrases, audit)
         # A translation with a Vietnamese prefix is *still incomplete* if
         # its second sentence, or even a two-word command, remains English.
         for sample in (
@@ -56,6 +57,20 @@ class VietnameseSpeechTests(unittest.TestCase):
         ):
             with self.subTest(approved=valid):
                 self.assertEqual(suspect_fragments(valid), [])
+        # A copied English clause without a "the/you/please" marker must
+        # still be noticed through the source-English/tranlation comparison.
+        self.assertIn(
+            "zombies attack now",
+            repeated_source_phrases(
+                "Listen to the voice. Zombies attack now. Aim carefully.",
+                "Hãy nghe thật kỹ. Zombies attack now. Ngắm cho chuẩn."),
+        )
+        self.assertEqual(
+            repeated_source_phrases(
+                "Back up in AudioDefence backup.zip by Loh Boon Keat.",
+                "Bản sao lưu AudioDefence backup.zip của Loh Boon Keat."),
+            [],
+        )
         total, issues = audit()
         self.assertGreaterEqual(total, 1651)
         self.assertEqual(issues, [])
