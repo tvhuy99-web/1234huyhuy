@@ -618,8 +618,6 @@ class Weapon:
             snd = announcer.any_sound_containing('outofammo') if announcer else None
         if snd is not None:
             snd.play()
-            from .voice_labels import speak_short_voice
-            speak_short_voice(snd)
 
     def play_click_sound(self, announce: bool = False) -> None:   # 0x100015f0c
         """The empty click and the call-out: what a press on an empty trigger answers with."""
@@ -643,8 +641,6 @@ class Weapon:
             snd = announcer.any_sound_containing('outofammo') if announcer else None
             if snd is not None:
                 snd.play()
-                from .voice_labels import speak_short_voice
-                speak_short_voice(snd)
             return
         if self.is_reloading():
             return
@@ -688,8 +684,6 @@ class Weapon:
                 voice.set_spatialized(False)
                 voice.set_gain(0.6)
                 voice.play(False)
-                from .voice_labels import speak_short_voice
-                speak_short_voice(voice)
 
     # --- pausing (PORT ADDITION) ------------------------------------------------------------------
     def pause(self) -> None:
