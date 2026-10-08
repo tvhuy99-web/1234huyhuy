@@ -48,7 +48,7 @@ VI_PHONE_WORDS = (
     (re.compile(r'\bEscape\b'), 'vuốt qua lại bằng hai ngón'),
 )
 EN_PHONE_WORDS = (
-    (re.compile(r'\bShift (?:plus |\\+ ?)?Enter\b'), 'double tap and hold'),
+    (re.compile(r'\bShift (?:plus |\+ ?)?Enter\b'), 'double tap and hold'),
     (re.compile(r'\bPress Enter\b'), 'Double tap'),
     (re.compile(r'\bpress Enter\b'), 'double tap'),
     (re.compile(r'\bEscape on the keyboard\b'), 'a two-finger scrub'),
