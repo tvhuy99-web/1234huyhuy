@@ -56,12 +56,14 @@ def speak_short_voice(sound) -> bool:
         return False
 
     from ..platform.speech import Speech
-    # The same agent can be reused. The original gain is restored on each
-    # recording's natural end so no successive callouts become quieter.
-    original_gain = sound.gain
+    # The same agent can be reused. Keep the original gain for the engine's
+    # normal stop/cleanup path to restore. Do NOT register an end callback here:
+    # the sound dispatcher gives each sound one monitor and registering another
+    # would erase power-up activation or challenge completion callbacks.
+    original_gain = getattr(sound, "_vi_voice_original_gain", None)
+    if original_gain is None:
+        original_gain = sound.gain
+        sound._vi_voice_original_gain = original_gain
     sound.set_gain(original_gain * 0.32)
-    sound.add_3d_sound_end_callback(
-        lambda clip, original=original_gain: clip.set_gain(original)
-    )
     Speech.shared().speak_in_game(text, False)
     return True
