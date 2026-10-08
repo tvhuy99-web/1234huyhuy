@@ -48,6 +48,33 @@ từ `tools/audit_vietnamese_dynamic.py` cần phân loại riêng: nhiều cả
 báo là phần câu của đoạn Extra **đã dịch nguyên đoạn**, chuỗi regex
 hoặc cấu hình nội bộ không đọc cho người chơi.
 
+## Kiểm tra tiếng Anh bị kẹp bên trong câu tiếng Việt
+
+Đã bổ sung `tools/check_vietnamese_embedded_english.py`, gọi bởi workflow
+`.github/workflows/vietnamese.yml`. Khác với phép đếm các ô JSON khác
+rỗng, công cụ này **kiểm tra bên trong từng câu** của:
+
+- **1.516 giá trị dịch văn bản**.
+- **114 câu TTS nháp** được đọc cùng bản ghi âm tiếng Anh.
+- **21 thông báo TTS ngắn** cho súng và vật phẩm.
+
+**Kết quả: 1.651/1.651 chuỗi đã quét, 0 cụm tiếng Anh đáng ngờ** theo
+hai phép soát tự động:
+
+1. Nhận biết từ ngữ pháp và mệnh lệnh tiếng Anh còn lại trong văn bản
+   tiếng Việt, ví dụ `Please try again`, `you have`, `press Enter`,
+   `reload your weapon`, kể cả khi trước đó đã có nguyên một câu Việt.
+2. Đối chiếu mỗi bản dịch văn bản với **câu tiếng Anh gốc làm khóa** để
+   phát hiện **ba từ tiếng Anh liên tiếp còn bị chép nguyên**. Chỉ bỏ
+   qua những chuỗi kỹ thuật hoặc tên riêng được phép giữ nguyên như tên
+   tác giả, `AudioDefence backup.zip` và đường dẫn trang web.
+
+Kiểm thử tự động cố tình chèn `Zombies attack now` vào câu tiếng Việt
+để xác nhận phép soát thứ hai thực sự bắt được lỗi dạng này.
+Điều này **không có nghĩa đã kiểm chứng thủ công từng từ**: một hoặc
+hai từ tiếng Anh riêng lẻ, lỗi diễn đạt, câu do giá trị biến bên ngoài
+đưa vào, hoặc lỗi chép từ âm thanh có thể cần nghe và sửa trực tiếp.
+
 ## Những câu được giữ nguyên có chủ ý
 
 Tên riêng `Berserk`, `Hydra`, `Zombie`, phím `Enter`/`Escape`,
