@@ -71,7 +71,7 @@ Chỉ đánh dấu một tệp thoại là hoàn chỉnh sau khi **đồng thờ
 - TTS thực sự phát đúng lúc trên Android, không bị trùng.
 - Skip, pause, resume và âm thanh chiến đấu đều đã kiểm tra.
 
-Dù bảng dịch văn bản đã đủ 1.495 câu, điều đó **không thay thế** kiểm tra
+Dù bảng dịch văn bản đã đủ 1.514 mục, điều đó **không thay thế** kiểm tra
 lời thoại ghi âm. Các tệp chưa dịch phải luôn hiện trong bản kiểm kê.
 
 Bản APK hiện tại là debug; hãy xuất sao lưu trước khi gỡ bản cũ.
