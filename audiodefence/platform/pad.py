@@ -151,6 +151,21 @@ _TOUCH_WORDS = (
     (r'\bEnter\b', 'double tap'),
     (r'\bEscape\b', 'two-finger tap'),
 )
+# A menu hint is translated before its keyboard action name is rewritten.
+# Replacing "Enter" with an English "double tap" afterwards made a Vietnamese
+# sentence bilingual. Keep the replacement in the chosen language.
+_TOUCH_WORDS_VI = (
+    (r'Shift (?:cộng|và|plus|\+) Enter|Shift Enter', 'chạm đúp và giữ'),
+    (r'\bNhấn Enter\b', 'Chạm đúp'),
+    (r'\bnhấn Enter\b', 'chạm đúp'),
+    (r'\bPress Enter\b', 'Chạm đúp'),
+    (r'\bpress Enter\b', 'chạm đúp'),
+    (r'\bEnter\b', 'chạm đúp'),
+    (r'\bNhấn Escape\b', 'Vuốt qua lại bằng hai ngón'),
+    (r'\bnhấn Escape\b', 'vuốt qua lại bằng hai ngón'),
+    (r'\bEscape\b', 'vuốt qua lại bằng hai ngón'),
+)
+
 #: PORT ADDITION (Android, user request, 2026-10-05): a keyboard plugged into the phone is being used - its
 #: last input was a key, not a touch (android_main.TouchInput) - so the hints name its keys, as written
 keyboard_in_use = False
@@ -170,7 +185,9 @@ def menu_words(text, *a, **k):
     if not kind:
         if host.ANDROID and not keyboard_in_use:
             text = str(text)
-            for pattern, words in _TOUCH_WORDS:
+            chosen = (_TOUCH_WORDS_VI if GameParameters.shared().language() == 'Tiếng Việt'
+                      else _TOUCH_WORDS)
+            for pattern, words in chosen:
                 text = re.sub(pattern, words, text)
         return text
     for pattern, name in _MENU_KEY_WORDS:
