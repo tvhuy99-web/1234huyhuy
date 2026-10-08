@@ -82,5 +82,54 @@ ASR_DRAFT_VI = {
 }
 
 
+# Later Challenge recordings, from the complete English ASR pass.
+# These also remain audio-unverified drafts until reviewed by listening.
+ASR_DRAFT_VI.update({
+    "bastard_tutorial_4_1": "Ai mà chẳng có lúc cần giúp đỡ, đúng không? Vì thế mới có vật phẩm hỗ trợ. Thỉnh thoảng ta gọi trực thăng thả xuống một chiếc máy quay thưởng rất nặng. Nó sẽ luôn cho phần thưởng nếu ngươi cho nó ăn đạn thay vì xu. Nhưng phải bắn nhanh, nếu không máy sẽ tắt và chẳng cho gì cả. Thử nào! Ta sẽ thả Bob, Jim và Ted cùng lúc. Trực thăng đang đến đấy, nhớ bắn máy quay thưởng khi nó rơi xuống!",
+    "bastard_tutorial_4_2": "Ngươi có thích mùi thịt cháy còn vương trong không khí không? Ta nghĩ Pháo hoa là vật phẩm hỗ trợ yêu thích nhất của mình, nhưng ta còn nhiều loại khác lắm. Chẳng ai biết trước sẽ nhận được gì từ máy quay thưởng của ta. Làm thêm lần nữa xem ngươi được món nào!",
+    "bastard_tutorial_4_4": "Xong rồi à? Ta vừa ra ngoài làm cho mình một chiếc bánh kẹp. Dù sao thì nhớ bài học nhé! Bắn máy quay thưởng ngay là tốt. Chờ quá lâu mới bắn là dở!",
+    "bastard_tutorial_5_1": "Giờ nói về tiền nào. Ta trả công cho ngươi nếu sống sót qua thử thách. Ngắm bắn thật chính xác thì được thưởng thêm, bóp cò càng nhanh lại càng kiếm nhiều tiền. Ví dụ, nếu ta thả hai zombie không bị xích vào ngươi, ngươi sẽ làm gì? Ta biết chúng sẽ làm gì rồi: chúng sẽ ăn sống ngươi nếu đến đủ gần!",
+    "bastard_tutorial_5_2": "Dễ mà, đúng không? Sống sót, ngắm chuẩn, bắn nhanh. Đó là cách kiếm tiền trong thử thách của ta. Nhưng tiền không phải tất cả. Chúng ta còn có kim cương! Một số vật phẩm trong Kho vũ khí bán bằng kim cương thay vì xu. Kim cương hiếm hơn xu rất nhiều. Muốn kiếm một ít không? Hãy bắn sinh vật nhỏ mà ta sắp thả đằng kia!",
+    "bastard_tutorial_5_3": "Ta đa! Ngươi vừa nhặt viên kim cương đầu tiên! Những con ký sinh nhỏ này thích đồ lấp lánh hơn thịt người. Chúng không tấn công, nhưng nếu ngươi không bắn nhanh thì chúng sẽ chạy mất. Khó hơn ngươi tưởng đấy! Thử một tình huống thực tế và chết người nào. Hãy bắn zombie rồi lấy viên kim cương. Hoặc chết khi đang cố!",
+    "bastard_tutorial_5_4": "Còn một điều cuối về kim cương. Ta chỉ thả chúng trong chế độ Vô tận, nơi ngươi sẽ được vào ngay sau thử thách này. Giờ ngươi đã hiểu cách làm giàu, ta hỏi nhé: Ngươi định làm gì với đống xu và kim cương ấy? Tất nhiên là mua thêm vũ khí! Hoặc nâng cấp những món đang có. Thế nên khi vượt xong thử thách, hãy đến Kho vũ khí chính thức của chúng ta và mua một khẩu súng mới. Ngươi cần súng shotgun nòng ngắn cho các thử thách tiếp theo. Mua xong thì quay lại, không thì đừng trở lại nữa!",
+    "bastard_tutorial_6_1": "Ta rất thích shotgun! Sát thương khổng lồ ở cự ly gần, đạn tỏa rất rộng. Nếu ngắm tốt, một phát có thể bắn trúng nhiều zombie. Đặc biệt hữu dụng khi bị bao vây, như tình huống ngươi sắp gặp đây! Chúc may mắn sống sót! Ha ha ha!",
+    "bastard_tutorial_6_2": "Chết tiệt, vừa rồi xem đã mắt thật! Hay đến mức ta có thể xem cả ngày. Vậy thì thêm zombie nhé. Giết chúng cho ta xem. Bỏng ngô ta đã chuẩn bị sẵn rồi!",
+    "bastard_tutorial_6_3": "Ngươi làm được rồi! Sao không ăn mừng bằng một điệu nhảy chiến thắng nhỉ? Nào, nhảy cho ta xem. Ta nói nghiêm túc đấy. Nhảy đi! Xoay vòng nào, không ta giết ngươi bây giờ! Chẳng đẹp chút nào. Thôi được, quên chuyện nhảy múa đi, cứ tập trung bắn súng!",
+    "bastard_tutorial_7_1": "Đến giờ ngươi chỉ đánh những zombie cổ điển của ta. Giờ ta sẽ giới thiệu một thí nghiệm mới. Ta bơm vào xác sống một lượng khí dễ nổ khủng khiếp. Khổ nỗi ta không tìm được cách ngăn khí rò rỉ, nên đặt tên nó là Farty! Đừng để nó áp sát, mà không chỉ vì mùi đâu. Để ta cho ngươi thấy tại sao. Thử giết con Farty này!",
+    "bastard_tutorial_7_2": "Ngươi biết tiếng ù tai chính là dấu hiệu các tế bào tai đang chết dần không? Ta mong ngươi đã hiểu nên giết Farty trước khi nó đến gần như thế. Làm lại nào. Lần này ta sẽ thả một con Farty khác từ xa hơn!",
+    "bastard_tutorial_7_3": "Khá hơn chứ? Giờ đến phần vui nhất! Zombie phát nổ cũng có điểm hay. Nếu một con Farty nổ ngay cạnh những zombie khác, cả đám sẽ bị thổi tung thành từng mảnh! Ha ha ha! Thử nào!",
+    "bastard_tutorial_7_4": "Ồ, ngươi thắng rồi à? Ta có nhìn đâu!",
+    "bastard_tutorial_8_1": "Đã đến lúc nghĩ đến nâng cấp vũ khí. Nếu ngươi muốn sống, đây là khoản đầu tư rất đáng giá. Nào, làm thí nghiệm nhỏ nhé. Ta sẽ thả nhiều zombie đến mức ngươi có lẽ sẽ chết. Đừng lo, ta là bác sĩ mà. Ta hồi sinh ngươi được. Ý ta là, nếu chết, hãy trở lại Kho vũ khí nâng cấp súng rồi mới chơi thử lần nữa. Chúc may mắn!",
+    "bastard_tutorial_8_2": "Cái gì? Ngươi vẫn sống ư?! Chết tiệt, ta cứ nghĩ ngươi sẽ chết. Giờ chẳng biết tiếp tục thế nào. Thôi, ứng biến vậy!",
+    "bastard_tutorial_9_1": "Ê! Ai để cái máy phát điện giữa đấu trường thế này? À đúng, chính ta! Sao, mất phương hướng hả, chiến binh mù? Cứ bắn nó vài phát, nó sẽ tắt được một lúc!",
+    "bastard_tutorial_9_2": "Ngươi phải tập quen với những trò tăng độ khó nho nhỏ này, chiến binh mù ạ. Tất cả nhằm làm thử thách thú vị hơn. Cho khán giả xem!",
+    "bastard_urban_10_1": "Hu hu! Tưởng giết được một con Hulk là ngươi vô địch thiên hạ rồi sao? Đó chỉ là màn nhử thôi. Thử thách thực sự bắt đầu ngay bây giờ!",
+    "bastard_zombie_hulk_a": "Tối nay, ta hân hạnh giới thiệu Hulk! Đây là kết quả của việc tiêm cho zombie quá liều adrenaline, testosterone và cả hạt quinoa. Ta khuyên ngươi tập trung bắn nó ngay khi nghe tiếng gầm. Thứ này chịu đòn cực kỳ giỏi!",
+    "bastard_urban_10_2": "Chưa đâu, ngươi mới đi được nửa đường thôi! Giờ đến tiết mục của Hulk với nhạc nền riêng, giai điệu quái vật!",
+    "bastard_city_end": "Hoan hô! Quả là kỳ tích! Ta chưa từng thấy ai quyết tâm không chết như ngươi. Đến lúc thử bản năng sinh tồn của ngươi ở một nơi phù hợp hơn. Chúc mừng, chiến binh mù! Ngươi đã nhận vé vào đấu trường Tàn tích Maya của ta. Nhớ tiêm phòng sốt rét đấy!",
+    "bastard_city_intro": "Chào mừng đến một số mới của Đấu trường zombie, do tiến sĩ Bastard tổ chức! Chương trình tối nay diễn ra ở ngã tư rộng lớn của thành phố, rực sáng nhờ đống xe đang cháy. Kính thưa quý khán giả, xin giới thiệu Chiến binh mù! À khoan, làm gì có khán giả nào ở đây! Ha ha ha! Đây là thành phố bị bỏ hoang mà. Ngươi phải tự giành lấy quyền được mọi người reo hò, chiến binh mù ạ. Giờ hãy sống sót qua bữa tiệc chào mừng chết người của ta!",
+    "bastard_urban_1_1": "Nghe tiếng còi báo hiệu đó không? Ngươi nên tập yêu thích âm thanh ấy. Nó có nghĩa là ngươi đã vượt qua thử thách! Ngày không còn nghe tiếng còi nữa sẽ là ngày ngươi chết trong đấu trường. Rồi ngày đó cũng đến thôi... nhưng không phải hôm nay!",
+    "bastard_passerby_cars_a": "Biết điều gì giúp chương trình ăn khách hơn không? Những vụ nổ! Vì thế ta đã đậu rất nhiều xe quanh ngươi. Chuông báo động của chúng sẽ thỉnh thoảng lại kêu. Nếu không muốn nghe bản giao hưởng còi xe giữa lúc đánh zombie, tốt nhất hãy bắn cho mấy chiếc xe nổ tung!",
+    "bastard_urban_2_1": "Đừng lo cho chủ của những chiếc xe đó. Họ chính là lũ zombie ngươi sắp đối mặt trong thử thách tiếp theo!",
+    "bastard_zombie_clown_a": "Giờ là tiết mục giải trí cổ điển: ta sẽ thả zombie hề! Gì cơ? Ta nghiêm túc đấy! Chúng có tóc giả, mặt hóa trang, giày mềm oặt và một cặp dao rỉ sét chưa mài. Nếu bắt được ngươi, chúng vẫn băm ngươi thành từng mảnh như lũ zombie khác. Nhưng chúng thích trêu chọc khán giả và chạy vòng rộng quanh ngươi. Nào, hãy thưởng thức tiết mục của những chú hề đi!",
+    "bastard_zombie_clown_b": "Hãy thả thêm vài con zombie cùng chú hề tiếp theo!",
+    "bastard_zombie_clown_c": "Lũ hề đâu hết rồi?",
+    "bastard_urban_3_1": "Tội nghiệp lũ hề! Sao ai cũng ghét hề thế nhỉ?",
+    "bastard_urban_4_1": "Đến lúc cho ngươi đối mặt tất cả những gì đã gặp: zombie cưa máy, zombie hề và Farty. Tất cả cùng lúc! Hãy khôn ngoan chọn mục tiêu bắn trước. Ủa, sao ta lại giúp ngươi nhỉ? Thôi, chúng tới rồi!",
+    "bastard_urban_4_2": "Xem ngươi tuyệt vọng chiến đấu để giành giật mạng sống thật vui! Sau này sẽ còn nhiều màn trộn đủ loại zombie nữa đấy.",
+    "bastard_zombie_runner_a": "Nhắc đến zombie chạy nhanh, ta thích dùng những loài mang dáng dấp động vật. Chúng tên là Snufflehog, quà từ người bạn thân Papa Sangre của ta. Thử giết vài con xem, nếu ngươi có thể!",
+    "bastard_urban_5_2": "Tội nghiệp đám Snufflehog! À mà khoan, ta vẫn còn cả một đội quân nhốt dưới phòng thí nghiệm! Ha ha ha! Còn ngươi, chiến binh mù, hãy mua một khẩu súng trường săn cho các thử thách sắp tới. Đến Kho vũ khí mua đi. Nếu thiếu xu, hãy chơi vài ván Vô tận hoặc săn những ngôi sao ngươi bỏ lỡ ở thử thách trước!",
+    "bastard_urban_6_1": "Ừm, súng trường săn! Đôi khi nó có thể hạ zombie chỉ bằng một phát. Nâng cấp càng cao càng dễ làm được điều đó. Ngươi sẽ tưởng đây là phép thuật. Nào, thử ngay đi!",
+    "bastard_urban_6_2": "Ôi chà! Ngươi đúng là có năng khiếu dùng súng! Hơi đáng sợ đấy. Thôi, sang thử thách tiếp theo nào!",
+    "bastard_passerby_jukebox_a": "Ta đã đặt một chiếc máy hát vào đấu trường cùng ngươi. Thỉnh thoảng nó sẽ phát những bản nhạc ta thích nhất. Nếu muốn làm ta tổn thương, cứ bắn cho nó tắt đi!",
+    "bastard_urban_7_2": "Nhìn mặt ngươi là ta biết chẳng thích nhạc của ta. Mà ta cũng chẳng thích ngươi! Nhưng đây là máy hát của ta, ta muốn phát nhạc gì thì phát. Giờ đi tiếp đi!",
+    "bastard_zombie_horde_b": "Ngay khi ngươi tưởng đã kiểm soát được mọi thứ, ta chỉ cần bấm một nút và bùm! Một bầy zombie đang lao tới!",
+    "bastard_urban_8_1": "Ôi, ngươi bày ra đống lộn xộn gì thế này! Xác thối chất đầy đấu trường, ghê quá! Đừng lo, đội dọn dẹp đang đến. Trong lúc đó, cứ tiếp tục giết thêm zombie đi!",
+    "bastard_urban_8_2": "Ừm, ta còn ngửi thấy mùi adrenaline từ tận trên này. Giờ ngươi được thư giãn rồi, thử thách kết thúc! À không, chưa đâu! Lại một đợt zombie nữa! Ha ha ha! Đùa thôi, đùa thôi! Ha ha! Hôm nay đến đây là đủ. Ngươi thắng màn này, chiến binh mù!",
+    "bastard_urban_9_1": "Biết chương trình này còn thiếu gì không? Một màn hài hước! Ta đã lấy sạch đạn của ngươi, nên thử thách này ngươi chỉ còn chiếc chảo rán để sống sót. Ta thấy chuyện ấy buồn cười muốn chết!",
+    "bastard_urban_9_2": "Ha ha ha! Thấy chưa, vui thật mà! Trông ngươi chẳng khác nào đầu bếp đang căng thẳng ở một quán ăn rẻ tiền! Ha ha ha!",
+})
+
+
 def draft_for(sound_key: str | None) -> str | None:
     return ASR_DRAFT_VI.get(sound_key or "")
