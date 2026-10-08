@@ -6,7 +6,7 @@ Bản dịch đang được thực hiện trên nhánh `feat/vietnamese-localiza
 ## Trạng thái
 
 - Bản dịch: `localization/Tiếng Việt.json`. Tệp có cùng 1.495 khóa với `localization/ru.json`.
-- Đã dịch bước đầu **469 câu/mục**; những mục còn trống tạm được đọc bằng tiếng Anh.
+- Đã dịch bước đầu **534 câu/mục** (35,7%); 961 mục còn trống tạm được đọc bằng tiếng Anh.
 - Quy tắc số nhiều: `"@plural": "none"`. Tiếng Việt không cần những dạng số nhiều như tiếng Anh hoặc tiếng Nga.
 - Trên Android, chọn **Tiếng Việt** sẽ yêu cầu cả giọng TTS thứ nhất và thứ hai dùng `vi-VN`. Nếu máy thiếu giọng Việt, bộ máy đọc quay về ngôn ngữ điện thoại, rồi tiếng Anh nếu cần.
 - Giọng người thông báo và các hội thoại thu âm của game **vẫn bằng tiếng Anh**. Bản dịch JSON chỉ xử lý câu chữ.
