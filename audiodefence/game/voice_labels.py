@@ -49,7 +49,8 @@ def speak_short_voice(sound) -> bool:
     if not host.ANDROID or sound is None:
         return False
     from .parameters import GameParameters
-    if GameParameters.shared().language() != "Tiếng Việt":
+    params = GameParameters.shared()
+    if params.language() != "Tiếng Việt" or not params.last_announcer_value():
         return False
     text = companion_label(getattr(sound, "key", None))
     if not text:
