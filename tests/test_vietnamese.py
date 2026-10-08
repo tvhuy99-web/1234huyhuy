@@ -34,6 +34,32 @@ class VietnameseSpeechTests(unittest.TestCase):
     def tearDown(self):
         self._language_patch.stop()
 
+    def test_no_english_subsentences_inside_vietnamese_ui_or_tts(self):
+        from tools.check_vietnamese_embedded_english import suspect_fragments, audit
+        # A translation with a Vietnamese prefix is *still incomplete* if
+        # its second sentence, or even a two-word command, remains English.
+        for sample in (
+            "Đã lưu. Please try again.",
+            "Chú ý! The zombie is behind you.",
+            "Bạn có thể tiếp tục, press Enter to select.",
+            "Trò chơi kết thúc. Game over.",
+            "Đã tới nơi. Reload your weapon!",
+        ):
+            with self.subTest(untranslated=sample):
+                self.assertTrue(suspect_fragments(sample))
+        for valid in (
+            "Tiến sĩ Bastard giới thiệu zombie Hulk.",
+            "Nhấn Enter để quay lại menu. Game vẫn giữ dữ liệu cũ.",
+            "Mở tệp AudioDefence backup.zip trong Documents.",
+            "Của ai? Có lẽ là Papa Sangre.",
+            "Nạp đạn, rồi trở lại đấu trường!",
+        ):
+            with self.subTest(approved=valid):
+                self.assertEqual(suspect_fragments(valid), [])
+        total, issues = audit()
+        self.assertGreaterEqual(total, 1651)
+        self.assertEqual(issues, [])
+
     def test_all_assembled_phone_tutorial_phrases_are_vietnamese(self):
         # AST audit: importing tutorial_text would pull pygame into a
         # lightweight localization test runner unnecessarily.
