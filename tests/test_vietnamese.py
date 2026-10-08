@@ -83,7 +83,10 @@ class VietnameseSpeechTests(unittest.TestCase):
             with self.subTest(voice_key=key):
                 self.assertIn(key, mapped, "Translation refers to unknown audio")
                 self.assertTrue(vietnamese.strip())
-                self.assertTrue(any(ord(char) > 127 for char in vietnamese))
+                # A brand title such as "Audio Defence!" may legitimately
+                # contain no accented Vietnamese characters.
+                self.assertTrue(any(ord(char) > 127 for char in vietnamese)
+                                or vietnamese == "Audio Defence!")
                 self.assertEqual(draft_for(key), vietnamese)
         for clip in inventory:
             if clip["status"] == "asr_draft_vi_needs_review":
