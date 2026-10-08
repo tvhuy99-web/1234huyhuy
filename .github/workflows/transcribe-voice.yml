@@ -1,12 +1,8 @@
 name: Draft transcripts of original English voice clips
 
+# Speech recognition is expensive and its results require human review.
+# Only run on explicit request, not once for every localization fix.
 on:
-  pull_request:
-    paths:
-      - '.github/workflows/transcribe-voice.yml'
-      - 'tools/transcribe_recorded_voice.py'
-      - 'tools/voice_inventory.py'
-      - 'analysis/data/sounds.tsv'
   workflow_dispatch:
 
 permissions:
