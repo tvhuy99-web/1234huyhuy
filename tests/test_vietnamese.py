@@ -8,6 +8,8 @@ import unittest
 
 from audiodefence import localization
 from audiodefence.platform.speech_android import phone_words
+from audiodefence.game.recorded_voice_text import CHALLENGE_VOICE_LINES, companion_for
+from pathlib import Path
 
 
 class VietnameseSpeechTests(unittest.TestCase):
@@ -53,6 +55,22 @@ class VietnameseSpeechTests(unittest.TestCase):
             phone_words("Nhấn Escape để hủy."),
             "Vuốt qua lại bằng hai ngón để hủy.",
         )
+
+    def test_recorded_voice_companion_only_for_reviewed_cues(self):
+        # Unknown recordings must not be given an invented translation.
+        self.assertIsNone(companion_for('bastard_tutorial_1_1'))
+        self.assertIsNone(companion_for('announcer_tutorial_reload_buttonMode'))
+        self.assertGreaterEqual(len(CHALLENGE_VOICE_LINES), 10)
+        for key, english_text in CHALLENGE_VOICE_LINES.items():
+            with self.subTest(key=key):
+                self.assertTrue(english_text)
+                self.assertNotEqual(localization.translate(english_text), english_text)
+                # Each entry must match an actual recorded sound in the game data.
+                path = Path('game/sounds/challenges')
+                self.assertTrue(
+                    any(path.glob('*/' + key + '.m4a')),
+                    'No corresponding recording found for ' + key,
+                )
 
     def test_english_keyboard_remains_correct(self):
         self.assertEqual(
