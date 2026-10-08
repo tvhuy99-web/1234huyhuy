@@ -404,6 +404,10 @@ def _template_regex(key: str):
         numeric.append(is_number)
         if is_number:
             parts.append(r'(-?\d[\d\s\u00a0]*)')
+        elif key == '%i star%s unlocked' and spec == '%s':
+            # Here %s is only the English plural suffix. It may be empty (1 star),
+            # or "s" (2 stars). Languages such as Vietnamese can omit it entirely.
+            parts.append(r'(s?)')
         elif match.start() == 0:
             # A substitution the line opens with does not reach back across ", ": the port glues a row's
             # title in front of its status with one ("Fuse, Grenade Launcher required, press Enter to go
