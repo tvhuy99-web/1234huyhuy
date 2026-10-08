@@ -444,7 +444,7 @@
     "key": "bastard_tutorial_4_1",
     "seconds": 32.322,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -452,7 +452,7 @@
     "key": "bastard_tutorial_4_2",
     "seconds": 19.551,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -460,7 +460,7 @@
     "key": "bastard_tutorial_4_4",
     "seconds": 15.07,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -468,7 +468,7 @@
     "key": "bastard_tutorial_5_1",
     "seconds": 26.053,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -476,7 +476,7 @@
     "key": "bastard_tutorial_5_2",
     "seconds": 27.051,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -484,7 +484,7 @@
     "key": "bastard_tutorial_5_3",
     "seconds": 28.05,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -492,7 +492,7 @@
     "key": "bastard_tutorial_5_4",
     "seconds": 41.564,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -500,7 +500,7 @@
     "key": "bastard_tutorial_6_1",
     "seconds": 21.804,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -508,7 +508,7 @@
     "key": "bastard_tutorial_6_2",
     "seconds": 13.189,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -516,7 +516,7 @@
     "key": "bastard_tutorial_6_3",
     "seconds": 25.054,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -524,7 +524,7 @@
     "key": "bastard_tutorial_7_1",
     "seconds": 27.051,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -532,7 +532,7 @@
     "key": "bastard_tutorial_7_2",
     "seconds": 18.204,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -540,7 +540,7 @@
     "key": "bastard_tutorial_7_3",
     "seconds": 18.321,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -548,7 +548,7 @@
     "key": "bastard_tutorial_7_4",
     "seconds": 2.647,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -556,7 +556,7 @@
     "key": "bastard_tutorial_8_1",
     "seconds": 28.561,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -564,7 +564,7 @@
     "key": "bastard_tutorial_8_2",
     "seconds": 12.817,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -572,7 +572,7 @@
     "key": "bastard_tutorial_9_1",
     "seconds": 18.553,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -580,7 +580,7 @@
     "key": "bastard_tutorial_9_2",
     "seconds": 14.303,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -588,7 +588,7 @@
     "key": "bastard_city_intro",
     "seconds": 33.808,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -596,7 +596,7 @@
     "key": "bastard_urban_1_1",
     "seconds": 18.135,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -604,7 +604,7 @@
     "key": "bastard_urban_10_1",
     "seconds": 10.635,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -612,7 +612,7 @@
     "key": "bastard_zombie_hulk_a",
     "seconds": 17.694,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -620,7 +620,7 @@
     "key": "bastard_urban_10_2",
     "seconds": 9.404,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -628,7 +628,7 @@
     "key": "bastard_city_end",
     "seconds": 27.098,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -636,7 +636,7 @@
     "key": "bastard_passerby_cars_a",
     "seconds": 19.133,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -644,7 +644,7 @@
     "key": "bastard_urban_2_1",
     "seconds": 10.658,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -652,7 +652,7 @@
     "key": "bastard_zombie_clown_a",
     "seconds": 32.647,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -660,7 +660,7 @@
     "key": "bastard_zombie_clown_b",
     "seconds": 4.644,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -668,7 +668,7 @@
     "key": "bastard_zombie_clown_c",
     "seconds": 3.901,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -676,7 +676,7 @@
     "key": "bastard_urban_3_1",
     "seconds": 9.404,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -684,7 +684,7 @@
     "key": "bastard_urban_4_1",
     "seconds": 16.068,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -692,7 +692,7 @@
     "key": "bastard_urban_4_2",
     "seconds": 10.635,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -700,7 +700,7 @@
     "key": "bastard_zombie_runner_a",
     "seconds": 14.048,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -708,7 +708,7 @@
     "key": "bastard_urban_5_2",
     "seconds": 27.632,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -716,7 +716,7 @@
     "key": "bastard_urban_6_1",
     "seconds": 15.557,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -724,7 +724,7 @@
     "key": "bastard_urban_6_2",
     "seconds": 10.89,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -732,7 +732,7 @@
     "key": "bastard_passerby_jukebox_a",
     "seconds": 12.817,
     "group": "challenge_dialogue",
-    "status": "contextual_companion_existing",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -740,7 +740,7 @@
     "key": "bastard_urban_7_2",
     "seconds": 14.652,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -748,7 +748,7 @@
     "key": "bastard_zombie_horde_b",
     "seconds": 8.777,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -756,7 +756,7 @@
     "key": "bastard_urban_8_1",
     "seconds": 14.884,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -764,7 +764,7 @@
     "key": "bastard_urban_8_2",
     "seconds": 22.802,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -772,7 +772,7 @@
     "key": "bastard_urban_9_1",
     "seconds": 15.65,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
@@ -780,7 +780,7 @@
     "key": "bastard_urban_9_2",
     "seconds": 12.144,
     "group": "challenge_dialogue",
-    "status": "needs_transcript_and_tts",
+    "status": "asr_draft_vi_needs_review",
     "verified_transcript": false
   },
   {
