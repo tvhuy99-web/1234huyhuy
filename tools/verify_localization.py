@@ -191,6 +191,28 @@ def code_phrases():
                 if body and isinstance(body[0], ast.Expr) and isinstance(body[0].value, ast.Constant):
                     docstrings.add(id(body[0].value))
             logged = _log_calls(tree)
+
+            # A few user-facing tutorials are assembled from constant dictionaries
+            # instead of being passed directly to View/speak/translate.  Their
+            # literals must be included or the verifier can report false 100%
+            # coverage while Android still speaks English navigation instructions.
+            if os.path.relpath(path, ROOT).replace(os.sep, '/') == 'audiodefence/game/tutorial_text.py':
+                text_tables = {'PHONE_AIM', 'PHONE_LINES', 'PHONE_BUTTON_LINES',
+                               'PAD_AIM', 'PAD_AIM_BUTTONS', 'PAD_SHAKE'}
+                for stmt in tree.body:
+                    if not isinstance(stmt, ast.Assign):
+                        continue
+                    if not any(isinstance(target, ast.Name) and target.id in text_tables
+                               for target in stmt.targets):
+                        continue
+                    for item in ast.walk(stmt.value):
+                        if not isinstance(item, ast.Constant) or not isinstance(item.value, str):
+                            continue
+                        phrase = ' '.join(item.value.split())
+                        if len(phrase) >= 3 and re.search('[A-Za-z]', phrase) and not is_plumbing(phrase):
+                            yield phrase, '%s:%d (tutorial text table)' % (
+                                os.path.relpath(path, ROOT), item.lineno)
+
             for node in ast.walk(tree):
                 if not isinstance(node, ast.Call):
                     continue
