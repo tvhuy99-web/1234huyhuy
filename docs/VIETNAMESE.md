@@ -77,7 +77,7 @@ py tools/verify_localization.py --language "Tiếng Việt"
 
 ## Biên dịch APK
 
-Làm theo mục [Building the app trong README](../README.md#building-the-app). Trên Windows,
+Làm theo mục [Hướng dẫn build APK Android trong README](../README.md#building-the-app-1). Trên Windows,
 dùng Python 3.13, Java 21, Android SDK và Gradle được nêu ở đó.
 
 ```powershell
