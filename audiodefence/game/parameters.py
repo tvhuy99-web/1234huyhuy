@@ -497,6 +497,16 @@ class GameParameters:
         self.defaults.set_object(value, 'language')
         self.defaults.synchronize()
         load(value, force=True)                           # every caller takes effect, not only Settings
+        # On Android, the translated text and its spoken voice should use the same language.
+        # Other languages keep the original phone-default TTS behaviour.
+        from ..platform import host
+        if host.ANDROID:
+            try:
+                from ..platform.jbridge import bridge
+                bridge().setGameSpeechLanguage('vi-VN' if value == 'Tiếng Việt' else '')
+            except Exception:
+                import logging
+                logging.getLogger(__name__).exception('could not select the Android speech language')
 
     #: PORT ADDITION: Settings -> Speech -> Use modern output: whether the game plays what SAPI 5 says
     #: through its own sound (platform/speech_audio.py), where a line stops the instant it is interrupted,
