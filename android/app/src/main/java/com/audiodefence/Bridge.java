@@ -979,6 +979,7 @@ public final class Bridge implements SensorEventListener {
             if (t != null) {
                 try {
                     speakTheLanguage(t);
+                    applySettings();             // preserve the user's speed and pitch after voice switching
                 } catch (RuntimeException e) {
                     Log.w(TAG, "could not change speech language", e);
                 }
