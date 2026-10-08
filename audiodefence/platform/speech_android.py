@@ -40,9 +40,14 @@ SAPI_DEFAULTS = {'voice': None, 'rate': None, 'boost': False, 'pitch': 0, 'volum
 #: that do those things instead, VoiceOver's: a double tap is Enter, a double tap and hold is Shift + Enter,
 #: a two-finger scrub is Escape, and swipes are the arrow keys.  Order matters: the longer phrases go first.
 PHONE_WORDS = (
-    # Vietnamese translations keep keyboard instructions on desktop. Only phone speech adapts them.
+    # Keep keyboard instructions on desktop; adapt Vietnamese input guidance as it is spoken on Android.
+    # Handle multi-key instructions before single-key replacements so the meaning is not lost.
+    (re.compile(r'\bShift (?:cộng|và) Enter\b'), 'chạm đúp và giữ'),
     (re.compile(r'\bNhấn Enter\b'), 'Chạm đúp'),
     (re.compile(r'\bnhấn Enter\b'), 'chạm đúp'),
+    (re.compile(r'\bNhấn Escape\b'), 'Vuốt qua lại bằng hai ngón'),
+    (re.compile(r'\bnhấn Escape\b'), 'vuốt qua lại bằng hai ngón'),
+    (re.compile(r'\bEscape\b'), 'vuốt qua lại bằng hai ngón'),
     (re.compile(r'\bShift (?:plus |\+ ?)?Enter\b'), 'double tap and hold'),
     (re.compile(r'\bPress Enter\b'), 'Double tap'),
     (re.compile(r'\bpress Enter\b'), 'double tap'),
