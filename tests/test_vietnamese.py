@@ -81,6 +81,17 @@ class VietnameseSpeechTests(unittest.TestCase):
                 self.assertNotIn(english, translated)
         self.assertIn("Loh Boon Keat", translated)  # creator name is not translated
 
+    def test_tarot_shuffle_price_read_in_vietnamese(self):
+        sentence = "%i diamonds and %i coins. You have %i diamonds and %i coins" % (
+            5, 200, 8, 1000)
+        translated = localization.translate(sentence)
+        self.assertIn("Giá xáo bài", translated)
+        self.assertIn("Bạn hiện có", translated)
+        self.assertIn("1000", translated)
+        self.assertNotIn("You have", translated)
+        self.assertEqual(localization.translate("Free while testing"),
+                         "Miễn phí khi thử nghiệm")
+
     def test_english_gesture_keeps_english_words(self):
         with patch('audiodefence.localization.language', return_value=localization.ENGLISH):
             self.assertEqual(phone_words('Press Escape to cancel.'), 'Press a two-finger scrub to cancel.')
