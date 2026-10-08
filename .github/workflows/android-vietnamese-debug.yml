@@ -68,11 +68,20 @@ jobs:
           apks = glob.glob('android/app/build/outputs/apk/debug/*.apk')
           assert len(apks) == 1, f'Expected exactly one debug APK, got {apks}'
           with zipfile.ZipFile(apks[0]) as apk:
-              names = set(apk.namelist())
+              # Android's APK ZIP writer may store UTF-8 filename bytes without the ZIP
+              # Unicode flag. Python then decodes them as CP437, unlike Android/Java.
+              # Normalize names for verification only; the APK itself is unchanged.
+              def unicode_name(filename):
+                  try:
+                      return filename.encode('cp437').decode('utf-8')
+                  except (UnicodeError, ValueError):
+                      return filename
+              names = {unicode_name(name): name for name in apk.namelist()}
+              print('Localization entries:', [n for n in names if n.startswith('assets/localization/')])
               assert 'assets/localization/Tiếng Việt.json' in names, 'Vietnamese JSON is absent from APK'
               assert 'assets/data-manifest.txt' in names, 'Game data manifest is absent from APK'
               assert any(p.startswith('assets/game/') for p in names), 'Original game sound/data assets are absent'
-              language = json.loads(apk.read('assets/localization/Tiếng Việt.json'))
+              language = json.loads(apk.read(names['assets/localization/Tiếng Việt.json']))
               assert language['@plural'] == 'none'
               assert language['Play'] == 'Chơi'
               assert len([k for k in language if not k.startswith('@')]) >= 1495
