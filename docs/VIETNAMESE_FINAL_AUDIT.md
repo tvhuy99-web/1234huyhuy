@@ -64,6 +64,10 @@ cần giữ nguyên để không làm mất ý nghĩa và nhất quán với âm
   Nếu có lời nói thật, vẫn thiếu bản TTS cho tệp đó.
 - **19 âm mẫu Zombiepedia** được thiết kế nghe tiếng zombie; cần nghe để
   bảo đảm không chứa câu nói mang nghĩa mà ta chưa phân loại.
+- **Windows và macOS chưa có TTS đọc kèm lời thoại thu âm**. Bộ ghép
+  `ADSound`/`S3DSound.play` đang bật riêng trên Android để dùng giọng
+  `vi-VN` của điện thoại. Giao diện Windows/Mac dùng bản dịch chữ,
+  nhưng lời ghi âm sẵn vẫn nói tiếng Anh trên các nền tảng đó.
 - **Chưa có kiểm thử trực tiếp trên điện thoại Android**. Cần xác nhận
   vi-VN có sẵn, chọn tiếng Việt từ lần chơi trước, tạm dừng, bỏ qua,
   đổi ngôn ngữ, thông báo nối đuôi/đè nhau, tiếng súng/zombie HRTF và
