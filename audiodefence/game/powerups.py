@@ -194,9 +194,13 @@ class PowerUp:
             felt_when_it_starts(self)                     # PORT ADDITION: felt with the sound it starts
 
         announce.add_3d_sound_end_callback(started)
-        if not GameParameters.shared().last_announcer_value():
+        announcer_enabled = GameParameters.shared().last_announcer_value()
+        if not announcer_enabled:
             announce.set_gain(0.0)
         announce.play(False)
+        if announcer_enabled:
+            from .voice_labels import speak_short_voice
+            speak_short_voice(announce)
 
     #: PORT ADDITION: how long the power-up starting is felt for when it has nothing of its own to go by,
     #: and the most it is felt for however long its start sound runs.  The Tornado's launch is 5.7 seconds
