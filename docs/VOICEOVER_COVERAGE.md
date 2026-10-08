@@ -24,10 +24,21 @@ Bảng từng tệp: `analysis/voice_inventory.json`. Tạo lại bằng lệnh:
 | Zombiepedia: âm thanh cần nghe để phân loại | 19 |
 | **Tổng cần xem xét** | **168** |
 
-Hiện có 21 tệp nhãn ngắn, 13 tệp tutorial và 11 tệp Challenge được ghép TTS.
-**104 tệp chưa có TTS**, **19 tệp Zombiepedia cần phân loại**. Đây là tỷ lệ
-bao phủ tệp, **không phải lời cam kết 45 bản dịch đã khớp từng chữ bản thu**.
-Các đoạn Challenge đã ghép trước đó chỉ là diễn giải theo ngữ cảnh.
+**Đã ghép TTS ở mức mã nguồn cho 148/149 tệp có khả năng chứa lời nói:**
+**88/88 lời Challenge**, 15/15 tutorial, 15/15 game-over, 10/10 announcer,
+10/10 tên súng, 4/4 power-up, 4/4 giọng opener và 2/3 tệp hồi sinh.
+Tệp `revive_standby` còn thiếu bản chép lời đáng tin cậy: ASR cho ra các câu
+mâu thuẫn, cần nghe xác định đây là lời nói hay chỉ âm hiệu ứng.
+
+Cụ thể: **114 bản dịch dựa trên transcript ASR chưa kiểm chứng bằng tai**,
+**21 nhãn ngắn** và **13 câu hướng dẫn theo điều khiển**. Danh sách
+`analysis/voice_inventory.json` ghi rõ `asr_draft_vi_needs_review`;
+**không được coi đây là 100% bản dịch chính xác đã kiểm thử**.
+
+**19 tệp Zombiepedia** được gọi là *Preview sound* trong mã để nghe tiếng
+zombie, không phải lời thuyết minh. Các tiếng rên, gầm, bước chân zombie
+phải giữ nguyên, chỉ cần kiểm tra bằng tai xem có âm lời nói có nghĩa nào
+bị phân loại nhầm hay không.
 
 ## Quy trình hoàn thiện
 
@@ -43,8 +54,8 @@ Các đoạn Challenge đã ghép trước đó chỉ là diễn giải theo ng�
    cảnh báo chiến đấu và hướng dẫn quan trọng. Dùng ánh xạ theo khóa tệp audio
    để game không phải nhận dạng giọng nói thời gian thực.
 4. **Kích hoạt TTS ở mọi điểm phát.** Challenge qua `ADSound`; nhãn ngắn qua
-   `S3DSound.play`; opener, game over, hồi sinh, Zombiepedia phải được kiểm tra
-   riêng. Tránh một tệp phát hai câu TTS.
+   `S3DSound.play`; opener, game over, hồi sinh được ghép trong danh sách
+   nháp. Zombiepedia giữ lại tiếng nghe thử và được kiểm tra riêng. Tránh một tệp phát hai câu TTS.
 5. **Đồng bộ.** Bắt đầu khi âm gốc bắt đầu, chỉ hạ riêng tiếng người đang nói.
    Xử lý lời Việt dài hơn bản gốc, skip, pause/resume và giọng thứ hai.
    Giữ nguyên tiếng súng, zombie, bước chân và âm thanh 3D.
