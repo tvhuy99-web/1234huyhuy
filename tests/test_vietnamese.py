@@ -37,6 +37,7 @@ class VietnameseSpeechTests(unittest.TestCase):
 
     def test_plural_suffix_does_not_spoil_vietnamese(self):
         self.assertEqual(localization.translate("2 stars unlocked"), "Đã mở khóa 2 sao")
+        self.assertEqual(localization.translate("1 star unlocked"), "Đã mở khóa 1 sao")
 
     def test_android_double_tap(self):
         self.assertEqual(phone_words("Nhấn Enter để chọn."), "Chạm đúp để chọn.")
