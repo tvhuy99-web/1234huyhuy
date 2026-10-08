@@ -6,7 +6,7 @@ Bản dịch đang được thực hiện trên nhánh `feat/vietnamese-localiza
 ## Trạng thái
 
 - Bản dịch: `localization/Tiếng Việt.json`. Tệp có cùng 1.495 khóa với `localization/ru.json`.
-- Đã dịch bước đầu **534 câu/mục** (35,7%); 961 mục còn trống tạm được đọc bằng tiếng Anh.
+- Đã hoàn thành **bản dịch vòng đầu của 1.495/1.495 câu/mục tham chiếu (100%)**. Đây là mức bao phủ của tệp `ru.json`, **chưa xác nhận rằng bộ trích xuất mã nguồn không phát sinh câu mới**.
 - Quy tắc số nhiều: `"@plural": "none"`. Tiếng Việt không cần những dạng số nhiều như tiếng Anh hoặc tiếng Nga.
 - Trên Android, chọn **Tiếng Việt** sẽ yêu cầu cả giọng TTS thứ nhất và thứ hai dùng `vi-VN`. Nếu máy thiếu giọng Việt, bộ máy đọc quay về ngôn ngữ điện thoại, rồi tiếng Anh nếu cần.
 - Giọng người thông báo và các hội thoại thu âm của game **vẫn bằng tiếng Anh**. Bản dịch JSON chỉ xử lý câu chữ.
@@ -29,17 +29,17 @@ Lưu ý: một số câu của Java được đọc lúc khởi động **trư�
 - Giữ nguyên tên gốc nếu việc dịch có thể khiến người chơi nhầm âm thanh, đặc biệt là tên riêng, tên nhân vật và các mã nội bộ.
 - Không làm thay đổi khóa tiếng Anh bên trái dấu hai chấm trong JSON. Chỉ điền phần giá trị tiếng Việt.
 - Bảo toàn chính xác `%i`, `%d`, `%s`, `%.1f`, `%%` và các tham số định dạng khác. Với chỗ đổi thứ tự hai tham số, chỉ dùng cú pháp có đánh số theo hướng dẫn README.
-- Trong tệp JSON dùng **Nhấn Enter** cho thao tác máy tính. Trên điện thoại, `speech_android.phone_words` chuyển thành **Chạm đúp** khi phát ra loa. Cách này giúp một tệp dịch dùng được ở cả Android và Windows.
+- Trong tệp JSON dùng **Nhấn Enter**, **Shift cộng Enter** và **Escape** cho bàn phím máy tính. Trên điện thoại, `speech_android.phone_words` chuyển hướng dẫn thành **chạm đúp**, **chạm đúp và giữ** và **vuốt qua lại bằng hai ngón** khi phát. Cách này giúp một tệp dịch dùng được ở cả Android và Windows.
 - Các hướng dẫn trong trận cần tránh dài dòng để không che tiếng bước chân và tiếng định hướng zombie.
 
-## Phân đoạn công việc còn lại
+## Công việc còn lại trước khi phát hành
 
-1. Hoàn thiện hướng dẫn trong trận, thông báo tạm dừng, điều khiển, giao diện Android và các thông báo lỗi.
-2. Hoàn thiện toàn bộ menu, nâng cấp, nhiệm vụ, thử thách, vật phẩm và thống kê.
-3. Dịch mô tả Tarot, Zombiepedia, tên và mô tả các loại zombie, vũ khí.
-4. Dịch văn bản cốt truyện và các màn mở rộng Extra.
-5. Rà soát những lời thoại thu âm tiếng Anh; nếu bổ sung lời dẫn TTS tiếng Việt thì phải kiểm tra không phát đè tiếng zombie, không trễ đợt tấn công.
-6. Kiểm thử APK thực tế và sửa các lỗi về giọng nói, thứ tự đọc, định dạng, thời điểm phát âm thanh.
+1. Chạy bộ trích xuất `tools/make_language.py` trên môi trường có đầy đủ nguồn game để phát hiện câu mới ngoài 1.495 mục tham chiếu; dịch ngay những mục đó.
+2. Chạy trình kiểm tra bằng Python, xác minh tính đầy đủ, tham số và ngữ pháp số nhiều. Hiện mới xác minh **tĩnh trên dữ liệu GitHub**, chưa thực thi lệnh trên môi trường build thực tế.
+3. Nhờ người chơi nghe thử toàn bộ hướng dẫn, thông báo chiến đấu và các đoạn văn dài. Chỉnh những câu quá dài hoặc khó hiểu khi đọc TTS.
+4. Kiểm thử cả hai giọng TTS tiếng Việt trên điện thoại, kể cả thay đổi ngôn ngữ trong lúc game đang chạy và khi thiết bị thiếu giọng Việt.
+5. Rà soát lời thoại thu âm tiếng Anh; nếu bổ sung lời dẫn TTS tiếng Việt thì phải kiểm tra không phát đè tiếng zombie, không làm trễ đợt tấn công.
+6. Build APK và kiểm thử Challenge, Endless, Extra, cập nhật và sao lưu trên Android thực tế.
 
 ## Kiểm tra bản dịch
 
@@ -51,7 +51,7 @@ py tools/check_vietnamese.py
 py tools/verify_localization.py --language "Tiếng Việt"
 ```
 
-Lệnh đầu sẽ bổ sung câu mới còn thiếu trong bộ dịch. Lệnh `check_vietnamese.py` báo tỷ lệ dịch và lỗi tham số; khi đang dịch dở, những giá trị rỗng là chủ ý. Lệnh `verify_localization.py` của game đòi dịch hoàn chỉnh, nên sẽ báo những mục chưa dịch đến khi xong.
+Lệnh đầu bổ sung câu mới còn thiếu trong bộ dịch nếu mã nguồn đã phát triển. Lệnh `check_vietnamese.py` phát hiện thiếu dịch và lỗi tham số đối chiếu với `ru.json`. Lệnh `verify_localization.py` kiểm tra trực tiếp cả mã game và dữ liệu màn chơi; nó có thể tìm thêm các câu chưa có trong tệp tham chiếu.
 
 Khi sẵn sàng phát hành, chạy:
 
@@ -60,7 +60,7 @@ py tools/check_vietnamese.py --strict
 py tools/verify_localization.py --language "Tiếng Việt"
 ```
 
-Cả hai phải đạt trước khi coi bản dịch văn bản là hoàn chỉnh.
+**Các kiểm tra này chưa được thực thi trong môi trường build ở giai đoạn hiện tại.** Cả hai phải đạt sau khi chạy công cụ trích xuất và trước khi phát hành.
 
 ## Kiểm tra chất lượng Android
 
