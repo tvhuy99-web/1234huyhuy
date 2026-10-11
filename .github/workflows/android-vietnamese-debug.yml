@@ -77,7 +77,7 @@ jobs:
           source = Path(".github/signing/stable-debug.keystore.b64")
           dest = Path("android/.gradle/stable-debug.p12")
           dest.parent.mkdir(parents=True, exist_ok=True)
-          dest.write_bytes(base64.b64decode(source.read_text().strip(), validate=True))
+          dest.write_bytes(base64.b64decode("".join(source.read_text().split()), validate=True))
           assert dest.stat().st_size > 1000
           PY
           EXPECTED=fe1606ae0459e6823e549a4f50404b59e263198dda30b33ecc1a7f3d4be9ed5d
