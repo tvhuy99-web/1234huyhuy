@@ -1,0 +1,35 @@
+[
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_j.m4a",
+    "key": "bastard_gameover_j",
+    "seconds": 2.81,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "medium.en",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "right"
+    },
+    "audio_sha256": "4fe88a40581174c133b3ca1c9c8b1cce42f983bf91877221457a8a562ca6ae7c",
+    "english_asr": "I'VE ONLY GOT BANG!",
+    "previous_vietnamese": "Thế là xong! Bùm!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.72,
+        "text": "I'VE ONLY GOT BANG!",
+        "avg_logprob": -0.6725,
+        "no_speech_prob": 0.0104
+      }
+    ]
+  }
+]

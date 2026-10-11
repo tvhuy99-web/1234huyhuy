@@ -24,16 +24,21 @@ Bảng từng tệp: `analysis/voice_inventory.json`. Tạo lại bằng lệnh:
 | Zombiepedia: âm thanh cần nghe để phân loại | 19 |
 | **Tổng cần xem xét** | **168** |
 
-**Đã ghép TTS ở mức mã nguồn cho 148/149 tệp có khả năng chứa lời nói:**
+**Đã ghép TTS ở mức mã nguồn cho 148/149 tệp có khả năng chứa lời nói trên
+các nền tảng:**
 **88/88 lời Challenge**, 15/15 tutorial, 15/15 game-over, 10/10 announcer,
 10/10 tên súng, 4/4 power-up, 4/4 giọng opener và 2/3 tệp hồi sinh.
 Tệp `revive_standby` còn thiếu bản chép lời đáng tin cậy: ASR cho ra các câu
 mâu thuẫn, cần nghe xác định đây là lời nói hay chỉ âm hiệu ứng.
 
-Cụ thể: **114 bản dịch dựa trên transcript ASR chưa kiểm chứng bằng tai**,
+Cụ thể: **114 bản dịch đã được nhận dạng lại bằng hai mô hình và đối chiếu
+với lời Anh tự động ngày 08/10/2026, nhưng chưa kiểm chứng bằng tai**,
 **21 nhãn ngắn** và **13 câu hướng dẫn theo điều khiển**. Danh sách
 `analysis/voice_inventory.json` ghi rõ `asr_draft_vi_needs_review`;
 **không được coi đây là 100% bản dịch chính xác đã kiểm thử**.
+Kết quả từng tệp, các câu đã sửa và phần còn mơ hồ được lưu trong
+`analysis/voice_asr_review_20261008.json`; báo cáo dễ đọc ở
+`docs/VOICE_ASR_REVIEW_20261008.md`.
 
 **19 tệp Zombiepedia** được gọi là *Preview sound* trong mã để nghe tiếng
 zombie, không phải lời thuyết minh. Các tiếng rên, gầm, bước chân zombie
@@ -62,16 +67,22 @@ bị phân loại nhầm hay không.
 6. **Kiểm thử APK thật.** Phát liên tục trong chiến đấu, mở khóa thử thách,
    hồi sinh, đổi vũ khí, cả hai bộ TTS và thiếu giọng vi-VN.
 
+TTS companion được gọi từ điểm phát âm thanh chung trên Windows, macOS và
+Android. Android chọn `vi-VN` khi game dùng tiếng Việt; desktop dùng giọng đọc
+đang chọn trong cài đặt game/trình đọc màn hình. Muốn có phát âm tiếng Việt
+trên desktop, máy cần có giọng tiếng Việt và người chơi cần chọn giọng đó.
+Chưa xác nhận phần này trên thiết bị thật.
+
 ## Khi nào mới được công bố 100%?
 
 Chỉ đánh dấu một tệp thoại là hoàn chỉnh sau khi **đồng thời** xác nhận:
 - Đây thực sự là lời nói, không phải âm thanh hiệu ứng.
 - Lời chép gốc đã được nghe và xác nhận.
 - Câu Việt đã được duyệt về nghĩa, cách phát âm và độ dài.
-- TTS thực sự phát đúng lúc trên Android, không bị trùng.
+- TTS thực sự phát đúng lúc, không bị trùng.
 - Skip, pause, resume và âm thanh chiến đấu đều đã kiểm tra.
 
-Dù bảng dịch văn bản đã đủ 1.516 mục, điều đó **không thay thế** kiểm tra
+Dù bảng dịch văn bản đã đủ 1.520 mục, điều đó **không thay thế** kiểm tra
 lời thoại ghi âm. Các tệp chưa dịch phải luôn hiện trong bản kiểm kê.
 
 Bản APK hiện tại là debug; hãy xuất sao lưu trước khi gỡ bản cũ.

@@ -1,0 +1,133 @@
+[
+  {
+    "path": "game/sounds/revive/revive_yes.m4a",
+    "key": "revive_yes",
+    "seconds": 2.322,
+    "group": "revive_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "medium.en",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "6d2a8e86b7d77c7ec42f06165aabc0441c69243ae203fd520dda90500478ebaf",
+    "english_asr": "",
+    "previous_vietnamese": "Audio Defence!",
+    "human_listened": false,
+    "segments": []
+  },
+  {
+    "path": "game/sounds/gameover_2/bastard_gameover_j.m4a",
+    "key": "bastard_gameover_j",
+    "seconds": 2.81,
+    "group": "gameover_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "medium.en",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "4fe88a40581174c133b3ca1c9c8b1cce42f983bf91877221457a8a562ca6ae7c",
+    "english_asr": "That's all you got! Bam!",
+    "previous_vietnamese": "Thế là xong! Bùm!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 1.4,
+        "text": "That's all you got!",
+        "avg_logprob": -0.876,
+        "no_speech_prob": 0.0121
+      },
+      {
+        "start": 1.4,
+        "end": 2.4,
+        "text": "Bam!",
+        "avg_logprob": -0.876,
+        "no_speech_prob": 0.0121
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/revive/revive_no.m4a",
+    "key": "revive_no",
+    "seconds": 4.063,
+    "group": "revive_dialogue",
+    "status": "asr_draft_vi_needs_review",
+    "verified_transcript": false,
+    "config": {
+      "model": "medium.en",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "7d76816bde3b4587f817bc786d9558edcfe30ce37aaf3e899c959b8f28a0cbcd",
+    "english_asr": "you",
+    "previous_vietnamese": "Hết rồi!",
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "text": "you",
+        "avg_logprob": -0.9068,
+        "no_speech_prob": 0.8504
+      }
+    ]
+  },
+  {
+    "path": "game/sounds/revive/revive_standby.m4a",
+    "key": "revive_standby",
+    "seconds": 8.057,
+    "group": "revive_dialogue",
+    "status": "needs_transcript_and_tts",
+    "verified_transcript": false,
+    "config": {
+      "model": "medium.en",
+      "parameters": {
+        "language": "en",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "condition_on_previous_text": false,
+        "vad_filter": false,
+        "initial_prompt": null
+      },
+      "channel": "mono"
+    },
+    "audio_sha256": "f8639c2bac3154cdac3cfe742b33b5cb142da4c0400fe69d55a6935e3837acf3",
+    "english_asr": "You",
+    "previous_vietnamese": null,
+    "human_listened": false,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "text": "You",
+        "avg_logprob": -0.9121,
+        "no_speech_prob": 0.7571
+      }
+    ]
+  }
+]

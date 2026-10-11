@@ -59,8 +59,7 @@ def speak_short_voice(sound) -> bool:
     On other languages and platforms nothing changes. TTS does not replace the
     recording, and ends up in the game's separate speech mix.
     """
-    from ..platform import host
-    if not host.ANDROID or sound is None:
+    if sound is None:
         return False
     from .parameters import GameParameters
     params = GameParameters.shared()

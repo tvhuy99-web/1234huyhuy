@@ -20,10 +20,13 @@ playing it and describing what they heard.
 
 Bản dịch tiếng Việt dành cho Audio Defence được phát triển trên nhánh
 [`feat/vietnamese-localization`](https://github.com/tvhuy99-web/1234huyhuy/tree/feat/vietnamese-localization).
-Bản dịch hiện có **1.516 mục tiếng Việt**; bộ kiểm tra mở rộng nhận diện
-**1.063 câu/mục người chơi có thể đọc hoặc nghe**, tất cả đều có bản dịch.
+Bản dịch hiện có **1.520 mục tiếng Việt**; bộ kiểm tra mở rộng nhận diện
+**1.067 câu/mục người chơi có thể đọc hoặc nghe**, tất cả đều có bản dịch.
 TTS Android sử dụng `vi-VN` khi chọn **Tiếng Việt**. Lời thoại thu âm gốc vẫn
 là tiếng Anh, với TTS tiếng Việt đọc đi kèm dựa trên bản chép lời nháp cần duyệt.
+Ngày 08/10/2026, toàn bộ **114 bản dịch lời thu âm** đã được đối chiếu với
+hai lượt nhận dạng giọng nói mới và sửa các lỗi tìm thấy. Xem
+[báo cáo từng tệp và các đoạn còn mơ hồ](docs/VOICE_ASR_REVIEW_20261008.md).
 
 **GitHub Actions đã biên dịch được APK debug, nhưng chưa có kiểm thử thực tế
 trên điện thoại.** Trước khi cài đặt hãy sao lưu tiến trình, kiểm tra giọng đọc
