@@ -28,7 +28,9 @@ readme.html
 # Building OpenAL Soft for the Mac (tools/build_openal_mac.sh): the source and the build, never committed
 vendor/build-openal/
 
-# Signing keys, wherever one is put by mistake: a key is kept outside the repository (C:\Android\Keys)
+# Private production signing keys stay outside this repository. The separate
+# intentionally PUBLIC test key is stored only as .github/signing/*.b64.
+# Any unencoded private keystore is still ignored.
 *.p12
 *.jks
 *.keystore
