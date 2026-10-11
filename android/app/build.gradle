@@ -106,12 +106,32 @@ android {
         }
     }
 
-    // The release is signed with the project's own permanent key: AD_KEYSTORE names the key file (a .p12)
-    // when a release is built.  Every release has to be signed with this same key, or Android refuses to
-    // install it over the one a player already has.  The key file itself is the secret; the passwords below
-    // only open it.  They and the alias are the ones tools/android_keys.py makes every key with; a key made
-    // some other way gives its own in AD_KEY_ALIAS, AD_KEYSTORE_PASSWORD and AD_KEY_PASSWORD.
+    // The openly shared debug key is stable across GitHub Actions runners and
+    // local checkouts. It is ONLY for the test/debug application, never for a
+    // production release. Android can update an installation only when its
+    // package name and signing certificate match.
+    def bundledDebugKey = rootProject.file('../.github/signing/stable-debug.keystore.b64')
+    if (!bundledDebugKey.isFile()) {
+        throw new GradleException('Missing .github/signing/stable-debug.keystore.b64')
+    }
+    def bundledDebugStore = rootProject.file('.gradle/stable-debug.p12')
+    bundledDebugStore.parentFile.mkdirs()
+    bundledDebugStore.bytes = java.util.Base64.getMimeDecoder().decode(
+        bundledDebugKey.getText('UTF-8').trim())
+
+    // Official release keys still come only from AD_KEYSTORE and should remain
+    // separate from this public debug/testing identity.
     signingConfigs {
+        debug {
+            storeFile bundledDebugStore
+            storeType 'pkcs12'
+            storePassword 'android'
+            keyAlias 'audiodefence-stable-debug'
+            keyPassword 'android'
+            enableV1Signing true
+            enableV2Signing true
+            enableV3Signing true
+        }
         release {
             def keystore = System.getenv('AD_KEYSTORE')
             if (keystore) {
@@ -130,6 +150,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
         release {
             minifyEnabled false
             if (System.getenv('AD_KEYSTORE')) {
