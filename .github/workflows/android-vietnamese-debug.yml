@@ -100,7 +100,7 @@ jobs:
       - name: Build APK (stable signer on master, disposable signer for PR checks)
         env:
           AD_UPDATE_KEYSTORE: ${{ github.ref == 'refs/heads/master' && format('{0}/audiodefence-signing/update.p12', runner.temp) || '' }}
-          AD_UPDATE_STORE_PASSWORD: ${{ secrets.AD_UPDATE_STORE_PASSWORD }}
+          AD_UPDATE_STORE_PASSWORD: ${{ github.ref == 'refs/heads/master' && secrets.AD_UPDATE_STORE_PASSWORD || '' }}
         run: |
           set -euo pipefail
           if [[ "$GITHUB_REF" == 'refs/heads/master' ]]; then
