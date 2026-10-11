@@ -41,7 +41,7 @@ Trong **Repository secrets**, tạo **hai** mục:
    [Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\\duong-dan\\AudioDefence-UpdateSigning-KEEP-PRIVATE.p12"))
    ```
 
-   Với macOS/Linux: `base64 < AudioDefence-UpdateSigning-KEEP-PRIVATE.p12 | tr -d '\\n'`.
+   Với macOS/Linux: `base64 < AudioDefence-UpdateSigning-KEEP-PRIVATE.p12 | tr -d '\n'`.
 
 2. `AD_UPDATE_STORE_PASSWORD`: mật khẩu trong tệp bí mật
    `AudioDefence-UpdateSigning-SECRET-INFO.txt` đã bàn giao riêng.
