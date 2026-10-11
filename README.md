@@ -28,6 +28,12 @@ Ngày 08/10/2026, toàn bộ **114 bản dịch lời thu âm** đã được đ
 hai lượt nhận dạng giọng nói mới và sửa các lỗi tìm thấy. Xem
 [báo cáo từng tệp và các đoạn còn mơ hồ](docs/VOICE_ASR_REVIEW_20261008.md).
 
+**Cài cập nhật Android:** Từ bản Debug `26.10.11-1`, GitHub Actions
+sử dụng [khóa ký thử nghiệm công khai cố định](docs/APK_UPDATE_SIGNING.md)
+thay vì khóa debug sinh ngẫu nhiên. APK mới có thể cài đè lên các bản tiếp
+theo dùng cùng khóa và `versionCode` không giảm. **APK cũ ký khác khóa vẫn
+cần sao lưu và cài lại một lần**. Khóa này không dùng cho bản phát hành bảo mật.
+
 **GitHub Actions đã biên dịch được APK debug, nhưng chưa có kiểm thử thực tế
 trên điện thoại.** Trước khi cài đặt hãy sao lưu tiến trình, kiểm tra giọng đọc
 và thử các chế độ chơi. Xem [hướng dẫn tiếng Việt](docs/VIETNAMESE.md) để biết cách sử

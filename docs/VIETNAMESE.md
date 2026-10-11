@@ -127,9 +127,15 @@ Nhánh Việt hóa có quy trình tự động:
 3. Cuộn xuống **Artifacts**, mở `AudioDefence-Vietnamese-Android-DEBUG`.
 4. Giải nén tệp ZIP được GitHub tải về; tệp `.apk` nằm bên trong.
 
-Bản này được Gradle ký bằng **khóa debug tự sinh của máy build**, chỉ dành cho thử nghiệm.
-Nó không dùng khóa của APK gốc, không phải bản phát hành và không bảo đảm cập nhật đè
-lên APK thử nghiệm trước đó (khóa debug trên các runner có thể khác nhau).
+Kể từ bản `26.10.11-1`, APK Debug được ký bằng **khóa thử nghiệm cố định công khai**
+lưu trong kho. Mỗi lần build tiếp theo sẽ dùng đúng chứng chỉ này, để Android
+có thể cài cập nhật mà không cần gỡ ứng dụng, miễn là giữ nguyên
+`applicationId` và tăng `VERSION`.
+
+**Riêng lần chuyển đổi:** APK Debug cũ dùng khóa khác nên **không thể cài đè**
+trực tiếp bằng APK mới; bạn cần sao lưu tiến trình rồi gỡ/cài một lần.
+Xem [hướng dẫn chữ ký và cập nhật](APK_UPDATE_SIGNING.md) để biết chi tiết
+và vân tay SHA-256 dùng để kiểm chứng.
 
 **Bảo vệ dữ liệu chơi:** trước khi gỡ bản gốc để cài APK debug, hãy dùng
 **Settings → Miscellaneous → Export backup**. Giữ một bản sao ở nơi an toàn,
@@ -150,6 +156,6 @@ py tools\android_keys.py
 py compiler.py --android
 ```
 
-**Quan trọng về dữ liệu và chữ ký:** APK tự build dùng khóa ký khác APK của tác giả gốc, nên thường **không cài đè được**. Hãy dùng **Export backup** trước khi gỡ bản cũ. Giữ khóa ký bản fork an toàn ở máy build; không đưa lên GitHub. Bản cập nhật do fork phát hành sau này phải dùng cùng khóa thì Android mới cài đè được.
+**Quan trọng về dữ liệu và chữ ký:** APK tự build dùng khóa ký khác APK của tác giả gốc, nên thường **không cài đè được**. Hãy dùng **Export backup** trước khi gỡ bản cũ. Đối với **Debug**, khóa công khai đã được ghim vào repo nhằm cho phép cài cập nhật. Đối với **Release**, tiếp tục giữ khóa phát hành riêng an toàn và không đưa lên GitHub.
 
 Không tuyên bố APK đã được thử nghiệm cho đến khi có thiết bị Android thật thực hiện các bước kiểm tra ở trên.

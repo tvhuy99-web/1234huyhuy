@@ -1,6 +1,16 @@
 name: Vietnamese Android debug APK
 
 on:
+  push:
+    branches: [master]
+    paths:
+      - 'android/**'
+      - 'audiodefence/**'
+      - 'game/**'
+      - 'localization/**'
+      - 'VERSION'
+      - '.github/signing/**'
+      - '.github/workflows/android-vietnamese-debug.yml'
   pull_request:
     paths:
       - 'android/**'
@@ -8,6 +18,7 @@ on:
       - 'game/**'
       - 'localization/**'
       - 'VERSION'
+      - '.github/signing/**'
       - '.github/workflows/android-vietnamese-debug.yml'
   workflow_dispatch:
 
@@ -58,7 +69,26 @@ jobs:
           python tools/check_vietnamese.py --strict
           python tools/verify_localization.py --language "Tiếng Việt"
 
-      - name: Build debug APK (automatically signed with a debug key)
+      - name: Verify bundled stable signing certificate BEFORE build
+        run: |
+          python - <<'PY'
+          import base64
+          from pathlib import Path
+          source = Path(".github/signing/stable-debug.keystore.b64")
+          dest = Path("android/.gradle/stable-debug.p12")
+          dest.parent.mkdir(parents=True, exist_ok=True)
+          dest.write_bytes(base64.b64decode("".join(source.read_text().split()), validate=True))
+          assert dest.stat().st_size > 1000
+          PY
+          EXPECTED=fe1606ae0459e6823e549a4f50404b59e263198dda30b33ecc1a7f3d4be9ed5d
+          ACTUAL="$(keytool -list -v -storetype PKCS12 \
+            -keystore android/.gradle/stable-debug.p12 -storepass android \
+            -alias audiodefence-stable-debug | grep -m1 'SHA256:' \
+            | sed 's/.*SHA256: *//' | tr -d ':[:space:]' | tr 'A-F' 'a-f')"
+          test "$ACTUAL" = "$EXPECTED" || { echo "Unexpected keystore fingerprint: $ACTUAL"; exit 1; }
+          echo "Stable debug key fingerprint verified: $ACTUAL"
+
+      - name: Build debug APK (signed with stable public test key)
         run: gradle -p android --no-daemon :app:assembleDebug -PbuildPython="$(command -v python)" --stacktrace
 
       - name: Verify Vietnamese assets are inside APK
@@ -89,11 +119,22 @@ jobs:
                     'assets:', len(names))
           PY
 
+      - name: Verify stable signing certificate on built APK
+        run: |
+          APK=android/app/build/outputs/apk/debug/app-debug.apk
+          EXPECTED=fe1606ae0459e6823e549a4f50404b59e263198dda30b33ecc1a7f3d4be9ed5d
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs "$APK" | tee /tmp/audiodefence-apksigner.txt
+          ACTUAL="$(grep -m1 'certificate SHA-256 digest:' /tmp/audiodefence-apksigner.txt \
+            | sed 's/.*digest: *//' | tr -d ':[:space:]' | tr 'A-F' 'a-f')"
+          test "$ACTUAL" = "$EXPECTED" || { echo "Wrong APK signing fingerprint: $ACTUAL"; exit 1; }
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" | grep -m1 "^package: name='com.audiodefence.android'"
+          echo "APK signed with permanent testing certificate: $ACTUAL"
+
       - name: Upload installable test APK (not a production release)
         uses: actions/upload-artifact@v4
         with:
           name: AudioDefence-Vietnamese-Android-DEBUG
           path: android/app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 30
           compression-level: 0
