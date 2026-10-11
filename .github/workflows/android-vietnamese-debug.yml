@@ -1,6 +1,15 @@
 name: Vietnamese Android debug APK
 
 on:
+  push:
+    branches: [master]
+    paths:
+      - 'android/**'
+      - 'audiodefence/**'
+      - 'game/**'
+      - 'localization/**'
+      - 'VERSION'
+      - '.github/workflows/android-vietnamese-debug.yml'
   pull_request:
     paths:
       - 'android/**'
@@ -58,8 +67,48 @@ jobs:
           python tools/check_vietnamese.py --strict
           python tools/verify_localization.py --language "Tiếng Việt"
 
-      - name: Build debug APK (automatically signed with a debug key)
-        run: gradle -p android --no-daemon :app:assembleDebug -PbuildPython="$(command -v python)" --stacktrace
+      # Never make a new key on a hosted runner: that breaks in-place
+      # Android updates. The private PKCS12 remains in GitHub Actions Secrets.
+      # Pull requests intentionally use disposable signing, without secrets.
+      - name: Restore persistent Android signer from repository Secrets
+        if: github.ref == 'refs/heads/master'
+        env:
+          AD_UPDATE_KEYSTORE_BASE64: ${{ secrets.AD_UPDATE_KEYSTORE_BASE64 }}
+          AD_UPDATE_STORE_PASSWORD: ${{ secrets.AD_UPDATE_STORE_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$AD_UPDATE_KEYSTORE_BASE64" || -z "$AD_UPDATE_STORE_PASSWORD" ]]; then
+            echo "::error::Configure AD_UPDATE_KEYSTORE_BASE64 and AD_UPDATE_STORE_PASSWORD in Settings > Secrets and variables > Actions. Refusing a randomly signed main-branch APK."
+            exit 1
+          fi
+          mkdir -p "$RUNNER_TEMP/audiodefence-signing"
+          python - <<'PY'
+          import base64, os
+          from pathlib import Path
+          data = base64.b64decode(os.environ['AD_UPDATE_KEYSTORE_BASE64'], validate=True)
+          if not (1000 < len(data) < 100000):
+              raise SystemExit("Invalid update-signing PKCS12")
+          p = Path(os.environ['RUNNER_TEMP']) / 'audiodefence-signing' / 'update.p12'
+          p.write_bytes(data)
+          p.chmod(0o600)
+          print('Restored private update signer without exposing its contents')
+          PY
+          keytool -list -keystore "$RUNNER_TEMP/audiodefence-signing/update.p12" \
+            -storetype PKCS12 -alias audiodefence-update \
+            -storepass "$AD_UPDATE_STORE_PASSWORD" >/dev/null
+
+      - name: Build APK (stable signer on master, disposable signer for PR checks)
+        env:
+          AD_UPDATE_KEYSTORE: ${{ github.ref == 'refs/heads/master' && format('{0}/audiodefence-signing/update.p12', runner.temp) || '' }}
+          AD_UPDATE_STORE_PASSWORD: ${{ secrets.AD_UPDATE_STORE_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [[ "$GITHUB_REF" == 'refs/heads/master' ]]; then
+            test -s "$AD_UPDATE_KEYSTORE"
+          else
+            unset AD_UPDATE_KEYSTORE AD_UPDATE_STORE_PASSWORD
+          fi
+          gradle -p android --no-daemon :app:assembleDebug -PbuildPython="$(command -v python)" --stacktrace
 
       - name: Verify Vietnamese assets are inside APK
         run: |
@@ -89,11 +138,33 @@ jobs:
                     'assets:', len(names))
           PY
 
-      - name: Upload installable test APK (not a production release)
+      - name: Verify stable certificate and package (master only)
+        if: github.ref == 'refs/heads/master'
+        env:
+          EXPECTED_CERT_SHA256: 3a274f80a416c75cac9a2a1c35be1d969ba10fff777dacd570fa8e153ab225fe
+        run: |
+          set -euo pipefail
+          APK=android/app/build/outputs/apk/debug/app-debug.apk
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs "$APK" | tee apksigner.txt
+          ACTUAL="$(awk -F': ' '/certificate SHA-256 digest:/ {print $NF; exit}' apksigner.txt | tr -d ':' | tr '[:upper:]' '[:lower:]')"
+          if [[ "$ACTUAL" != "$EXPECTED_CERT_SHA256" ]]; then
+            echo "::error::APK certificate changed; refusing an APK that cannot update the installed game."
+            exit 1
+          fi
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" > badging.txt
+          grep -q "package: name='com.audiodefence.android' " badging.txt
+          echo "Verified installable APK: com.audiodefence.android signer SHA-256 $ACTUAL"
+          rm -f apksigner.txt badging.txt
+
+      - name: Upload APK (master stable, PR disposable)
         uses: actions/upload-artifact@v4
         with:
-          name: AudioDefence-Vietnamese-Android-DEBUG
+          name: ${{ github.ref == 'refs/heads/master' && 'AudioDefence-Android-STABLE-SIGNED' || 'AudioDefence-PR-TEST-TEMPORARY-SIGNATURE' }}
           path: android/app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 30
           compression-level: 0
+
+      - name: Remove signer from temporary runner
+        if: always()
+        run: rm -f "$RUNNER_TEMP/audiodefence-signing/update.p12"
