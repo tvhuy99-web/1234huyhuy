@@ -112,6 +112,18 @@ android {
     // only open it.  They and the alias are the ones tools/android_keys.py makes every key with; a key made
     // some other way gives its own in AD_KEY_ALIAS, AD_KEYSTORE_PASSWORD and AD_KEY_PASSWORD.
     signingConfigs {
+        // A persistent debug/update signer is selected only when the key
+        // has been restored from private GitHub Actions Secrets or provided
+        // locally. Never generate it in Gradle or commit it to this repository.
+        if (System.getenv('AD_UPDATE_KEYSTORE')) {
+            create('stableUpdate') {
+                storeFile file(System.getenv('AD_UPDATE_KEYSTORE'))
+                storeType 'pkcs12'
+                storePassword System.getenv('AD_UPDATE_STORE_PASSWORD')
+                keyAlias 'audiodefence-update'
+                keyPassword System.getenv('AD_UPDATE_STORE_PASSWORD')
+            }
+        }
         release {
             def keystore = System.getenv('AD_KEYSTORE')
             if (keystore) {
@@ -130,6 +142,13 @@ android {
     }
 
     buildTypes {
+        debug {
+            // Use the same certificate on every trusted CI build. Local
+            // builds without signing secrets remain disposable debug APKs.
+            if (System.getenv('AD_UPDATE_KEYSTORE')) {
+                signingConfig = signingConfigs.stableUpdate
+            }
+        }
         release {
             minifyEnabled false
             if (System.getenv('AD_KEYSTORE')) {
